@@ -1,0 +1,4 @@
+[
+  {"from": "measurementTechnique - schema:DataCatalog","to": "measurementTechniques(R)","value": 1},
+  {"from": "measurementTechniques(R)","to": "EOSC/EDMI","value": 1}
+]

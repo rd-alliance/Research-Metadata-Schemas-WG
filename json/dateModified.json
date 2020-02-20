@@ -1,0 +1,16 @@
+[
+  {"from": "dateModified - schema:CreativeWork","to": "dateModified(M)","value": 1},
+  {"from": "dateModified(M)","to": "EOSC/EDMI","value": 1},
+  {"from": "dateModified - schema:CreativeWork","to": "Temporal reference: date of last modification","value": 1},
+  {"from": "Temporal reference: date of last modification","to": "ISO-19115:2003","value": 1},
+  {"from": "dateModified - schema:CreativeWork","to": "Version Date","value": 1},
+  {"from": "Version Date","to": "Dataverse","value": 1},
+  {"from": "dateModified - schema:CreativeWork","to": "update/modification date; modified","value": 1},
+  {"from": "update/modification date; modified","to": "DCAT","value": 1},
+  {"from": "dateModified - schema:CreativeWork","to": "Date(R) dateType field indicates the type of date","value": 1},
+  {"from": "Date(R) dateType field indicates the type of date","to": "Datacite","value": 1},
+  {"from": "dateModified - schema:CreativeWork","to": "dcterms:modified","value": 1},
+  {"from": "dcterms:modified","to": "DC","value": 1},
+  {"from": "dateModified - schema:CreativeWork","to": "Dates(date type)(O)","value": 1},
+  {"from": "Dates(date type)(O)","to": "ECRIN","value": 1}
+]

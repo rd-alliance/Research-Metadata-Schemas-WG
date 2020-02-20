@@ -1,0 +1,4 @@
+[
+  {"from": "dataset - schema:Dataset","to": "dataset(M)","value": 1},
+  {"from": "dataset(M)","to": "DCAT","value": 1}
+]

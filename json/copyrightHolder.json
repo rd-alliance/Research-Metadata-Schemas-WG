@@ -1,0 +1,6 @@
+[
+  {"from": "copyrightHolder - schema:CreativeWork","to": "owner(O)","value": 1},
+  {"from": "owner(O)","to": "DCAT","value": 1},
+  {"from": "copyrightHolder - schema:CreativeWork","to": "No mapping","value": 1},
+  {"from": "No mapping","to": "RIF-CS","value": 1}
+]

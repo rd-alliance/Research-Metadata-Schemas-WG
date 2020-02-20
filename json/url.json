@@ -1,0 +1,17 @@
+[
+  {"from": "url - schema:Thing","to": "url(M)","value": 2},
+  {"from": "url(M)","to": "EOSC/EDMI","value": 1},
+  {"from": "url(M)","to": "BioSchema","value": 1},
+  {"from": "url - schema:Thing","to": "Online resource(function: \"information\")","value": 1},
+  {"from": "Online resource(function: \"information\")","to": "ISO-19115:2003","value": 1},
+  {"from": "url - schema:Thing","to": "accessURL(M); landing page(if no access directly to dataset); homepage","value": 1},
+  {"from": "accessURL(M); landing page(if no access directly to dataset); homepage","to": "DCAT","value": 1},
+  {"from": "url - schema:Thing","to": "identifier(R)","value": 1},
+  {"from": "identifier(R)","to": "DATS","value": 1},
+  {"from": "url - schema:Thing","to": "valueURL","value": 1},
+  {"from": "valueURL","to": "Datacite","value": 1},
+  {"from": "url - schema:Thing","to": "RDA key=URL of record. \"https://researchdata.ands.org.au/view?key=<insert key>\"","value": 1},
+  {"from": "RDA key=URL of record. \"https://researchdata.ands.org.au/view?key=<insert key>\"","to": "RIF-CS","value": 1},
+  {"from": "url - schema:Thing","to": "dc:identifier(if URL)","value": 1},
+  {"from": "dc:identifier(if URL)","to": "DC","value": 1}
+]
