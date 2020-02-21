@@ -1,0 +1,16 @@
+[
+  {"from": "spatialCoverage - schema:CreativeWork","to": "spatialCoverage(O)","value": 1},
+  {"from": "spatialCoverage(O)","to": "EOSC/EDMI","value": 1},
+  {"from": "spatialCoverage - schema:CreativeWork","to": "Geographic extent","value": 1},
+  {"from": "Geographic extent","to": "ISO-19115:2003","value": 1},
+  {"from": "spatialCoverage - schema:CreativeWork","to": "spatial/geographic coverage","value": 1},
+  {"from": "spatial/geographic coverage","to": "DCAT","value": 1},
+  {"from": "spatialCoverage - schema:CreativeWork","to": "GeoLocation","value": 1},
+  {"from": "GeoLocation","to": "Datacite","value": 1},
+  {"from": "spatialCoverage - schema:CreativeWork","to": "collection/coverage/spatial","value": 1},
+  {"from": "collection/coverage/spatial","to": "RIF-CS","value": 1},
+  {"from": "spatialCoverage - schema:CreativeWork","to": "dcterms:coverage(spatial)","value": 1},
+  {"from": "dcterms:coverage(spatial)","to": "DC","value": 1},
+  {"from": "spatialCoverage - schema:CreativeWork","to": "Spatial Coverage(O)","value": 1},
+  {"from": "Spatial Coverage(O)","to": "B2FIND","value": 1}
+]

@@ -1,0 +1,19 @@
+source,target,value
+description,description(M),3
+description(M),EOSC/EDMI,1
+description(M),DCAT,1
+description(M),BioSchema,1
+description,Description(R),3
+Description(R),Datacite,1
+Description(R),B2FIND,1
+Description(R),ECRIN,1
+description,Resource description,1
+Resource description,ISO-19115:2003,1
+description,Description - dcterms:description,1
+Description - dcterms:description,DC,1
+description,description(R),1
+description(R),DATS,1
+description,collection/description[@type='brief'] OR collection/description[@type='full'],1
+collection/description[@type='brief'] OR collection/description[@type='full'],RIF-CS,1
+description,Description;DescriptionValue(M),1
+Description;DescriptionValue(M),Dataverse,1

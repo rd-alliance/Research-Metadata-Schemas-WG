@@ -1,0 +1,20 @@
+[
+  {"from": "publisher - schema:CreativeWork","to": "Responsible party(role:\"publisher\")","value": 1},
+  {"from": "Responsible party(role:\"publisher\")","to": "ISO-19115:2003","value": 1},
+  {"from": "publisher - schema:CreativeWork","to": "Dataset Publisher","value": 1},
+  {"from": "Dataset Publisher","to": "Dataverse","value": 1},
+  {"from": "publisher - schema:CreativeWork","to": "publisher(M)","value": 1},
+  {"from": "publisher(M)","to": "DCAT","value": 1},
+  {"from": "publisher - schema:CreativeWork","to": "Publisher(M)","value": 1},
+  {"from": "Publisher(M)","to": "Datacite","value": 1},
+  {"from": "publisher - schema:CreativeWork","to": "registryObject:collection:citationInfo:citationMetadata:publisher OR registryObject@Group","value": 1},
+  {"from": "registryObject:collection:citationInfo:citationMetadata:publisher OR registryObject@Group","to": "RIF-CS","value": 1},
+  {"from": "publisher - schema:CreativeWork","to": "Publisher - dcterms:publisher","value": 1},
+  {"from": "Publisher - dcterms:publisher","to": "DC","value": 1},
+  {"from": "publisher - schema:CreativeWork","to": "Publisher(R)","value": 1},
+  {"from": "Publisher(R)","to": "B2FIND","value": 1},
+  {"from": "publisher - schema:CreativeWork","to": "distrbtr","value": 1},
+  {"from": "distrbtr","to": "DDI","value": 1},
+  {"from": "publisher - schema:CreativeWork","to": "Publisher/Provider(M)","value": 1},
+  {"from": "Publisher/Provider(M)","to": "ECRIN","value": 1}
+]

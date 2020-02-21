@@ -1,0 +1,13 @@
+[
+  {"from": "distribution - schema:Dataset","to": "distribution(R)","value": 2},
+  {"from": "distribution(R)","to": "EOSC/EDMI","value": 1},
+  {"from": "distribution(R)","to": "DATS","value": 1},
+  {"from": "distribution - schema:Dataset","to": "Distribution information","value": 1},
+  {"from": "Distribution information","to": "ISO-19115:2003","value": 1},
+  {"from": "distribution - schema:Dataset","to": "distribution","value": 3},
+  {"from": "distribution","to": "DCAT","value": 1},
+  {"from": "distribution","to": "Datacite","value": 1},
+  {"from": "distribution","to": "BioSchema","value": 1},
+  {"from": "distribution - schema:Dataset","to": "location/address/electronic @type=\"url\" @ target=\"directDownload","value": 1},
+  {"from": "location/address/electronic @type=\"url\" @ target=\"directDownload","to": "RIF-CS","value": 1}
+]

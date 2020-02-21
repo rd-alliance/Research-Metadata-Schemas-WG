@@ -1,0 +1,8 @@
+[
+  {"from": "contentURL - schema:Thing","to": "Online resource(function:\"download\"):linkage","value": 1},
+  {"from": "Online resource(function:\"download\"):linkage","to": "ISO-19115:2003","value": 1},
+  {"from": "contentURL - schema:Thing","to": "accessURL","value": 1},
+  {"from": "accessURL","to": "DCAT","value": 1},
+  {"from": "contentURL - schema:Thing","to": "access(M)","value": 1},
+  {"from": "access(M)","to": "DATS","value": 1}
+]

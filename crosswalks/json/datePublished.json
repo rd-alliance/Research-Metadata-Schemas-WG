@@ -1,0 +1,22 @@
+[
+  {"from": "datePublished - schema:CreativeWork","to": "datePublished(O)","value": 1},
+  {"from": "datePublished(O)","to": "EOSC/EDMI","value": 1},
+  {"from": "datePublished - schema:CreativeWork","to": "Temporal reference: date of publication","value": 1},
+  {"from": "Temporal reference: date of publication","to": "ISO-19115:2003","value": 1},
+  {"from": "datePublished - schema:CreativeWork","to": "Publication Date","value": 1},
+  {"from": "Publication Date","to": "Dataverse","value": 1},
+  {"from": "datePublished - schema:CreativeWork","to": "release date","value": 1},
+  {"from": "release date","to": "DCAT","value": 1},
+  {"from": "datePublished - schema:CreativeWork","to": "PublicationYear(M)","value": 1},
+  {"from": "PublicationYear(M)","to": "Datacite","value": 1},
+  {"from": "datePublished - schema:CreativeWork","to": "collection/citationInfo/citationMetadata.date[@type='publicationDate'] OR collection/citationInfo/citationMetadata/date[@type='issued'] OR collection/dates[@type='dc.issued'] OR collection/dates[@type='dc.available'] OR Collection[@dateAccessioned] OR date the record was ingested into RDA","value": 1},
+  {"from": "collection/citationInfo/citationMetadata.date[@type='publicationDate'] OR collection/citationInfo/citationMetadata/date[@type='issued'] OR collection/dates[@type='dc.issued'] OR collection/dates[@type='dc.available'] OR Collection[@dateAccessioned] OR date the record was ingested into RDA","to": "RIF-CS","value": 1},
+  {"from": "datePublished - schema:CreativeWork","to": "dcterms:issued","value": 1},
+  {"from": "dcterms:issued","to": "DC","value": 1},
+  {"from": "datePublished - schema:CreativeWork","to": "PublicationYear(R)","value": 1},
+  {"from": "PublicationYear(R)","to": "B2FIND","value": 1},
+  {"from": "datePublished - schema:CreativeWork","to": "distDate(for export)","value": 1},
+  {"from": "distDate(for export)","to": "DDI","value": 1},
+  {"from": "datePublished - schema:CreativeWork","to": "Creation Year(M)","value": 1},
+  {"from": "Creation Year(M)","to": "ECRIN","value": 1}
+]

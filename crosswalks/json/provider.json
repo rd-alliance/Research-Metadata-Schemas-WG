@@ -1,0 +1,6 @@
+[
+  {"from": "provider - schema:CreativeWork","to": "Dataset Publisher","value": 1},
+  {"from": "Dataset Publisher","to": "Dataverse","value": 1},
+  {"from": "provider - schema:CreativeWork","to": "No mapping","value": 1},
+  {"from": "No mapping","to": "RIF-CS","value": 1}
+]

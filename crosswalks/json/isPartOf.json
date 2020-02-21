@@ -1,0 +1,8 @@
+[
+  {"from": "isPartOf - schema:CreativeWork","to": "includedIn(Dataset)(R)","value": 1},
+  {"from": "includedIn(Dataset)(R)","to": "EOSC/EDMI","value": 1},
+  {"from": "isPartOf - schema:CreativeWork","to": "is part of","value": 1},
+  {"from": "is part of","to": "DCAT","value": 1},
+  {"from": "isPartOf - schema:CreativeWork","to": "relatedObject|relatedInfo collection where relation[@type='isPartOf']","value": 1},
+  {"from": "relatedObject|relatedInfo collection where relation[@type='isPartOf']","to": "RIF-CS","value": 1}
+]

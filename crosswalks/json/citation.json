@@ -1,0 +1,14 @@
+[
+  {"from": "citation - schema:CreativeWork","to": "citation(O)","value": 1},
+  {"from": "citation(O)","to": "EOSC/EDMI","value": 1},
+  {"from": "citation - schema:CreativeWork","to": "Related Publication","value": 1},
+  {"from": "Related Publication","to": "Dataverse","value": 1},
+  {"from": "citation - schema:CreativeWork","to": "primaryPublication/citations(O)","value": 1},
+  {"from": "primaryPublication/citations(O)","to": "DATS","value": 1},
+  {"from": "citation - schema:CreativeWork","to": "collection/relatedInfo[@type='publication'] OR relatedObject:collection where related collection[@type='publication']","value": 1},
+  {"from": "collection/relatedInfo[@type='publication'] OR relatedObject:collection where related collection[@type='publication']","to": "RIF-CS","value": 1},
+  {"from": "citation - schema:CreativeWork","to": "dcterms:isReferencedBy","value": 1},
+  {"from": "dcterms:isReferencedBy","to": "DC","value": 1},
+  {"from": "citation - schema:CreativeWork","to": "citation(R)","value": 1},
+  {"from": "citation(R)","to": "BioSchema","value": 1}
+]

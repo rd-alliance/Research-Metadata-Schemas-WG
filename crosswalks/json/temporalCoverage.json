@@ -1,0 +1,20 @@
+[
+  {"from": "temporalCoverage - schema:CreativeWork","to": "temporalCoverage(O)","value": 1},
+  {"from": "temporalCoverage(O)","to": "EOSC/EDMI","value": 1},
+  {"from": "temporalCoverage - schema:CreativeWork","to": "Temporal extent","value": 1},
+  {"from": "Temporal extent","to": "ISO-19115:2003","value": 1},
+  {"from": "temporalCoverage - schema:CreativeWork","to": "Time Period Covered","value": 1},
+  {"from": "Time Period Covered","to": "Dataverse","value": 1},
+  {"from": "temporalCoverage - schema:CreativeWork","to": "datasetTimeInterval","value": 1},
+  {"from": "datasetTimeInterval","to": "DCAT","value": 1},
+  {"from": "temporalCoverage - schema:CreativeWork","to": "Date","value": 1},
+  {"from": "Date","to": "Datacite","value": 1},
+  {"from": "temporalCoverage - schema:CreativeWork","to": "collection/coverage/temporal","value": 1},
+  {"from": "collection/coverage/temporal","to": "RIF-CS","value": 1},
+  {"from": "temporalCoverage - schema:CreativeWork","to": "dcterms:temporal(start); dcterms:temporal(end)","value": 1},
+  {"from": "dcterms:temporal(start); dcterms:temporal(end)","to": "DC","value": 1},
+  {"from": "temporalCoverage - schema:CreativeWork","to": "Temporal Coverage(O)","value": 1},
+  {"from": "Temporal Coverage(O)","to": "B2FIND","value": 1},
+  {"from": "temporalCoverage - schema:CreativeWork","to": "timePrd","value": 1},
+  {"from": "timePrd","to": "DDI","value": 1}
+]

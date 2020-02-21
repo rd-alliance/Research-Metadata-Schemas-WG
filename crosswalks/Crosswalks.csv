@@ -1,0 +1,120 @@
+Schema.org,,,,,,,,,,,,,,,
+Parent Type,Property,Type,Description,EOSC/EDMI,ISO-19115:2003,Dataverse,DCAT,DATS,Datacite,RIF-CS,DC ,BioSchema,B2FIND,DDI,ECRIN Clinical Research Metadata Schema 
+schema:Thing,description ,Text,A description of the item.,description (M),Resource description,Description; DescriptionValue (M),description (M),description (R),Description (R),"collection/description[@type='brief']
+OR
+collection/description[@type='full']",Description - dcterms:description,description (M),Description (R),,Description (R)
+schema:Thing,identifier,PropertyValue or URL,"The identifier property represents any kind of identifier for any kind of Thing, such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See background notes for more details.",identifier (M),Resource identifier,Dataset Persistent ID,identifier; other identifier,identifier (R),Identifier (M),"collection/citationInfo/citationMetadata/identifier
+AND/OR
+collection/identifier
+",Identifier - dcterms:identifier,identifier (M),Identifier (M),IDNo,DOI (M)
+schema:Thing,name,Text,"A descriptive name of the item (e.g. dataset, software, Organization). ",name (M),Resource title (M),Title (M),title (M),title (M),Title (M),"registryObject:collection:name
+(Title as displayed in RDA)",Title - dcterms:title,name (M),Title (M),titl,Object Title (M)
+schema:Thing,alternateName,Text,"An alias for the item 
+",,,,,,,,,,,,
+schema:Thing,sameAs,URL,"URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website.",sameAs (O),,Alternative URl,,alternateIdentifier (O),RelatedIdentifer,No mapping,relation,,,,"Related resource identifiers, with relation type indicator (R)"
+schema:Thing,url,URL,URL of the item.,url (M),"Online resource (function: information"")",,accessURL (M); landing page (if no access directly to dataset); homepage,identifier (R),valueURL,"RDA key= URL of record.
+""https://researchdata.ands.org.au/view?key=<insert key>""",dc:identifier (if URL),url (M),,,
+schema:Thing,relatedLink,URL,"A link related to this object, e.g. related web pages",,,,,,,,,,,relPubl,
+schema:CreativeWork,author,Organization or Person,The author of this content or rating. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent to this and may be used interchangeably.,,,Author; authorName (M),,,creator,"collection/citationInfo/citationMetadata/contributor
+OR
+relatedObject|relatedInfo party/name where relation=IsPrincipalInvestigatorOf
+OR
+relatedObject|relatedInfo party/name where relation=author
+OR
+relatedObject|relatedInfo party/name where relation=coInvestigator
+OR
+relatedObject|relatedInfo party/name where relation=hasCollector",Creator,,,AuthEnty,
+schema:CreativeWork,citation,CreativeWork or URL,"A citation or reference to another creative work, such as another publication, web page, scholarly article, etc.",citation (O),,Related Publication,,primaryPublication/ citations (O),,"collection/relatedInfo[@type='publication']
+OR
+relatedObject:collection where related collection [@type='publication']",dcterms:isReferencedBy,citation (R),,,
+schema:CreativeWork,contributor,Organization or Person,A secondary contributor to the CreativeWork or Event.,,,Contributor,,,Contributor (R),No mapping,Contributor,,Contributor (O),,Contributors (O)
+schema:CreativeWork,copyrightHolder,Organization or Person,The party holding the legal copyright to the CreativeWork.,,,,owner (O),,,No mapping,,,,,
+schema:CreativeWork,copyrightYear,Number,The year during which the claimed copyright for the CreativeWork was first asserted.,,,,,,,No mapping,,,,,
+schema:CreativeWork,creator,Organization or Person,"The creator/author of this CreativeWork (dataset). This is the same as the Author property for CreativeWork.
+
+ To uniquely identify individuals, use ORCID ID as the value of the sameAs property of the Person type. To uniquely identify institutions and organizations, use ROR ID. ",creator (M),,Author,author,creator (M),Creator (M) ,"collection/citationInfo/citationMetadata/contributor
+OR
+relatedObject|relatedInfo party/name where relation=IsPrincipalInvestigatorOf
+OR
+relatedObject|relatedInfo party/name where relation=author
+OR
+relatedObject|relatedInfo party/name where relation=coInvestigator
+OR
+relatedObject|relatedInfo party/name where relation=hasCollector",Creator,creator (R),Creator (R),,Creators (M)
+schema:CreativeWork,dateCreated,Date or DateTime,The date on which the CreativeWork was created or the item was added to a DataFeed.,dateCreated (M),,,creation date,,Date (R) dateType field indicates the type of date ,"collection/citationInfo/citationMetadata/date[@type= 'created']
+OR
+collection/dates[@type='created']",,,,,Dates (date type) (O)
+schema:CreativeWork,dateModified,Date or DateTime,The date on which the CreativeWork was most recently modified or when the item's entry was modified within a DataFeed.,"
+dateModified (M)",Temporal reference: date of last modification,Version Date,update/ modification date; modified,,Date (R) dateType field indicates the type of date ,,dcterms:modified,,,,Dates (date type) (O)
+schema:CreativeWork,datePublished,Date,Date of first broadcast/publication.,"
+datePublished (O)",Temporal reference: date of publication,Publication Date,release date,,PublicationYear (M),"collection/citationInfo/citationMetadata/date[@type='publicationDate']
+OR
+collection/citationInfo/citationMetadata/date[@type='issued']
+OR
+collection/dates[@type='dc.issued']
+OR
+collection/dates[@type='dc.available']
+OR
+Collection[@dateAccessioned]
+OR
+date the record was ingested into RDA",dcterms:issued,,PublicationYear (R),distDate (for export),Creation Year (M)
+schema:CreativeWork,editor,Person,Specifies the Person who edited the CreativeWork.,,,,,,,No mapping,,,,,
+schema:CreativeWork,encoding,MediaObject,A media object that encodes this CreativeWork. This property is a synonym for associatedMedia. Supersedes encodings.,,,,,,,No mapping,,,,,
+schema:CreativeWork,fileFormat,Text or URL,"Media type, typically MIME format (see IANA site) of the content e.g. application/zip of a SoftwareApplication binary. In cases where a CreativeWork has several media type representations, 'encoding' can be used to indicate each MediaObject alongside particular fileFormat information. Unregistered or niche file formats can be indicated instead via the most appropriate URL, e.g. defining Web page or a Wikipedia entry.",format (R),,,format; media type,,Format (R),collection/address/electronic[@target='directDownload']/mediaType        ,,,,,
+schema:CreativeWork,funder,Organization or Person,A person or organization that supports (sponsors) something through some kind of financial contribution.,,,Grant information,,acknowledges (O),,relatedObject|relatedInfo party/name where relation=isFundedBy        ,dcterms:contributor,,,,
+schema:CreativeWork,keywords,Text,Keywords or tags used to describe this content. Multiple entries in a keywords list are typically delimited by commas.,keywords (R),Descriptive keywords,Subject (M); Topic Classification Term; Keywords,keywords,keywords (O),,collection/subject        ,Subject - dcterms:subject,keywords (M),,keywords,
+schema:CreativeWork,license,CreativeWork or URL,"A license document that applies to this content, typically indicated by URL.
+
+(A license under which the dataset is distributed.)",license (R),,,licence ,licenses (R),Rights,"collection/rights/licence[@rightsURI]
+AND/OR
+collection/rights/licence[@type]
+AND
+collection/rights/licence",Rights,license (R),Rights (O),,Rights (O)
+schema:CreativeWork,producer,Organization or Person,"The person or organization who produced the work (e.g. music album, movie, tv/radio series etc.).",,,Producer,,,"contributor with contributortype=""Producer""",No mapping,,,,producer,
+schema:CreativeWork,provider,Organization or Person,"The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider may also serve as the seller. Supersedes carrier.",,,Dataset Publisher,,,,No mapping,,,,,
+schema:CreativeWork,publisher,Organization or Person,The publisher of the creative work.,,"Responsible party (role: ""publisher"")",Dataset Publisher,publisher (M),,Publisher (M),registryObject:collection:citationInfo:citationMetadata:publisher OR registryObject@Group,Publisher - dcterms:publisher,,Publisher (R),distrbtr,Publisher/ Provider (M)
+schema:CreativeWork,sponsor,Organization or Person,"A person or organization that supports a thing through a pledge, promise, or financial contribution. e.g. a sponsor of a Medical Study or a corporate sponsor of an event.",,,,,,,,,,,,
+schema:CreativeWork,version,Number or Text,The version of the CreativeWork embodied by a specified resource.,"
+version (O)",,Version,version,version (R),Version (R),registryObject:collection:citationInfo:citationMetadata:version,,version (R),,version,version (O)
+schema:CreativeWork,isAccessibleForFree,Boolean,A flag to signal that the publication is accessible for free.,,,,,,,No mapping,,,,,
+schema:CreativeWork,isPartOf,CreativeWork,"Indicates a CreativeWork that this CreativeWork is (in some sense) part of. Reverse property hasPart.
+
+If the dataset is a collection of smaller datasets, use the hasPart property to denote such relationship. Conversly, if the dataset is part of a larger dataset, use isPartOf.","
+includedIn(Dataset) (R)",,,is part of,,,relatedObject|relatedInfo collection where relation[@type='isPartOf']        ,,,,,
+schema:CreativeWork,hasPart,CreativeWork,Indicates a CreativeWork that is (in some sense) a part of this CreativeWork. Reverse property isPartOf,includes(Dataset) (R),,,has part,hasPart (O),,relatedObject|relatedInfo collection where relation[@type='hasPart']        ,,,,,
+schema:CreativeWork,position,Integer or Text,"The position of an item in a series or sequence of items. (While schema.org considers this a property of CreativeWork, it is also the way to indicate ordering in any list (e.g. the Authors list). By default arrays are unordered in JSON-LD",,,,,,,No mapping,,,,,
+schema:CreativeWork,spatialCoverage,"Text, Place",You can provide a single point that describes the spatial aspect of the dataset. Only include this property if the dataset has a spatial dimension. ,spatialCoverage (O),Geographic extent,,spatial/ geographic coverage,,GeoLocation,collection/coverage/spatial,dcterms:coverage (spatial),,Spatial Coverage (O),,
+schema:CreativeWork,temporalCoverage,Text,The data in the dataset covers a specific time interval. Only include this property if the dataset has a temporal dimension.,temporalCoverage (O),Temporal extent,Time Period Covered,datasetTimeInterval,,Date,collection/coverage/temporal,dcterms:temporal (start); dcterms:temporal (end),,Temporal Coverage (O),timePrd,
+schema:Dataset,distribution,,,distribution (R),Distribution information,, distribution,distribution (R),distribution,"location/address/electronic @type=""url"" @ target=""directDownload""",,distribution,,,
+schema:Dataset,includedInDataCatalog,,,includedInDataCatalog (R),,,,distribution.storedIn (O),publisher,No mapping,,includedInDataCatalog (M),,,
+schema:Dataset,measurementTechnique,,,,,,,,,,,measurementTechnique (R),,,
+schema:Dataset,variableMeasured,,,,,,,,,,,variablesMeasured (R),,,
+schema:Dataset,variablesMeasured,,,variableMeasured (R),,,,dimensions (O),,,,,,,
+schema:DataCatalog,dataset,,,,,,dataset (M),,,,,,,,
+schema:DataCatalog,measurementTechnique,,,measurementTechniques (R),,,,,,,,,,,
+schema:CreativeWork,sourceOrganization,Text,,,,,,,,registryObject@Group,,,,,
+schema:Thing,inLanguage,,,,Resource language,Language,language,,Language,"(default to English) ""en""",Language - dcterms:language,,Language (O),,Language (R)
+,,,,,,Distributor,,,,,dcterms:contributor (Distributor),,,distrbtr,
+,,,,scientificType (R),,,,,,,,,,,
+schema:Thing,additionalType,Text/URL,,contentType,,Kind of Data,type,types (M),ResourceType (M),,dcterms:type,,ResourceType (R),dataKind,Resource Class (M)
+,,,,,,Data Sources,,,,,dcterms:source,,,dataSrc,
+schema:Thing,productionDate,Date,,,,Production Date,,,,,Date - dcterms:date,,,,
+,,,,,,Depositor,,,,,Contributor - dcterms:contributor (Depositor),,,,
+,,,,,,Deposit Date,,,,,dcterms:dateSubmitted,,,,
+,,,,,,,,,,,,rdf.type,,,
+,,,,,,,Provenance,,,,,,,,
+schema:Thing,contentURL,URL,,,"Online resource (function: ""download""): linkage",,access URL,access (M),,,,,,,
+schema:Thing,subjectOf,CreativeWork/Event,A CreativeWork or Event about this Thing,,,,,,,,,,,,
+schema:Creativework,about,Thing,"The subject matter of the content.
+Inverse property: subjectOf.",,,,,,,,,,,,
+,,,,,,,,,Subject (O),Subject,Subject,,Tags (O),,Study Topics (R)
+,,,,,,,,,,,,,,,Source study title (M)
+,,,,,,,,,,,,,,,Study identifiers (R)
+,,,,,,,,,,,,,,,Record key types (M)
+,,,,,,,,,,,,,,,Identifier type (M)
+,,,,,,,,,,,,,,,Associated consent (M)
+,,,,,,,,,,,,,,,Access Type (M)
+,,,,,,,,,,,,,,,Access Details (M)
+,,,,,,,,,,,,,,,Access Contact (M)
+,,,,,,,,,"Size, Format",,"Description, table of contents",,,,Resources (M)
+,,,,,,DatasetContact (M),,,,,,,,,

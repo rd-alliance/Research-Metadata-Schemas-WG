@@ -1,0 +1,4 @@
+[
+  {"from": "relatedLink - schema:Thing","to": "relPubl","value": 1},
+  {"from": "relPubl","to": "DDI","value": 1}
+]

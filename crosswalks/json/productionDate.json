@@ -1,0 +1,8 @@
+[
+  {"from": "productionDate - schema:Thing","to": "Data Sources","value": 1},
+  {"from": "Data Sources","to": "Dataverse","value": 1},
+  {"from": "productionDate - schema:Thing","to": "dcterms:source","value": 1},
+  {"from": "dcterms:source","to": "DC","value": 1},
+  {"from": "productionDate - schema:Thing","to": "dataSrc","value": 1},
+  {"from": "dataSrc","to": "DDI","value": 1}
+]
