@@ -1,4 +1,0 @@
-[
-  {"from": "measurementTechnique - schema:Dataset","to": "measurementTechnique(R)", "value": 1},
-  {"from": "measurementTechnique(R)","to": "BioSchema","value": 1}
-]

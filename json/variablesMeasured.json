@@ -1,6 +1,0 @@
-[
-  {"from": "variablesMeasured - schema:Dataset","to": "variableMeasured(R)","value": 1},
-  {"from": "variableMeasured(R)","to": "EOSC/EDMI","value": 1},
-  {"from": "variablesMeasured - schema:Dataset","to": "dimensions(O)","value": 1},
-  {"from": "dimensions(O)","to": "DATS","value": 1}
-]
