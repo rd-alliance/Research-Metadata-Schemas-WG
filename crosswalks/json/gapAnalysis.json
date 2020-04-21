@@ -1,0 +1,15 @@
+[
+  {"name": "EOSC/EDMI", "value": 27},
+  {"name": "ISO-19115:2003", "value": 36},
+  {"name": "Dataverse", "value": 30},
+  {"name": "DCAT", "value": 27},
+  {"name": "DCATv2", "value": 5},
+  {"name": "DATS", "value": 33},
+  {"name": "Datacite", "value": 28},
+  {"name": "RIF-CS", "value": 17},
+  {"name": "DC", "value": 30},
+  {"name": "BioSchema", "value": 37},
+  {"name": "B2FIND", "value": 38},
+  {"name": "DDI", "value": 39},
+  {"name": "ECRIN", "value": 36}
+]
