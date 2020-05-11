@@ -1,2 +1,2 @@
 
-Here is [the living document](https://docs.google.com/document/d/1VTA-rFhSn6dceNZpp0Nq3mRRUoAjYMPaqQtEW-ls9Qs/edit) for the guideline. 
+Here is [the living google doc](https://drive.google.com/open?id=1VTA-rFhSn6dceNZpp0Nq3mRRUoAjYMPaqQtEW-ls9Qs) for the guideline. 
