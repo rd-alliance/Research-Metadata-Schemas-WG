@@ -1311,19 +1311,35 @@
             <td>relation</td>
             <td>dc:identifier (if URL)</td>
             <td></td>
-            <td>Creator</td>
+            <td>Language -dcterms: Language</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
             <td>dcterms:isReferencedBy</td>
-            <td>Contributor</td>
-            <td></td>
-            <td></td>
+            <td>Subject -dcterms:subject</td>
+            <td>Rights</td>
             <td>Creator</td>
             <td></td>
-            <td>dcterms:modified</td>
+            <td></td>
+            <td>dcterms:temporal (start); dcterms:temporal (end)</td>
+            <td>dcterms:coverage (spatial)</td>
+            <td>Publisher - dcterms:publisher</td>
+            <td></td>
             <td>dcterms:issued</td>
+            <td>dcterms:modified</td>
             <td></td>
             <td></td>
             <td></td>
-            <td>dcterms:contributor</td>
+            <td></td>
+            <td></td>
+            <td></td>
             <td>Subject - dcterms:subject</td>
             <td>Rights</td>
             <td></td>
@@ -1335,24 +1351,16 @@
             <td></td>
             <td></td>
             <td></td>
-            <td>dcterms:coverage (spatial)</td>
-            <td>dcterms:temporal (start); dcterms:temporal (end)</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>Language - dcterms:language</td>
-            <td>dcterms:contributor (Distributor)</td>
-            <td></td>
-            <td>dcterms:type</td>
-            <td>dcterms:source</td>
-            <td>Date - dcterms:date</td>
+            <td>dcterms:contributor</td>
             <td>Contributor - dcterms:contributor (Depositor)</td>
-            <td>dcterms:dateSubmitted</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
             <td></td>
             <td></td>
             <td></td>
@@ -1481,23 +1489,20 @@
             <td>url(M)</td>
             <td></td>
             <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>measurementTechnique(R)</td>
+            <td>variableMeasured(R)</td>
+            <td>includedInDataCatalog(M)</td>
+            <td>distribution</td>
+            <td></td>
+            <td></td>
+            <td></td>
             <td>citation(R)</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>creator(R)</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
             <td>keywords(M)</td>
             <td>license(R)</td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>creator(R)</td>
             <td></td>
             <td>version(R)</td>
             <td></td>
@@ -1506,10 +1511,6 @@
             <td></td>
             <td></td>
             <td></td>
-            <td>distribution</td>
-            <td>includedInDataCatalog(M)</td>
-            <td>measurementTechnique(R)</td>
-            <td>variablesMeasured(R)</td>
             <td></td>
             <td></td>
             <td></td>
@@ -1522,7 +1523,11 @@
             <td></td>
             <td></td>
             <td></td>
-            <td>rdf.type</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
             <td></td>
             <td></td>
             <td></td>
@@ -1649,13 +1654,26 @@
             <td></td>
             <td></td>
             <td></td>
+            <td>Language(O)</td>
             <td></td>
             <td></td>
-            <td>Contributor(O)</td>
             <td></td>
             <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Rights(O)</td>
             <td>Creator(R)</td>
             <td></td>
+            <td></td>
+            <td>Temporal Coverage(O)</td>
+            <td>Spatial Coverage</td>
+            <td>Publisher</td>
             <td></td>
             <td>PublicationYear(R)</td>
             <td></td>
@@ -1663,30 +1681,14 @@
             <td></td>
             <td></td>
             <td></td>
-            <td>Rights(O)</td>
-            <td></td>
-            <td></td>
-            <td>Publisher(R)</td>
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>SpatialCoverage(O)</td>
-            <td>TemporalCoverage(O)</td>
+            <td>Contributor(O)</td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>Language(O)</td>
-            <td></td>
-            <td></td>
-            <td>RecourceType(R)</td>
             <td></td>
             <td></td>
             <td></td>
@@ -1817,46 +1819,43 @@
             <td></td>
             <td></td>
             <td></td>
-            <td>relPubl</td>
-            <td>AuthEnty</td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Kewords</td>
+            <td></td>
+            <td>AuthEnty*</td>
+            <td></td>
+            <td>version</td>
+            <td>timePrd</td>
+            <td></td>
+            <td>distributor*</td>
             <td></td>
             <td>distDate (for export)</td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
-            <td>keywords</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
             <td></td>
             <td>producer</td>
             <td></td>
-            <td>distrbtr</td>
-            <td></td>
-            <td>version</td>
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td>timePrd</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>distrbtr</td>
-            <td></td>
-            <td>dataKind</td>
-            <td>dataSrc</td>
             <td></td>
             <td></td>
             <td></td>
@@ -1980,52 +1979,44 @@
           <table id="SPASE" class="table table-striped table-hover mt32 i">
           <tr>
             <td>SPASE</td>
-            <td></td>
-            <td>IDNo</td>
-            <td>titl</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>relPubl</td>
-            <td>AuthEnty</td>
-            <td></td>
+            <td>ResourceHeader/Description</td>
+            <td>ResourceHeader/DOI</td>
+            <td>ResourceHeader/ResourceName</td>
+            <td>ResourceHeader/AlternateName</td>
+            <td>ResourceHeader/InformationURL/URL</td>
+            <td>AccessInformation/AccessURL/URL</td>
+            <td>ResourceHeader/Contact</td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
+            <td>MeasurementType</td>
+            <td>Parameter</td>
             <td></td>
             <td></td>
-            <td>distDate (for export)</td>
+            <td>AccessInformation/AccessURL/URL</td>
+            <td>AccessInformation/Format</td>
             <td></td>
+            <td>ResourceHeader/PublicationInfo</td>
+            <td>keyword</td>
             <td></td>
+            <td>ResourceHeader/Contact[@role=PrincipalInvestigator]</td>
             <td></td>
+            <td>ProviderVersion</td>
+            <td>TemporalDescription/TimeSpan</td>
+            <td>ObservedRegion</td>
+            <td>ResourceHeader/Contact[@role=Publisher]</td>
             <td></td>
-            <td>keywords</td>
-            <td></td>
-            <td>producer</td>
-            <td></td>
-            <td>distrbtr</td>
-            <td></td>
-            <td>version</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>timePrd</td>
-            <td></td>
-            <td></td>
+            <td>ReleaseDate</td>
+            <td>RevisionHistory/RevisionEvent/ReleaseDate*</td>
             <td></td>
             <td></td>
             <td></td>
+            <td>AccessInformation/Format</td>
+            <td>AccessInformation/Format</td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>distrbtr</td>
-            <td></td>
-            <td>dataKind</td>
-            <td>dataSrc</td>
+            <td>ResourceHeader/Funding/Agency</td>
+            <td>ResourceHeader/Contact[@role=Contributor]</td>
             <td></td>
             <td></td>
             <td></td>
@@ -2033,7 +2024,11 @@
             <td></td>
             <td></td>
             <td></td>
+            <td>AccessRights*</td>
             <td></td>
+            <td></td>
+            <td></td>
+            <td>RevisionHistory*</td>
           </tr>
           <tr>
             <td>Schema.org Property</td>
