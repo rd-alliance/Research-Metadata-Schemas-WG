@@ -807,11 +807,28 @@
             <td>identifier(R)</td>
             <td></td>
             <td></td>
-            <td>primaryPublicaion/citations(O)</td>
+            <td></td>
+            <td></td>
+            <td>acces(M)</td>
+            <td></td>
+            <td>dimensions(O)</td>
+            <td>distribution.storedIn(O)</td>
+            <td>distribution(R)</td>
             <td></td>
             <td></td>
             <td></td>
+            <td>primaryPublication/citations(O)</td>
+            <td>keywords(O)</td>
+            <td>licenses(R)</td>
             <td>creator(M)</td>
+            <td>hasPart(O)</td>
+            <td>version(R)</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
             <td></td>
             <td></td>
             <td></td>
@@ -819,38 +836,18 @@
             <td></td>
             <td></td>
             <td>acknowledges(O)</td>
-            <td>keywords(O)</td>
-            <td>licenses(R)</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>version(R)</td>
-            <td></td>
-            <td></td>
-            <td>hasPart(O)</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>distribution(R)</td>
-            <td>distribution.storedIn(O)</td>
-            <td></td>
-            <td></td>
-            <td>dimensions(O)</td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
-            <td>types(M)</td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
-            <td>access(M)</td>
             <td></td>
             <td></td>
           </tr>
@@ -975,29 +972,29 @@
             <td>RelatedIdentifier</td>
             <td>valueURL</td>
             <td></td>
-            <td>creator</td>
+            <td>Language</td>
             <td></td>
-            <td>Contributor(R)</td>
-            <td></td>
-            <td></td>
-            <td>Creator(M)</td>
-            <td>Date(R) dateType field indicates the type of date</td>
-            <td>Date(R) dateType field indicates the type of date</td>
-            <td>PublicationYear(M)</td>
+            <td>Size(O)</td>
             <td></td>
             <td></td>
-            <td>Format(R)</td>
+            <td></td>
+            <td>Publisher</td>
+            <td>Distribution</td>
             <td></td>
             <td></td>
+            <td>Subject*</td>
+            <td>citation/isBasedOn</td>
+            <td>Subject(R)</td>
             <td>Rights</td>
-            <td>contributor with contributortype="Producer"</td>
+            <td>Creator(M)</td>
             <td></td>
+            <td>Version(O)</td>
+            <td>Date/td>
+            <td>GeoLocation(R)</td>
             <td>Publisher(M)</td>
-            <td></td>
-            <td>Version(R)</td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Date (R)/Created</td>
+            <td>PublicationYear(M)</td>
+            <td>Date (R)/Updated *</td>
             <td></td>
             <td>GeoLocation</td>
             <td>Date</td>
@@ -1006,16 +1003,18 @@
             <td></td>
             <td></td>
             <td></td>
+            <td>Format(O)</td>
+            <td>Format(O)</td>
+            <td></td>
+            <td>contributor with ContributorType/Sponser(O)*</td>
+            <td>Contributor(R)</td>
+            <td>contributor with contributortype="Producer"</td>
             <td></td>
             <td></td>
             <td></td>
-            <td>Language</td>
             <td></td>
             <td></td>
-            <td>ResourceType(M)</td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Rights(O)*</td>
             <td></td>
             <td></td>
             <td></td>
@@ -1144,45 +1143,44 @@
             <td>No mapping</td>
             <td>RDA key=URL of record. "https://researchdata.ands.org.au/view?key=(insert key)"</td>
             <td></td>
-            <td>collection/citationInfo/citationMetadata/contributor OR relatedObject|relatedInfo party/name where relation=IsPrincipalInvestigatorOf OR relatedObject|relatedInfo party/name where relation=author OR relatedObject|relatedInfo party/name where relation=coInvestigator  OR relatedObject|relatedInfo party/name where relation=hasCollector</td>
-            <td>collection/relatedInfo[@type='publication'] OR relatedObject:collection where related collection[@type='publication']</td>
-            <td>No mapping</td>
-            <td>No mapping</td>
-            <td>No mapping</td>
-            <td>collection/citationInfo/citationMetadata/contributor OR relatedObject|relatedInfo party/name where relation=IsPrincipalInvestigatorOf OR relatedObject|relatedInfo party/name where relation=coInvestigator OR relatedObject|relatedInfo party/name where relation=hasCollector</td>
-            <td>collection/citationInfo/citationMetadata/date[@type='created'] OR collection/dates[@type='created']</td>
-            <td></td>
-            <td>collection/citationInfo/citationMetadata.date[@type='publicationDate'] OR collection/citationInfo/citationMetadata/date[@type='issued'] OR collection/dates[@type='dc.issued'] OR collection/dates[@type='dc.available'] OR Collection[@dateAccessioned] OR date the record was ingested into RDA</td>
-            <td>No mapping</td>
-            <td>No mapping</td>
-            <td>collection/address/electronic[@target='directDownload']/mediaType</td>
-            <td>relatedObject|relatedInfo party/name where relation=isFundedBy</td>
-            <td>collection/subject</td>
-            <td>collection/rights/licence[@rightsURL] AND/OR collection/rights/licence[@type] AND collcetion/rights/licence</td>
-            <td>No mapping</td>
-            <td>No mapping</td>
-            <td>registryObject:collection:citationInfo:citationMetadata:publisher OR registryObject@Group</td>
-            <td></td>
-            <td>registryObject:collection:citationInfo:citationMetadata:version</td>
-            <td>No mapping</td>
-            <td>relatedObject|relatedInfo collection where relation[@type='isPartOf']</td>
-            <td>relatedObject|relatedInfo collection where relation[@tyoe='hasPart]</td>
-            <td>No mapping</td>
-            <td>collection/coverage/spatial</td>
-            <td>collection/coverage/temporal</td>
-            <td>location/address/electronic @type="url" @ target="directDownload"</td>
-            <td>No mapping</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>registryObject@Group</td>
             <td>(default to English) "en"</td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
+            <td></td>
+            <td>No mapping</td>
+            <td>location/address/electronic @type="url" @ target="directDownload"</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>collection/relatedInfo[@type='publication'] OR relatedObject:collection where related collection [@type='publication']</td>
+            <td>collection/subject</td>
+            <td>collection/rights/licence[@rightsURI] AND/OR collection/rights/licence[@type] AND collection/rights/licence</td>
+            <td>collection/citationInfo/citationMetadata/contributor OR relatedObject|relatedInfo party/name where relation=IsPrincipalInvestigatorOf OR relatedObject|relatedInfo party/name where relation=author OR relatedObject|relatedInfo party/name where relation=coInvestigator OR relatedObject|relatedInfo party/name where relation=hasCollector</td>
+            <td>relatedObject|relatedInfo collection where relation[@type='hasPart']</td>
+            <td>registryObject:collection:citationInfo:citationMetadata:version</td>
+            <td>collection/coverage/temporal</td>
+            <td>collection/coverage/spatial</td>
+            <td>collection/subject</td>
+            <td>registryObject:collection:citationInfo:citationMetadata:publisher OR registryObject@Group</td>
+            <td>collection/citationInfo/citationMetadata/date[@type= 'created'] OR collection/dates[@type='created']</td>
+            <td>collection/citationInfo/citationMetadata/date[@type='publicationDate'] OR collection/citationInfo/citationMetadata/date[@type='issued'] OR collection/dates[@type='dc.issued'] OR collection/dates[@type='dc.available'] OR Collection[@dateAccessioned] OR date the record was ingested into RDA</td>
+            <td>registryObject:collection:citationInfo:citationMetadata:publisher OR registryObject@Group</td>
+            <td></td>
+            <td>No mapping</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>collection/address/electronic[@target='directDownload']/mediaType</td>
+            <td></td>
+            <td>relatedObject|relatedInfo party/name where relation=isFundedBy</td>
+            <td>No mapping</td>
+            <td>No mapping</td>
+            <td></td>
+            <td>No mapping</td>
+            <td>No mapping</td>
+            <td>No mapping</td>
             <td></td>
             <td></td>
             <td></td>
