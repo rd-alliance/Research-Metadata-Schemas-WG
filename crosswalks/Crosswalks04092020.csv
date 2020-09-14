@@ -1,0 +1,133 @@
+,Schema.org,,,,,,,,,,,,,,,,,,
+,Parent Type,"Property
+R: Required",Type,"Description
+(text in bracket is from the Google dataset search guide)",DCATv2,DCAT-AP,Datacite,ISO-19115:2003,EOSC/EDMI,Dataverse,DATS,RIF-CS,DC ,BioSchema,B2FIND,DDI,ECRIN Clinical Research Metadata Schema ,CodeMeta,SPASE
+From Google dataset search recommendaton,schema:Thing,description (R),Text,A description of the item.,dcterms:description,dct:description(M),Description (R),Resource abstract,description (M),Description; DescriptionValue (M),description (R),"collection/description[@type='brief']
+OR
+collection/description[@type='full']",Description - dcterms:description,description (M),Description (R),,Description (R),description,ResourceHeader/Description
+,schema:Thing,name (R),Text,"A descriptive name of the item (e.g. dataset, software, Organization). ",dcterms:title,dct:title(M),Title (M),Resource title (M),name (M),Title (M),title (M),"registryObject:collection:name
+(Title as displayed in RDA)",Title - dcterms:title,name (M),Title (M),titl,Object Title (M),name,ResourceHeader/ResourceName
+,schema:Thing,identifier,PropertyValue or URL,"The identifier property represents any kind of identifier for any kind of Thing, such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See background notes for more details.",dcterms:identifier,dct:identifier,Identifier (M),Resource identifier,identifier (M),Dataset Persistent ID,identifier (R),"collection/citationInfo/citationMetadata/identifier
+AND/OR
+collection/identifier
+",Identifier - dcterms:identifier,identifier (M),Identifier (M),IDNo,DOI (M),identifier,"ResourceHeader/DOI
+ ResourceID"
+,schema:Thing,alternateName,Text,"An alias for the item 
+
+(Alternative names that have been used to refer to this dataset, such as aliases or abbreviations.)","rdfs:label
+skos:altLabel",,,,,,,,,,,,,,ResourceHeader/AlternateName
+,schema:Thing,sameAs,URL,"URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website.","owl:sameAs
+skos:exactMatch",,"RelatedIdentifer(R)
+
+AlernateIdentifier(O)*",,sameAs (O),Alternative URl,alternateIdentifier (O),No mapping,relation,,,,"Related resource identifiers, with relation type indicator (R)",sameAs,ResourceHeader/InformationURL/URL
+,schema:Thing,url,URL,"URL of the item.
+(Location of a page describing the dataset.)",dcat:landingPage,dcat:landingPage(O),valueURL,"Online resource (function: information"")",url (M),,identifier (R),"RDA key= URL of record.
+""https://researchdata.ands.org.au/view?key=<insert key>""",dc:identifier (if URL),url (M),,,,url,AccessInformation/AccessURL/URL
+,schema:CreativeWork,citation,CreativeWork or URL,"A citation or reference to another creative work, such as another publication, web page, scholarly article, etc.",dcterms:bibliographicCitation,,citation/isBasedOn,,citation (O),Related Publication,primaryPublication/ citations (O),"collection/relatedInfo[@type='publication']
+OR
+relatedObject:collection where related collection [@type='publication']",dcterms:isReferencedBy,citation (R),,,,citation,ResourceHeader/PublicationInfo
+,schema:CreativeWork,keywords,Text,Keywords or tags used to describe this content. Multiple entries in a keywords list are typically delimited by commas.,dcat:keyword,dct:keyword (R),Subject(R)*,Descriptive keywords (free text),keywords (R),Subject (M); Topic Classification Term; Keywords,keywords (O),collection/subject        ,Subject - dcterms:subject,keywords (M),,keywords,,keywords,keyword
+,schema:CreativeWork,license,CreativeWork or URL,"A license document that applies to this content, typically indicated by URL.
+
+(A license under which the dataset is distributed.)",dct:license,dct:license,Rights,"Resource constraints: use constraints (for catalogue)
+
+Online resource (function: ""download""): linkage (for dataset)",license (R),,licenses (R),"collection/rights/licence[@rightsURI]
+AND/OR
+collection/rights/licence[@type]
+AND
+collection/rights/licence",Rights,license (R),Rights (O),,Rights (O),license,
+,schema:CreativeWork,creator,Organization or Person,"The creator/author of this CreativeWork (dataset). This is the same as the Author property for CreativeWork.
+
+(To uniquely identify individuals, use ORCID ID as the value of the sameAs property of the Person type. To uniquely identify institutions and organizations, use ROR ID. )",dcterms:creator,dct:creator,Creator (M) ,,creator (M),Author; authorName (M),creator (M),"collection/citationInfo/citationMetadata/contributor
+OR
+relatedObject|relatedInfo party/name where relation=IsPrincipalInvestigatorOf
+OR
+relatedObject|relatedInfo party/name where relation=author
+OR
+relatedObject|relatedInfo party/name where relation=coInvestigator
+OR
+relatedObject|relatedInfo party/name where relation=hasCollector",Creator,creator (R),Creator (R),AuthEnty*,Creators (M),author,"ResourceHeader/Contact[@role=PrincipalInvestigator]
+ ResourceHeader/Contact[@role=DataProducer]"
+,schema:CreativeWork,isPartOf,CreativeWork,"Indicates a CreativeWork that this CreativeWork is (in some sense) part of. Reverse property hasPart.
+
+If the dataset is a collection of smaller datasets, use the hasPart property to denote such relationship. Conversly, if the dataset is part of a larger dataset, use isPartOf.",dcterms:isPartOf,dct:isPartOf (R),,,"
+includedIn(Dataset) (R)",,,relatedObject|relatedInfo collection where relation[@type='isPartOf']        ,,,,,,isPartOf,ParentID (only for Granule resource type)
+,schema:CreativeWork,hasPart,CreativeWork,Indicates a CreativeWork that is (in some sense) a part of this CreativeWork. Reverse property isPartOf,dcterms:hasPart,dct:hasPart (R),,,includes(Dataset) (R),,hasPart (O),relatedObject|relatedInfo collection where relation[@type='hasPart']        ,,,,,,hasPart,
+,schema:CreativeWork,version,Number or Text,The version of the CreativeWork embodied by a specified resource.,owl:versionInfo,owl:versionInfo,Version (O),,"
+version (O)",Version,version (R),registryObject:collection:citationInfo:citationMetadata:version,,version (R),,version,version (O),version,ProviderVersion
+,schema:CreativeWork,temporalCoverage,Text,"The temporalCoverage of a CreativeWork indicates the period that the content applies to
+
+(The data in the dataset covers a specific time interval. Only include this property if the dataset has a temporal dimension.)",dcterms:temporal,dct:temporal,Date,Temporal extent,temporalCoverage (O),Time Period Covered,,collection/coverage/temporal,dcterms:temporal (start); dcterms:temporal (end),,Temporal Coverage (O),timePrd,,,TemporalDescription/TimeSpan
+,schema:CreativeWork,spatialCoverage,"Text, Place","The spatialCoverage of a CreativeWork indicates the place(s) which are the focus of the content.
+
+(You can provide a single point that describes the spatial aspect of the dataset. Only include this property if the dataset has a spatial dimension.) ",dcterms:spatial,dct:spatial,GeoLocation(R),Geographic extent,spatialCoverage (O),,,collection/coverage/spatial,dcterms:coverage (spatial),,Spatial Coverage (O),,,,ObservedRegion
+,"schema:Dataset
+schema:DataCatalog
+schema.DataDowload",measurementTechnique,"Text, URL","A technique or technology used in a Dataset (or DataDownload, DataCatalog), corresponding to the method used for measuring the corresponding variable(s)",sosa:usedProcedure,,,,measurementTechniques (R)*,,,,,measurementTechnique (R),,,,,MeasurementType
+,schema:Dataset,variableMeasured,"PropertyValue, Text","The variableMeasured property can indicate (repeated as necessary) the variables that are measured in some dataset, either described as text or as pairs of identifier and description using PropertyValue.
+
+(The variable that this dataset measures. For example, temperature or pressure.)",sosa:observedProperty,,,,variableMeasured (R)*,,dimensions (O),,,variablesMeasured (R),,,,,Parameter
+,Schema:DataDownload,distribution.contentUrl,URL,(The link for the download.),dcat:downloadURL,"dct:accessURL (M)
+dct:downloadURL (O)",,,,,,,,,,,,,AccessInformation/AccessURL/URL
+,schema:Dataset,includedInDataCatalog,DataCatalog,"A data catalog which contains this dataset.
+
+(The catalog to which the dataset belongs.)",dcterms:isPartOf,,publisher,"Responsible party (role: ""publisher"")",includedInDataCatalog (R),,distribution.storedIn (O),No mapping,,includedInDataCatalog (M),,,,,
+,Schema:Dataset,distribution,DataDownload,"A downloadable form of this dataset, at a specific location, in a specific format
+(The description of the location for download of the dataset and the file format for download.)",dcat:distribution,dct:distribution (R),distribution,Distribution information,distribution (R),,distribution (R),"location/address/electronic @type=""url"" @ target=""directDownload""",,distribution,,,,,
+,Schema:DataDownload,distribution.encodingFormat,,(The file format of the distribution.),"dcat:mediaType
+dcterms:format",,,"Online resource (function: ""download""): linkage",,,,,,,,,,,AccessInformation/Format
+"Properties from DCAT/DCAT-AP (catalogue, dataset and distribution) that can be mapped to schema.org",schema:CreativeWork,publisher,Organization or Person,The publisher of the creative work,dcterms:publisher,dct:publisher (R),Publisher (M),"Responsible party (role: ""publisher"")",,Dataset Publisher,,registryObject:collection:citationInfo:citationMetadata:publisher OR registryObject@Group,Publisher - dcterms:publisher,,Publisher (R),distributor*,Publisher/ Provider (M),publisher,ResourceHeader/Contact[@role=Publisher]
+,schema:Thing,ContactPoint,"Telephone, email, Place (etc)","A contact point, e.g. email, telephone, address",,dct:contactPoint (R),,"Responsible party (role: ""point of contact"")",,,,,,,,,Access Contact (M),,ResourceHeader/Contact
+,"schema:CreativeWork or
+schema:Thing","about or
+subjectOf","CreativeWork, Event, Communication",The subject matter of content,,"dcat:theme (R)
+dcat:subject(O)",Subject*,Descriptive keyword (from a controlled vocabulary),,,,,,,,,,,
+,schema:Thing,inLanguage,Language or Text,The language of the content or performance or used in an action.  Please use one of the language codes from the IETF BCP 47 standard.,dcterms:language,dct:language (R),Language (O),Resource language,,Language,,"(default to English) ""en""",Language - dcterms:language,,Language (O),,Language (R),,
+,schema:CreativeWork,dateCreated,Date or DateTime,The date on which the CreativeWork was created or the item was added to a DataFeed.,dcterms:created(O),dct:created (O),Date (R)/Created,,dateCreated (M),,,"collection/citationInfo/citationMetadata/date[@type= 'created']
+OR
+collection/dates[@type='created']",,,,,Dates (date type) (O),datedCreated,
+,schema:CreativeWork,datePublished,Date,Date of first broadcast/publication.,dcterms:dateAccepted,dct:issued (R),PublicationYear (M),Temporal reference: date of publication,"
+datePublished (O)",Publication Date,,"collection/citationInfo/citationMetadata/date[@type='publicationDate']
+OR
+collection/citationInfo/citationMetadata/date[@type='issued']
+OR
+collection/dates[@type='dc.issued']
+OR
+collection/dates[@type='dc.available']
+OR
+Collection[@dateAccessioned]
+OR
+date the record was ingested into RDA",dcterms:issued,,PublicationYear (R),distDate (for export),Creation Year (M),datePublished,ReleaseDate
+,schema:CreativeWork,dateModified,Date or DateTime,The date on which the CreativeWork was most recently modified or when the item's entry was modified within a DataFeed.,dcterms:modified,dct:mofified (O),Date (R)/Updated *,Temporal reference: date of last modification,"
+dateModified (M)",Version Date,,,dcterms:modified,,,,Dates (date type) (O),dateModified,RevisionHistory/RevisionEvent/ReleaseDate*
+,schema:CreativeWork,copyrightHolder,Organization or Person,The party holding the legal copyright to the CreativeWork.,dcterms:rightsHolder,dct:rightsHolder (O),,,,,,No mapping,,,,,,copyrightHolder,
+,schema:CreativeWork,mentions,Thing,"Indicates that the CreativeWork contains a reference to, but is not necessarily about a concept.",,dct:relation,,,,,,,,,,,,,
+,schema:CreativeWork,isBasedOn,"CreativeWork, Product, URL",A resource from which this work is derived or from which it is a modification or adaption,,dct:source(O),,,,,,,,,,,,,
+,schema:CreativeWork,encodingFormat,"Text, URL",Media type typically expressed using a MIME format,,"dct:format (R)
+dct:mediaType(O)",Format(O)*,,,,,,,,,,,encordingFormat,AccessInformation/Format
+,schema:CreativeWork,fileFormat (superseded by encordingFormat),Text or URL,"Media type, typically MIME format (see IANA site) of the content e.g. application/zip of a SoftwareApplication binary. In cases where a CreativeWork has several media type representations, 'encoding' can be used to indicate each MediaObject alongside particular fileFormat information. Unregistered or niche file formats can be indicated instead via the most appropriate URL, e.g. defining Web page or a Wikipedia entry.",dcat:mediaType,,Format (O)*,,format (R),,,collection/address/electronic[@target='directDownload']/mediaType        ,,,,,,fileFormat,AccessInformation/Format
+,schema:MediaObject,contentURL,URL,"Actual bytes of the media object, for example the image file or video file.","dcat:accessURL
+dcat:downloadURL","dcat:accessURL (M)
+dcat:downloadURL(O)",,"Online resource (function: ""download""): linkage",,,access (M),,,,,,,,
+,schema:MediaObject,contentSize,"Text, URL",File size in (mega/kilo) bytes.,dct:byteSize,dct:byteSize(O),Size(O)*,,,,,,,,,,,,
+,schema:CreativeWork,review,Review,A review of the item,,,,,,,,,,,,,,,
+Properties  from DCAT/DCAT-AP have no mapping in schema.org,,,,rights,dct:rights,dct:rights(O),Rights(O)*,,,,,,,,,,,,
+,,,,access rights,dct:accessRights,dct:accessRights(O),,,,,,,,,,,,,AccessRights*
+,,,,conformance result / conformity (datta quality),dct:conformsTo,dct:conformsTo,,,,,,,,,,,,,
+,,,,frequency,dct:accrualPeriodicity,dct:accrualPeriodicity(O),,,,,,,,,,,,,
+,,,,has version,,dct:hasVersion,,,,,,,,,,,,,
+,,,,is version of,,dct:isVersionOf,,,,,,,,,,,,,
+,,,,provenance,prov:qualifiedAttribution,dct:provenance,,,,,,,,,,,,,RevisionHistory*
+Properties used by all other schemas that can be mapped to schema.org,schema:CreativeWork,funder,Organization or Person,A person or organization that supports (sponsors) something through some kind of financial contribution.,dcterms:contributor,,contributor with ContributorType/Sponsor(O)*,,,Grant information,acknowledges (O),relatedObject|relatedInfo party/name where relation=isFundedBy        ,dcterms:contributor,,,,,funder,ResourceHeader/Funding/Agency
+,schema:CreativeWork,contributor,Organization or Person,A secondary contributor to the CreativeWork or Event.,dcterms:contributor,,Contributor (R),,,Contributor,,No mapping,Contributor - dcterms:contributor (Depositor),,Contributor (O),,Contributors (O),Contributor,ResourceHeader/Contact[@role=Contributor]
+,schema:CreativeWork,producer,Organization or Person,"The person or organization who produced the work (e.g. music album, movie, tv/radio series etc.).",dcterms:contributor,,"contributor with contributortype=""Producer""",,,Producer,,No mapping,,,,producer,,producer,
+,schema:CreativeWork,editor,Person,Specifies the Person who edited the CreativeWork.,,,,,,,,,,,,,,editor,
+,schema:CreativeWork,copyrightYear,Number,The year during which the claimed copyright for the CreativeWork was first asserted.,dcterms:dateCopyrighted,,,,,,,No mapping,,,,,,copyrightYear,
+,schema:CreativeWork,isAccessibleForFree,Boolean,A flag to signal that the publication is accessible for free.,,,,,,,,No mapping,,,,,,isAccessibleForFree,
+,schema:CreativeWork,position,Integer or Text,"The position of an item in a series or sequence of items. (While schema.org considers this a property of CreativeWork, it is also the way to indicate ordering in any list (e.g. the Authors list). By default arrays are unordered in JSON-LD",,,,,,,,No mapping,,,,,,,
+Properties used by all other schemas that can't find a proper mapping in schema.org,"(schema:ParcelDelivery)
+
+","expectedArriveFrom
+expectedArriveUntil
+","Date
+DateTime","Resources may be embargoed from public access until a specified date (e.g. pending publication, 1 year from publication)",,,,,,,,,,,,,,codemeta:SoftwareSourceCode:embargoDate,
