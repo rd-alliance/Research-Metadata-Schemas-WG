@@ -11,7 +11,7 @@
   {"name": "BioSchema", "value": 38},
   {"name": "B2FIND", "value": 40},
   {"name": "DDI", "value": 42},
+  {"name": "SPASE", "value": 24},
+  {"name": "CODEMETA", "value": 25},
   {"name": "ECRIN", "value": 37}
-  {"name": "CODEMETA", "value": 25}
-  {"name": "SPASE", "value": 24}
 ]
