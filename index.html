@@ -2277,38 +2277,23 @@
                 </tr>
                 <tr>
                     <td>EOSC/EDMI</td>
-                    <td>url(M)</td>
-                    <td>url</td>
+                    <td>measurementTechniques(R)*</td>
+                    <td>measurementTechnique</td>
                 </tr>
                 <tr>
                     <td>EOSC/EDMI</td>
-                    <td>citation(O)</td>
-                    <td>citation</td>
+                    <td>variableMeasured(R)*</td>
+                    <td>variableMeasured</td>
                 </tr>
                 <tr>
                     <td>EOSC/EDMI</td>
-                    <td>creator(M)</td>
-                    <td>creator</td>
+                    <td>includedInDataCatalog(R)</td>
+                    <td>includedInDataCatalog</td>
                 </tr>
                 <tr>
                     <td>EOSC/EDMI</td>
-                    <td>dateCreated(M)</td>
-                    <td>dateCreated</td>
-                </tr>
-                <tr>
-                    <td>EOSC/EDMI</td>
-                    <td>dateModified(M)</td>
-                    <td>dateModified</td>
-                </tr>
-                <tr>
-                    <td>EOSC/EDMI</td>
-                    <td>datePublished(O)</td>
-                    <td>datePublished</td>
-                </tr>
-                <tr>
-                    <td>EOSC/EDMI</td>
-                    <td>format(R)</td>
-                    <td>fileFormat</td>
+                    <td>distribution</td>
+                    <td>distribution</td>
                 </tr>
                 <tr>
                     <td>EOSC/EDMI</td>
@@ -2322,23 +2307,13 @@
                 </tr>
                 <tr>
                     <td>EOSC/EDMI</td>
-                    <td>version(O)</td>
-                    <td>version</td>
+                    <td>creator(M)</td>
+                    <td>creator</td>
                 </tr>
                 <tr>
                     <td>EOSC/EDMI</td>
-                    <td>includedIn(Dataset)(R)</td>
-                    <td>isPartOf</td>
-                </tr>
-                <tr>
-                    <td>EOSC/EDMI</td>
-                    <td>includes(dataset)(R)</td>
+                    <td>includes(Dataset)(R)</td>
                     <td>hasPart</td>
-                </tr>
-                <tr>
-                    <td>EOSC/EDMI</td>
-                    <td>spatialCoverage(O)</td>
-                    <td>spatialCoverage</td>
                 </tr>
                 <tr>
                     <td>EOSC/EDMI</td>
@@ -2347,38 +2322,23 @@
                 </tr>
                 <tr>
                     <td>EOSC/EDMI</td>
-                    <td>distribution(R)</td>
-                    <td>distribution</td>
+                    <td>spatialCoverage(O)</td>
+                    <td>spatialCoverage</td>
                 </tr>
                 <tr>
                     <td>EOSC/EDMI</td>
-                    <td>includedInDataCatalog(R)</td>
-                    <td>includedInDataCatalog</td>
+                    <td>dateCreated(M)</td>
+                    <td>dateCreated</td>
                 </tr>
                 <tr>
                     <td>EOSC/EDMI</td>
-                    <td>variableMeasured(R)</td>
-                    <td>variablesMeasured</td>
-                </tr>
-                <tr>
-                    <td>EOSC/EDMI</td>
-                    <td>measurementTechniques(R)</td>
-                    <td>measurementTechnique</td>
-                </tr>
-                <tr>
-                    <td>EOSC/EDMI</td>
-                    <td>scientificType(R)</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>EOSC/EDMI</td>
-                    <td>contentType</td>
-                    <td>additionalType</td>
+                    <td>format(R)</td>
+                    <td>fileFormat (superseded by encordingFormat)</td>
                 </tr>
                 <tr>
                     <td>ISO-19115:2003</td>
-                    <td>Resource description</td>
-                    <td>description</td>
+                    <td>Resource abstract</td>
+                    <td>description (R)</td>
                 </tr>
                 <tr>
                     <td>ISO-19115:2003</td>
@@ -2397,38 +2357,8 @@
                 </tr>
                 <tr>
                     <td>ISO-19115:2003</td>
-                    <td>Temporal reference: date of last modification</td>
-                    <td>dateModified</td>
-                </tr>
-                <tr>
-                    <td>ISO-19115:2003</td>
-                    <td>Temporal reference: date of publication</td>
-                    <td>datePublished</td>
-                </tr>
-                <tr>
-                    <td>ISO-19115:2003</td>
-                    <td>Descriptive keywords</td>
-                    <td>keywords</td>
-                </tr>
-                <tr>
-                    <td>ISO-19115:2003</td>
-                    <td>Responsible party(role:"publisher")</td>
-                    <td>publisher</td>
-                </tr>
-                <tr>
-                    <td>ISO-19115:2003</td>
-                    <td>Geographic extent</td>
-                    <td>spatialCoverage</td>
-                </tr>
-                <tr>
-                    <td>ISO-19115:2003</td>
-                    <td>Temporal extent</td>
-                    <td>temporalCoverage</td>
-                </tr>
-                <tr>
-                    <td>ISO-19115:2003</td>
-                    <td>Distribution information</td>
-                    <td>distribution</td>
+                    <td>Responsible party (role: "point of contact")</td>
+                    <td>contactPoint/td>
                 </tr>
                 <tr>
                     <td>ISO-19115:2003</td>
@@ -2437,8 +2367,73 @@
                 </tr>
                 <tr>
                     <td>ISO-19115:2003</td>
-                    <td>Online resource(function:"download"):linkage</td>
+                    <td>Descriptive keywords</td>
+                    <td>subjectOf</td>
+                </tr>
+                <tr>
+                    <td>ISO-19115:2003</td>
+                    <td>Online resource (function: "download"): linkage</td>
                     <td>contentURL</td>
+                </tr>
+                <tr>
+                    <td>ISO-19115:2003</td>
+                    <td>Responsible party (role: "publisher")</td>
+                    <td>includedInDataCatalog</td>
+                </tr>
+                <tr>
+                    <td>ISO-19115:2003</td>
+                    <td>Distribution information</td>
+                    <td>distribution</td>
+                </tr>
+                <tr>
+                    <td>ISO-19115:2003</td>
+                    <td>Distribution information</td>
+                    <td>distribution</td>
+                </tr>
+                <tr>
+                    <td>ISO-19115:2003</td>
+                    <td>Online resource (function: "download"): linkage</td>
+                    <td>distribution.encodingFormat</td>
+                </tr>
+                <tr>
+                    <td>ISO-19115:2003</td>
+                    <td>Descriptive keyword (from a controlled vocabulary)</td>
+                    <td>about</td>
+                </tr>
+                <tr>
+                    <td>ISO-19115:2003</td>
+                    <td>Descriptive keywords (free text)</td>
+                    <td>keywords</td>
+                </tr>
+                <tr>
+                    <td>ISO-19115:2003</td>
+                    <td>Resource constraints: use constraints (for catalogue)</td>
+                    <td>license</td>
+                </tr>
+                <tr>
+                    <td>ISO-19115:2003</td>
+                    <td>temporal extent</td>
+                    <td>temporalCoverage</td>
+                </tr>
+                <tr>
+                    <td>ISO-19115:2003</td>
+                    <td>Geographic extent</td>
+                    <td>spatialCoverage</td>
+                </tr>
+                <tr>
+                    <td>ISO-19115:2003</td>
+                    <td>Responsible party (role: "publisher")</td>
+                    <td>publisher</td>
+                </tr>
+                <tr>
+                    <td>ISO-19115:2003</td>
+                    <td>Temporal reference: date of publication</td>
+                    <td>datePublished</td>
+                </tr>
+                <tr>
+                    <td>ISO-19115:2003</td>
+                    <td>Temporal reference: date of last modification</td>
+                    <td>dateModified</td>
                 </tr>
                 <tr>
                     <td>Dataverse</td>
@@ -2462,8 +2457,8 @@
                 </tr>
                 <tr>
                     <td>Dataverse</td>
-                    <td>Author; authorName(M)</td>
-                    <td>author</td>
+                    <td>Language</td>
+                    <td>language</td>
                 </tr>
                 <tr>
                     <td>Dataverse</td>
@@ -2472,48 +2467,13 @@
                 </tr>
                 <tr>
                     <td>Dataverse</td>
-                    <td>Contributor</td>
-                    <td>contributor</td>
-                </tr>
-                <tr>
-                    <td>Dataverse</td>
-                    <td>Author</td>
-                    <td>creator</td>
-                </tr>
-                <tr>
-                    <td>Dataverse</td>
-                    <td>Version Date</td>
-                    <td>dateModified</td>
-                </tr>
-                <tr>
-                    <td>Dataverse</td>
-                    <td>Publication Date</td>
-                    <td>datePublished</td>
-                </tr>
-                <tr>
-                    <td>Dataverse</td>
-                    <td>Grant information</td>
-                    <td>funder</td>
-                </tr>
-                <tr>
-                    <td>Dataverse</td>
-                    <td>Subject(M); Topic Classification Term; Keywords</td>
+                    <td>Subject (M); Topic Classification Term; Keywords</td>
                     <td>keywords</td>
                 </tr>
                 <tr>
                     <td>Dataverse</td>
-                    <td>Producer</td>
-                    <td>producer</td>
-                </tr>
-                <tr>
-                    <td>Dataverse</td>
-                    <td>Dataset Publisher</td>
-                    <td>provider</td>
-                </tr>
-                <tr>
-                    <td>Dataverse</td>
-                    <td>Dataset Publisher</td>
-                    <td>publisher</td>
+                    <td>Author;authorName(M)</td>
+                    <td>creator</td>
                 </tr>
                 <tr>
                     <td>Dataverse</td>
@@ -2527,38 +2487,33 @@
                 </tr>
                 <tr>
                     <td>Dataverse</td>
-                    <td>Language</td>
-                    <td>inLanguage</td>
+                    <td>Dataset Publisher</td>
+                    <td>publisher</td>
                 </tr>
                 <tr>
                     <td>Dataverse</td>
-                    <td>Distributor</td>
-                    <td></td>
+                    <td>Publication Date</td>
+                    <td>datePublished</td>
                 </tr>
                 <tr>
                     <td>Dataverse</td>
-                    <td>Kind of Data</td>
-                    <td>additionalType</td>
+                    <td>Version Date</td>
+                    <td>dateModified</td>
                 </tr>
                 <tr>
                     <td>Dataverse</td>
-                    <td>Data Sources</td>
-                    <td></td>
+                    <td>Grant information</td>
+                    <td>funder</td>
                 </tr>
                 <tr>
                     <td>Dataverse</td>
-                    <td>Production Date</td>
-                    <td>productionDate</td>
+                    <td>Contributor</td>
+                    <td>contributor</td>
                 </tr>
                 <tr>
                     <td>Dataverse</td>
-                    <td>Depositor</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Dataverse</td>
-                    <td>Deposit Date</td>
-                    <td></td>
+                    <td>Producer</td>
+                    <td>producer</td>
                 </tr>
                 <tr>
                     <td>DCAT</td>
@@ -2573,112 +2528,217 @@
                 <tr>
                     <td>DCAT</td>
                     <td>title(M)</td>
-                    <td>name</td>
+                    <td>name(R)</td>
                 </tr>
                 <tr>
                     <td>DCAT</td>
-                    <td>accessURL(M); landing page (if no access directly to dataset); homepage</td>
-                    <td>url</td>
+                    <td>label</td>
+                    <td>alternateName</td>
                 </tr>
                 <tr>
                     <td>DCAT</td>
-                    <td>owner(O)</td>
-                    <td>copyrightHolder</td>
+                    <td>sameAs</td>
+                    <td>sameAs</td>
                 </tr>
                 <tr>
                     <td>DCAT</td>
-                    <td>author</td>
-                    <td>creator</td>
+                    <td>landingPage</td>
+                    <td>URL</td>
                 </tr>
                 <tr>
                     <td>DCAT</td>
-                    <td>creation date</td>
-                    <td>dateCreated</td>
+                    <td>contactPoint(R)</td>
+                    <td>contactPoint</td>
                 </tr>
                 <tr>
                     <td>DCAT</td>
-                    <td>update/modification date; modified</td>
-                    <td>dateModified</td>
-                </tr>
-                <tr>
-                    <td>DCAT</td>
-                    <td>release date</td>
-                    <td>datePublished</td>
-                </tr>
-                <tr>
-                    <td>DCAT</td>
-                    <td>format; media type</td>
-                    <td>fileFormat</td>
-                </tr>
-                <tr>
-                    <td>DCAT</td>
-                    <td>keywords</td>
-                    <td>keywords</td>
-                </tr>
-                <tr>
-                    <td>DCAT</td>
-                    <td>licence</td>
-                    <td>license</td>
-                </tr>
-                <tr>
-                    <td>DCAT</td>
-                    <td>publisher(M)</td>
-                    <td>publisher</td>
-                </tr>
-                <tr>
-                    <td>DCAT</td>
-                    <td>version</td>
-                    <td>version</td>
-                </tr>
-                <tr>
-                    <td>DCAT</td>
-                    <td>is part of</td>
-                    <td>isPartOf</td>
-                </tr>
-                <tr>
-                    <td>DCAT</td>
-                    <td>has part</td>
-                    <td>hasPart</td>
-                </tr>
-                <tr>
-                    <td>DCAT</td>
-                    <td>spatial/geographic coverage</td>
-                    <td>spatialCoverage</td>
-                </tr>
-                <tr>
-                    <td>DCAT</td>
-                    <td>datasetTimeInterval</td>
-                    <td>temporalCoverage</td>
-                </tr>
-                <tr>
-                    <td>DCAT</td>
-                    <td>distribution</td>
-                    <td>distribution</td>
-                </tr>
-                <tr>
-                    <td>DCAT</td>
-                    <td>dataset(M)</td>
-                    <td>dataset</td>
-                </tr>
-                <tr>
-                    <td>DCAT</td>
-                    <td>language</td>
+                    <td>language(R)</td>
                     <td>inLanguage</td>
                 </tr>
                 <tr>
                     <td>DCAT</td>
-                    <td>type</td>
-                    <td>additionalType</td>
+                    <td>subject</td>
+                    <td>subjectOf</td>
                 </tr>
                 <tr>
                     <td>DCAT</td>
-                    <td>Provenance</td>
+                    <td>byteSize</td>
+                    <td>contentSize</td>
+                </tr>
+                <tr>
+                    <td>DCAT</td>
+                    <td>accessURL(M) / downloadURL (O)</td>
+                    <td>contentURL</td>
+                </tr>
+                <tr>
+                    <td>DCAT</td>
+                    <td>usedProcedure</td>
+                    <td>measurementTechnique</td>
+                </tr>
+                <tr>
+                    <td>DCAT</td>
+                    <td>observedProperty</td>
+                    <td>variableMeasured</td>
+                </tr>
+                <tr>
+                    <td>DCAT</td>
+                    <td>isPartOf</td>
+                    <td>includedInDatacatalogue</td>
+                </tr>
+                <tr>
+                    <td>DCAT</td>
+                    <td>distribution (R)</td>
+                    <td>distribution</td>
+                </tr>
+                <tr>
+                    <td>DCAT</td>
+                    <td>accessURL (M) / downloadURL(O)</td>
+                    <td>distribution.contentUrl</td>
+                </tr>
+                <tr>
+                    <td>DCAT</td>
+                    <td>mediaType</td>
+                    <td>distribution.encodingFormat</td>
+                </tr>
+                <tr>
+                    <td>DCAT</td>
+                    <td>theme(R) / subject(O)</td>
+                    <td>about</td>
+                </tr>
+                <tr>
+                    <td>DCAT</td>
+                    <td>bibliographicCitation</td>
+                    <td>citation</td>
+                </tr>
+                <tr>
+                    <td>DCAT</td>
+                    <td>keywords (R)</td>
+                    <td>keywords</td>
+                </tr>
+                <tr>
+                    <td>DCAT</td>
+                    <td>license</td>
+                    <td>license</td>
+                </tr>
+                <tr>
+                    <td>DCAT</td>
+                    <td>creator</td>
+                    <td>creator</td>
+                </tr>
+                <tr>
+                    <td>DCAT</td>
+                    <td>hasPart(R)</td>
+                    <td>hasPart</td>
+                </tr>
+                <tr>
+                    <td>DCAT</td>
+                    <td>versionInfo</td>
+                    <td>vesion</td>
+                </tr>
+                <tr>
+                    <td>DCAT</td>
+                    <td>temporal</td>
+                    <td>temporalCoverage</td>
+                </tr>
+                <tr>
+                    <td>DCAT</td>
+                    <td>spatial</td>
+                    <td>spatialCoverage</td>
+                </tr>
+                <tr>
+                    <td>DCAT</td>
+                    <td>publisher</td>
+                    <td>publisher</td>
+                </tr>
+                <tr>
+                    <td>DCAT</td>
+                    <td>created</td>
+                    <td>dateCreated</td>
+                </tr>
+                <tr>
+                    <td>DCAT</td>
+                    <td>issued / dateAccepted</td>
+                    <td>datePublished</td>
+                </tr>
+                <tr>
+                    <td>DCAT</td>
+                    <td>modified (O)</td>
+                    <td>dateModified</td>
+                </tr>
+                <tr>
+                    <td>DCAT</td>
+                    <td>rightsHolder (O)</td>
+                    <td>copyrightHolder</td>
+                </tr>
+                <tr>
+                    <td>DCAT</td>
+                    <td>relation</td>
+                    <td>mentions</td>
+                </tr>
+                <tr>
+                    <td>DCAT</td>
+                    <td>source (O)</td>
+                    <td>isBasedOn</td>
+                </tr>
+                <tr>
+                    <td>DCAT</td>
+                    <td>format (R)</td>
+                    <td>encodingFormat</td>
+                </tr>
+                <tr>
+                    <td>DCAT</td>
+                    <td>mediaType</td>
+                    <td>fileFormat (superseded by encordingFormat)</td>
+                </tr>
+                <tr>
+                    <td>DCAT</td>
+                    <td>contributor</td>
+                    <td>funder</td>
+                </tr>
+                <tr>
+                    <td>DCAT</td>
+                    <td>contributor</td>
+                    <td>contributor</td>
+                </tr>
+                <tr>
+                    <td>DCAT</td>
+                    <td>contributor</td>
+                    <td>producer</td>
+                </tr>
+                <tr>
+                    <td>DCAT</td>
+                    <td>rights(O)</td>
                     <td></td>
                 </tr>
                 <tr>
                     <td>DCAT</td>
-                    <td>access URL</td>
-                    <td>contentURL</td>
+                    <td>accesRights(O)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>DCAT</td>
+                    <td>conformsTo</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>DCAT</td>
+                    <td>accrualPeriodicity(O)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>DCAT</td>
+                    <td>hasVersion</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>DCAT</td>
+                    <td>isVersionOf</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>DCAT</td>
+                    <td>provenance</td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td>DATS</td>
