@@ -2767,8 +2767,38 @@
                 </tr>
                 <tr>
                     <td>DATS</td>
-                    <td>primaryPublications/citations(O)</td>
+                    <td>access(M)</td>
+                    <td>controlURL</td>
+                </tr>
+                <tr>
+                    <td>DATS</td>
+                    <td>dimensions(O)</td>
+                    <td>variableMeasured</td>
+                </tr>
+                <tr>
+                    <td>DATS</td>
+                    <td>distribution.storedIn (O)</td>
+                    <td>includedInDatacatalogue</td>
+                </tr>
+                <tr>
+                    <td>DATS</td>
+                    <td>distribution (R)</td>
+                    <td>distribution</td>
+                </tr>
+                <tr>
+                    <td>DATS</td>
+                    <td>primaryPublication/ citations (O)</td>
                     <td>citation</td>
+                </tr>
+                <tr>
+                    <td>DATS</td>
+                    <td>keywords(O)</td>
+                    <td>keyword</td>
+                </tr>
+                <tr>
+                    <td>DATS</td>
+                    <td>licenses(R)</td>
+                    <td>licenses</td>
                 </tr>
                 <tr>
                     <td>DATS</td>
@@ -2777,48 +2807,18 @@
                 </tr>
                 <tr>
                     <td>DATS</td>
-                    <td>acknowledges(O)</td>
-                    <td>funder</td>
-                </tr>
-                <tr>
-                    <td>DATS</td>
-                    <td>keywords(O)</td>
-                    <td>keywords</td>
-                </tr>
-                <tr>
-                    <td>DATS</td>
-                    <td>licenses(R)</td>
-                    <td>license</td>
+                    <td>hasPart(O)</td>
+                    <td>hasPart</td>
                 </tr>
                 <tr>
                     <td>DATS</td>
                     <td>version(R)</td>
-                    <td>hasPart(O)</td>
+                    <td>version</td>
                 </tr>
                 <tr>
                     <td>DATS</td>
-                    <td>distribution(R)</td>
-                    <td>distribution</td>
-                </tr>
-                <tr>
-                    <td>DATS</td>
-                    <td>distribution.storedIn(O)</td>
-                    <td>includedInDataCatalog</td>
-                </tr>
-                <tr>
-                    <td>DATS</td>
-                    <td>dimenstions(O)</td>
-                    <td>variablesMeasured</td>
-                </tr>
-                <tr>
-                    <td>DATS</td>
-                    <td>types(M)</td>
-                    <td>additionalType</td>
-                </tr>
-                <tr>
-                    <td>DATS</td>
-                    <td>access(M)</td>
-                    <td>contentURL</td>
+                    <td>acknowledges(O)</td>
+                    <td>funder</td>
                 </tr>
                 <tr>
                     <td>Datacite</td>
@@ -2847,38 +2847,38 @@
                 </tr>
                 <tr>
                     <td>Datacite</td>
-                    <td>creator</td>
-                    <td>author</td>
+                    <td>language(O)</td>
+                    <td>inlanguage</td>
                 </tr>
                 <tr>
                     <td>Datacite</td>
-                    <td>Contributor(R)</td>
-                    <td>contributor</td>
+                    <td>Size(O)</td>
+                    <td>contentSize</td>
                 </tr>
                 <tr>
                     <td>Datacite</td>
-                    <td>Creator(M)</td>
-                    <td>creator</td>
+                    <td>publisher</td>
+                    <td>includedInDataCatalogue</td>
                 </tr>
                 <tr>
                     <td>Datacite</td>
-                    <td>Date(R) dateType field indicates the type of date</td>
-                    <td>dateCreated</td>
+                    <td>Distribution</td>
+                    <td>distribution</td>
                 </tr>
                 <tr>
                     <td>Datacite</td>
-                    <td>Date(R) dateType field indicates the type of date</td>
-                    <td>dateModified</td>
+                    <td>Subject</td>
+                    <td>about</td>
                 </tr>
                 <tr>
                     <td>Datacite</td>
-                    <td>PublicationYear(M)</td>
-                    <td>datePublished</td>
+                    <td>ciation/isBasedOn</td>
+                    <td>citation</td>
                 </tr>
                 <tr>
                     <td>Datacite</td>
-                    <td>Format(R)</td>
-                    <td>fileFormat</td>
+                    <td>Subject(R)</td>
+                    <td>keywords</td>
                 </tr>
                 <tr>
                     <td>Datacite</td>
@@ -2887,13 +2887,13 @@
                 </tr>
                 <tr>
                     <td>Datacite</td>
-                    <td>contributor with contributortype="Producer"</td>
-                    <td>producer</td>
+                    <td>creator(M)</td>
+                    <td>creator</td>
                 </tr>
                 <tr>
                     <td>Datacite</td>
-                    <td>Publisher(M)</td>
-                    <td>publisher</td>
+                    <td>date</td>
+                    <td>temporalCoverage</td>
                 </tr>
                 <tr>
                     <td>Datacite</td>
@@ -2907,18 +2907,18 @@
                 </tr>
                 <tr>
                     <td>Datacite</td>
-                    <td>Date</td>
-                    <td>temporalCoverage</td>
-                </tr>
-                <tr>
-                    <td>Datacite</td>
-                    <td>distribution</td>
-                    <td>distribution</td>
-                </tr>
-                <tr>
-                    <td>Datacite</td>
+                    <td>Publisher(M)</td>
                     <td>publisher</td>
-                    <td>includedInDataCatalog</td>
+                </tr>
+                <tr>
+                    <td>Datacite</td>
+                    <td>date (R)/Created</td>
+                    <td>dateCreated</td>
+                </tr>
+                <tr>
+                    <td>Datacite</td>
+                    <td>publicationYear(M)</td>
+                    <td>datePublished</td>
                 </tr>
                 <tr>
                     <td>Datacite</td>
@@ -2927,8 +2927,38 @@
                 </tr>
                 <tr>
                     <td>Datacite</td>
-                    <td>ResrouceType(M)</td>
-                    <td>additionalType</td>
+                    <td>Date(R)/Updated*</td>
+                    <td>dateModified</td>
+                </tr>
+                <tr>
+                    <td>Datacite</td>
+                    <td>Format (O)*</td>
+                    <td>encodingFormat</td>
+                </tr>
+                <tr>
+                    <td>Datacite</td>
+                    <td>contributor with ContributorType/Sponsor(O)*</td>
+                    <td>funder</td>
+                </tr>
+                <tr>
+                    <td>Datacite</td>
+                    <td>Format (O)*</td>
+                    <td>fileFormat (superseded by encordingFormat)</td>
+                </tr>
+                <tr>
+                    <td>Datacite</td>
+                    <td>Contributor(R)</td>
+                    <td>contributor</td>
+                </tr>
+                <tr>
+                    <td>Datacite</td>
+                    <td>contributor with contributortype="Producer"</td>
+                    <td>producer</td>
+                </tr>
+                <tr>
+                    <td>Datacite</td>
+                    <td>Rights(O))*</td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td>RIF-CS</td>
@@ -2957,13 +2987,87 @@
                 </tr>
                 <tr>
                     <td>RIF-CS</td>
-                    <td>collection/citationInfo/citationMetadata/contributor OR relatedObject|relatedInfo party/name where relation=IsPrincipalInvestigatorOf OR relatedObject|relatedInfo party/name where relation=author OR relatedObject|relatedInfo party/name where relation=coInvestigator  OR relatedObject|relatedInfo party/name where relation=hasCollector</td>
-                    <td>author</td>
+                    <td>(default to Enlgish) "en"</td>
+                    <td>inLanguage</td>
                 </tr>
+                <tr>
+                    <td>RIF-CS</td>
+                    <td>No mapping</td>
+                    <td>includedInDataCatalogue</td>
+                </tr>
+                <tr>
+                    <td>RIF-CS</td>
+                    <td>location/address/electronic @type="url" @ target="directDownload"</td>
+                    <td>distribution</td>
                 <tr>
                     <td>RIF-CS</td>
                     <td>collection/relatedInfo[@type='publication'] OR relatedObject:collection where related collection[@type='publication']</td>
                     <td>citation</td>
+                </tr>
+                <tr>
+                    <td>RIF-CS</td>
+                    <td>collection/subject</td>
+                    <td>keywords</td>
+                </tr>
+                <tr>
+                    <td>RIF-CS</td>
+                    <td>collection/rights/licence[@rightsURI] AND/OR collection/rights/licence[@type] AND collection/rights/licence</td>
+                    <td>license</td>
+                </tr>
+                <tr>
+                    <td>RIF-CS</td>
+                    <td>collection/citationInfo/citationMetadata/contributor OR relatedObject|relatedInfo party/name where relation=IsPrincipalInvestigatorOf OR relatedObject|relatedInfo party/name where relation=author OR relatedObject|relatedInfo party/name where relation=coInvestigator OR relatedObject|relatedInfo party/name where relation=hasCollector</td>
+                    <td>creator</td>
+                </tr>
+                <tr>
+                    <td>RIF-CS</td>
+                    <td>relatedObject|relatedInfo collection where relation[@type='hasPart']</td>
+                    <td>hasPart</td>
+                </tr>
+                <tr>
+                    <td>RIF-CS</td>
+                    <td>registryObject:collection:citationInfo:citationMetadata:version</td>
+                    <td>version</td>
+                </tr>
+                <tr>
+                    <td>RIF-CS</td>
+                    <td>collection/coverage/temporal</td>
+                    <td>temporalCoverage</td>
+                </tr>
+                <tr>
+                    <td>RIF-CS</td>
+                    <td>collection/coverage/spatial</td>
+                    <td>spatialCoverage</td>
+                </tr>
+                <tr>
+                    <td>RIF-CS</td>
+                    <td>registryObject:collection:citationInfo:citationMetadata:publisher OR registryObject@Group</td>
+                    <td>publisher</td>
+                </tr>
+                <tr>
+                    <td>RIF-CS</td>
+                    <td>collection/citationInfo/citationMetadata/date[@type= 'created'] OR collection/dates[@type='created']</td>
+                    <td>dateCreated</td>
+                </tr>
+                <tr>
+                    <td>RIF-CS</td>
+                    <td>collection/citationInfo/citationMetadata/date[@type='publicationDate'] OR collection/citationInfo/citationMetadata/date[@type='issued'] OR collection/dates[@type='dc.issued'] OR collection/dates[@type='dc.available'] OR Collection[@dateAccessioned] OR date the record was ingested into RDA</td>
+                    <td>datepublished</td>
+                </tr>
+                <tr>
+                    <td>RIF-CS</td>
+                    <td>No Mapping</td>
+                    <td>copyrightHolder</td>
+                </tr>
+                <tr>
+                    <td>RIF-CS</td>
+                    <td>collection/address/electronic[@target='directDownload']/mediaType</td>
+                    <td>fileformat (superseded by encodingFormat)</td>
+                </tr>
+                <tr>
+                    <td>RIF-CS</td>
+                    <td>relatedObject|relatedInfo party/name where relation=isFundedBy</td>
+                    <td>funder</td>
                 </tr>
                 <tr>
                     <td>RIF-CS</td>
@@ -2973,7 +3077,7 @@
                 <tr>
                     <td>RIF-CS</td>
                     <td>No mapping</td>
-                    <td>copyrightHolder</td>
+                    <td>producer</td>
                 </tr>
                 <tr>
                     <td>RIF-CS</td>
@@ -2982,118 +3086,13 @@
                 </tr>
                 <tr>
                     <td>RIF-CS</td>
-                    <td>collection/citationInfo/citationMetadata/contributor OR relatedObject|relatedInfo party/name where relation=IsPrincipalInvestigatorOf OR relatedObject|relatedInfo party/name where relation=coInvestigator OR relatedObject|relatedInfo party/name where relation=hasCollector</td>
-                    <td>creator</td>
-                </tr>
-                <tr>
-                    <td>RIF-CS</td>
-                    <td>collection/citationInfo/citationMetadata/date[@type='created'] OR collection/dates[@type='created']</td>
-                    <td>dateCreated</td>
-                </tr>
-                <tr>
-                    <td>RIF-CS</td>
-                    <td>collection/citationInfo/citationMetadata.date[@type='publicationDate'] OR collection/citationInfo/citationMetadata/date[@type='issued'] OR collection/dates[@type='dc.issued'] OR collection/dates[@type='dc.available'] OR Collection[@dateAccessioned] OR date the record was ingested into RDA</td>
-                    <td>datePublished</td>
-                </tr>
-                <tr>
-                    <td>RIF-CS</td>
-                    <td>No mapping</td>
-                    <td>editor</td>
-                </tr>
-                <tr>
-                    <td>RIF-CS</td>
-                    <td>No mapping</td>
-                    <td>encoding</td>
-                </tr>
-                <tr>
-                    <td>RIF-CS</td>
-                    <td>collection/address/electronic[@target='directDownload']/mediaType</td>
-                    <td>fileFormat</td>
-                </tr>
-                <tr>
-                    <td>RIF-CS</td>
-                    <td>relatedObject|relatedInfo party/name where relation=isFundedBy</td>
-                    <td>funder</td>
-                </tr>
-                <tr>
-                    <td>RIF-CS</td>
-                    <td>collection/subject</td>
-                    <td>keywords</td>
-                </tr>
-                <tr>
-                    <td>RIF-CS</td>
-                    <td>collection/rights/licence[@rightsURL] AND/OR collection/rights/licence[@type] AND collcetion/rights/licence</td>
-                    <td>license</td>
-                </tr>
-                <tr>
-                    <td>RIF-CS</td>
-                    <td>No mapping</td>
-                    <td>producer</td>
-                </tr>
-                <tr>
-                    <td>RIF-CS</td>
-                    <td>No mapping</td>
-                    <td>provider</td>
-                </tr>
-                <tr>
-                    <td>RIF-CS</td>
-                    <td>registryObject:collection:citationInfo:citationMetadata:publisher OR registryObject@Group</td>
-                    <td>publisher</td>
-                </tr>
-                <tr>
-                    <td>RIF-CS</td>
-                    <td>registryObject:collection:citationInfo:citationMetadata:version</td>
-                    <td>version</td>
-                </tr>
-                <tr>
-                    <td>RIF-CS</td>
                     <td>No mapping</td>
                     <td>isAccessibleForFree</td>
                 </tr>
                 <tr>
                     <td>RIF-CS</td>
-                    <td>relatedObject|relatedInfo collection where relation[@type='isPartOf']</td>
-                    <td>isPartOf</td>
-                </tr>
-                <tr>
-                    <td>RIF-CS</td>
-                    <td>relatedObject|relatedInfo collection where relation[@tyoe='hasPart]</td>
-                    <td>hasPart</td>
-                </tr>
-                <tr>
-                    <td>RIF-CS</td>
                     <td>No mapping</td>
                     <td>position</td>
-                </tr>
-                <tr>
-                    <td>RIF-CS</td>
-                    <td>collection/coverage/spatial</td>
-                    <td>spatialCoverage</td>
-                </tr>
-                <tr>
-                    <td>RIF-CS</td>
-                    <td>collection/coverage/temporal</td>
-                    <td>temporalCoverage</td>
-                </tr>
-                <tr>
-                    <td>RIF-CS</td>
-                    <td>location/address/electronic @type="url" @ target="directDownload"</td>
-                    <td>distribution</td>
-                </tr>
-                <tr>
-                    <td>RIF-CS</td>
-                    <td>No mapping</td>
-                    <td>includedInDataCatalog</td>
-                </tr>
-                <tr>
-                    <td>RIF-CS</td>
-                    <td>registryObject@Group</td>
-                    <td>sourceOrganization</td>
-                </tr>
-                <tr>
-                    <td>RIF-CS</td>
-                    <td>(default to English) "en"</td>
-                    <td>inLanguage</td>
                 </tr>
                 <tr>
                     <td>DC</td>
@@ -3122,8 +3121,8 @@
                 </tr>
                 <tr>
                     <td>DC</td>
-                    <td>Creator</td>
-                    <td>author</td>
+                    <td>Language -dcterms:language</td>
+                    <td>inLanguage</td>
                 </tr>
                 <tr>
                     <td>DC</td>
@@ -3132,32 +3131,7 @@
                 </tr>
                 <tr>
                     <td>DC</td>
-                    <td>Contributor</td>
-                    <td>contributor</td>
-                </tr>
-                <tr>
-                    <td>DC</td>
-                    <td>Creator</td>
-                    <td>creator</td>
-                </tr>
-                <tr>
-                    <td>DC</td>
-                    <td>dcterms:modified</td>
-                    <td>dateModified</td>
-                </tr>
-                <tr>
-                    <td>DC</td>
-                    <td>dcterms:issued</td>
-                    <td>datePublished</td>
-                </tr>
-                <tr>
-                    <td>DC</td>
-                    <td>dcterms:contributor</td>
-                    <td>funder</td>
-                </tr>
-                <tr>
-                    <td>DC</td>
-                    <td>Subject = dcterms:subject</td>
+                    <td>Subject - dcterm:subject</td>
                     <td>keywords</td>
                 </tr>
                 <tr>
@@ -3167,13 +3141,8 @@
                 </tr>
                 <tr>
                     <td>DC</td>
-                    <td>Publisher - dcterms:publisher</td>
-                    <td>publisher</td>
-                </tr>
-                <tr>
-                    <td>DC</td>
-                    <td>dcterms:coverage (spatial)</td>
-                    <td>spatialCoverage</td>
+                    <td>Creator</td>
+                    <td>creator</td>
                 </tr>
                 <tr>
                     <td>DC</td>
@@ -3182,33 +3151,33 @@
                 </tr>
                 <tr>
                     <td>DC</td>
-                    <td>Language - dcterms:language</td>
-                    <td>inLanguage</td>
+                    <td>dcterms:coverage (spatial)</td>
+                    <td>spatialCoverager</td>
                 </tr>
                 <tr>
                     <td>DC</td>
-                    <td>dcterms:contributor (Distributor)</td>
-                    <td></td>
+                    <td>Publisher - dcterms:publisher</td>
+                    <td>publisher</td>
                 </tr>
                 <tr>
                     <td>DC</td>
-                    <td>dcterms:type</td>
-                    <td>additionalType</td>
+                    <td>dcterms:issued</td>
+                    <td>datePublished</td>
                 </tr>
                 <tr>
                     <td>DC</td>
-                    <td>dcterms:source</td>
-                    <td></td>
+                    <td>dcterms:modified</td>
+                    <td>dateModified</td>
                 </tr>
                 <tr>
                     <td>DC</td>
-                    <td>Date - dcters:date</td>
-                    <td>productionDate</td>
+                    <td>dcterms:contributor</td>
+                    <td>fundere</td>
                 </tr>
                 <tr>
                     <td>DC</td>
-                    <td>dcterms:dateSubmitted</td>
-                    <td></td>
+                    <td>Contributor - dcterms:contributor (Depositor)</td>
+                    <td>contributor</td>
                 </tr>
                 <tr>
                     <td>BioSchema</td>
@@ -3227,8 +3196,28 @@
                 </tr>
                 <tr>
                     <td>BioSchema</td>
+                    <td>measurementTechnique(R)</td>
+                    <td>measurementTechnique</td>
+                </tr>
+                <tr>
+                    <td>BioSchema</td>
                     <td>url(M)</td>
                     <td>url</td>
+                </tr>
+                <tr>
+                    <td>BioSchema</td>
+                    <td>variablesMeasured (R)</td>
+                    <td>variableMeasured</td>
+                </tr>
+                <tr>
+                    <td>BioSchema</td>
+                    <td>includedInDataCatalogue(M)</td>
+                    <td>includedInDataCatalogue</td>
+                </tr>
+                <tr>
+                    <td>BioSchema</td>
+                    <td>distribution</td>
+                    <td>distribution</td>
                 </tr>
                 <tr>
                     <td>BioSchema</td>
@@ -3237,48 +3226,23 @@
                 </tr>
                 <tr>
                     <td>BioSchema</td>
+                    <td>Keywords(M)</td>
+                    <td>keywords</td>
+                </tr>
+                <tr>
+                    <td>BioSchema</td>
+                    <td>License(R)</td>
+                    <td>license</td>
+                </tr>
+                <tr>
+                    <td>BioSchema</td>
                     <td>creator(R)</td>
                     <td>creator</td>
                 </tr>
                 <tr>
                     <td>BioSchema</td>
-                    <td>keywords(M)</td>
-                    <td>keywords</td>
-                </tr>
-                <tr>
-                    <td>BioSchema</td>
-                    <td>license(R)</td>
-                    <td>license</td>
-                </tr>
-                <tr>
-                    <td>BioSchema</td>
                     <td>version(R)</td>
                     <td>version</td>
-                </tr>
-                <tr>
-                    <td>BioSchema</td>
-                    <td>distribution</td>
-                    <td>distribution</td>
-                </tr>
-                <tr>
-                    <td>BioSchema</td>
-                    <td>includedInDataCatalog(M)</td>
-                    <td>includedInDataCatalog</td>
-                </tr>
-                <tr>
-                    <td>BioSchema</td>
-                    <td>measurementTechnique(R)</td>
-                    <td>measurementTechnique</td>
-                </tr>
-                <tr>
-                    <td>BioSchema</td>
-                    <td>variablesMeasured(R)</td>
-                    <td>variablesMeasured</td>
-                </tr>
-                <tr>
-                    <td>BioSchema</td>
-                    <td>rdf.type</td>
-                    <td></td>
                 </tr>
                 <tr>
                     <td>B2FIND</td>
@@ -3297,18 +3261,8 @@
                 </tr>
                 <tr>
                     <td>B2FIND</td>
-                    <td>Contributor(O)</td>
-                    <td>contributor</td>
-                </tr>
-                <tr>
-                    <td>B2FIND</td>
-                    <td>Creator(R)</td>
-                    <td>creator</td>
-                </tr>
-                <tr>
-                    <td>B2FIND</td>
-                    <td>PublicationYear(R)</td>
-                    <td>datePublished</td>
+                    <td>Language(O)</td>
+                    <td>inLanguage</td>
                 </tr>
                 <tr>
                     <td>B2FIND</td>
@@ -3317,13 +3271,8 @@
                 </tr>
                 <tr>
                     <td>B2FIND</td>
-                    <td>Publisher(R)</td>
-                    <td>publisher</td>
-                </tr>
-                <tr>
-                    <td>B2FIND</td>
-                    <td>Spatial Coverage(O)</td>
-                    <td>spatialCoverage</td>
+                    <td>Creator(R)</td>
+                    <td>creator</td>
                 </tr>
                 <tr>
                     <td>B2FIND</td>
@@ -3332,13 +3281,23 @@
                 </tr>
                 <tr>
                     <td>B2FIND</td>
-                    <td>Language(O)</td>
-                    <td>inLanguage</td>
+                    <td>Spatial Coverage(O)</td>
+                    <td>spatialCoverage</td>
                 </tr>
                 <tr>
                     <td>B2FIND</td>
-                    <td>ResourceType(R)</td>
-                    <td>additionalType</td>
+                    <td>Publisher(R)</td>
+                    <td>publisher</td>
+                </tr>
+                <tr>
+                    <td>B2FIND</td>
+                    <td>PublicationYear(R)</td>
+                    <td>datePublished</td>
+                </tr>
+                <tr>
+                    <td>B2FIND</td>
+                    <td>Contributor(O)</td>
+                    <td>contributor</td>
                 </tr>
                 <tr>
                     <td>DDI</td>
