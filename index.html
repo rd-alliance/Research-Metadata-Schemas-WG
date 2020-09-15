@@ -3311,28 +3311,18 @@
                 </tr>
                 <tr>
                     <td>DDI</td>
-                    <td>relPubl</td>
-                    <td>relatedLink</td>
-                </tr>
-                <tr>
-                    <td>DDI</td>
-                    <td>AuthEnty</td>
-                    <td>author</td>
-                </tr>
-                <tr>
-                    <td>DDI</td>
-                    <td>distDate (for export)</td>
-                    <td>datePublished</td>
-                </tr>
-                <tr>
-                    <td>DDI</td>
                     <td>keywords</td>
                     <td>keywords</td>
                 </tr>
                 <tr>
                     <td>DDI</td>
-                    <td>producer</td>
-                    <td>producer</td>
+                    <td>AuthEnty*</td>
+                    <td>creator</td>
+                </tr>
+                <tr>
+                    <td>DDI</td>
+                    <td>version</td>
+                    <td>version</td>
                 </tr>
                 <tr>
                     <td>DDI</td>
@@ -3341,8 +3331,8 @@
                 </tr>
                 <tr>
                     <td>DDI</td>
-                    <td>version</td>
-                    <td>version</td>
+                    <td>distDate (for export)</td>
+                    <td>datePublished</td>
                 </tr>
                 <tr>
                     <td>DDI</td>
@@ -3351,23 +3341,273 @@
                 </tr>
                 <tr>
                     <td>DDI</td>
-                    <td>distrbtr</td>
+                    <td>producer</td>
+                    <td>producer</td>
+                </tr>
+                <tr>
+                    <td>SPASE</td>
+                    <td>ResourceHeader/Description</td>
+                    <td>description(R)</td>
+                </tr>
+                <tr>
+                    <td>SPASE</td>
+                    <td>ResourceHeader/DOI OR ResourceID</td>
+                    <td>identifier</td>
+                </tr>
+                <tr>
+                    <td>SPASE</td>
+                    <td>ResourceHeader/ResourceName</td>
+                    <td>name(R)</td>
+                </tr>
+                <tr>
+                    <td>SPASE</td>
+                    <td>ResourceHeader/AlternateName</td>
+                    <td>alternateName</td>
+                </tr>
+                <tr>
+                    <td>SPASE</td>
+                    <td>ResourceHeader/InformationURL/URL</td>
+                    <td>SameAs</td>
+                </tr>
+                <tr>
+                    <td>SPASE</td>
+                    <td>AccessInformation/AccessURL/URL</td>
+                    <td>URL</td>
+                </tr>
+                <tr>
+                    <td>SPASE</td>
+                    <td>ResourceHeader/Contact</td>
+                    <td>contactPoint/td>
+                </tr>
+                <tr>
+                    <td>SPASE</td>
+                    <td>MeasurementType</td>
+                    <td>measurementTechnique</td>
+                </tr>
+                <tr>
+                    <td>SPASE</td>
+                    <td>Parameter</td>
+                    <td>variableMeasured</td>
+                </tr>
+                <tr>
+                    <td>SPASE</td>
+                    <td>AccessInformation/AccessURL/URL</td>
+                    <td>distribution.contentUrl</td>
+                </tr>
+                <tr>
+                    <td>SPASE</td>
+                    <td>AccessInformation/Format</td>
+                    <td>distribution.encodingFormat</td>
+                </tr>
+                <tr>
+                    <td>SPASE</td>
+                    <td>ResourceHeader/PublicationInfo</td>
+                    <td>citation</td>
+                </tr>
+                <tr>
+                    <td>SPASE</td>
+                    <td>keyword</td>
+                    <td>keyword</td>
+                </tr>
+                <tr>
+                    <td>SPASE</td>
+                    <td>ResourceHeader/Contact[@role=PrincipalInvestigator]</td>
+                    <td>creator</td>
+                </tr>
+                <tr>
+                    <td>SPASE</td>
+                    <td>ProviderVersion</td>
+                    <td>version</td>
+                </tr>
+                <tr>
+                    <td>SPASE</td>
+                    <td>TemporalDescription/TimeSpan</td>
+                    <td>temporalCoverage/td>
+                </tr>
+                <tr>
+                    <td>SPASE</td>
+                    <td>ObservedRegion</td>
+                    <td>spatialCoverage</td>
+                </tr>
+                <tr>
+                    <td>SPASE</td>
+                    <td>ResourceHeader/Contact[@role=Publisher]</td>
+                    <td>publisher</td>
+                </tr>
+                <tr>
+                    <td>SPASE</td>
+                    <td>ReleaseDate</td>
+                    <td>datePublished</td>
+                </tr>
+                <tr>
+                    <td>SPASE</td>
+                    <td>RevisionHistory/RevisionEvent/ReleaseDate*</td>
+                    <td>dateModified</td>
+                </tr>
+                <tr>
+                    <td>SPASE</td>
+                    <td>AccesInformation/Format</td>
+                    <td>accessFormat</td>
+                </tr>
+                <tr>
+                    <td>SPASE</td>
+                    <td>AccesInformation/Format</td>
+                    <td>fileFormat (superseded by encordingFormat)</td>
+                </tr>
+                <tr>
+                    <td>SPASE</td>
+                    <td>AccesInformation/Format</td>
+                    <td>accessFormat</td>
+                </tr>
+                <tr>
+                    <td>SPASE</td>
+                    <td>ResourceHeader/Funding/Agency</td>
+                    <td>funder</td>
+                </tr>
+                <tr>
+                    <td>SPASE</td>
+                    <td>ResourceHeader/Contact[@role=Contributor]</td>
+                    <td>contributor</td>
+                </tr>
+                <tr>
+                    <td>SPASE</td>
+                    <td>AccesRights</td>
                     <td></td>
                 </tr>
                 <tr>
-                    <td>DDI</td>
-                    <td>dataKind</td>
-                    <td>additionalType</td>
+                    <td>SPASE</td>
+                    <td>RevisionHistory*</td>
+                    <td></td>
                 </tr>
                 <tr>
-                    <td>DDI</td>
-                    <td>dataSrc</td>
-                    <td></td>
+                    <td>CODEMETA</td>
+                    <td>description</td>
+                    <td>description(R)</td>
+                </tr>
+                <tr>
+                    <td>CODEMETA</td>
+                    <td>identifier</td>
+                    <td>identifier</td>
+                </tr>
+                <tr>
+                    <td>CODEMETA</td>
+                    <td>name</td>
+                    <td>name(R)</td>
+                </tr>
+                <tr>
+                    <td>CODEMETA</td>
+                    <td>SameAs</td>
+                    <td>sameAS</td>
+                </tr>
+                <tr>
+                    <td>CODEMETA</td>
+                    <td>url</td>
+                    <td>url</td>
+                </tr>
+                <tr>
+                    <td>CODEMETA</td>
+                    <td>citation</td>
+                    <td>citation</td>
+                </tr>
+                <tr>
+                    <td>CODEMETA</td>
+                    <td>keywords</td>
+                    <td>keywords</td>
+                </tr>
+                <tr>
+                    <td>CODEMETA</td>
+                    <td>license</td>
+                    <td>license</td>
+                </tr>
+                <tr>
+                    <td>CODEMETA</td>
+                    <td>auhtor</td>
+                    <td>creator</td>
+                </tr>
+                <tr>
+                    <td>CODEMETA</td>
+                    <td>hasPart</td>
+                    <td>hasPart</td>
+                </tr>
+                <tr>
+                    <td>CODEMETA</td>
+                    <td>version</td>
+                    <td>version</td>
+                </tr>
+                <tr>
+                    <td>CODEMETA</td>
+                    <td>publisher</td>
+                    <td>publisher</td>
+                </tr>
+                <tr>
+                    <td>CODEMETA</td>
+                    <td>dateCreated</td>
+                    <td>dateCreated</td>
+                </tr>
+                <tr>
+                    <td>CODEMETA</td>
+                    <td>datePublished</td>
+                    <td>datePublished</td>
+                </tr>
+                <tr>
+                    <td>CODEMETA</td>
+                    <td>dateModified</td>
+                    <td>dateModified</td>
+                </tr>
+                <tr>
+                    <td>CODEMETA</td>
+                    <td>copyrightHolder/td>
+                    <td>copyrightHolder</td>
+                </tr>
+                <tr>
+                    <td>CODEMETA</td>
+                    <td>enocdingFormat</td>
+                    <td>encodingFormat</td>
+                </tr>
+                <tr>
+                    <td>CODEMETA</td>
+                    <td>fileFormat</td>
+                    <td>fileFormat(superseded by encoding)</td>
+                </tr>
+                <tr>
+                    <td>CODEMETA</td>
+                    <td>funder</td>
+                    <td>funder</td>
+                </tr>
+                <tr>
+                    <td>CODEMETA</td>
+                    <td>contributor</td>
+                    <td>contributor</td>
+                </tr>
+                <tr>
+                    <td>CODEMETA</td>
+                    <td>producer</td>
+                    <td>producer</td>
+                </tr>
+                <tr>
+                    <td>CODEMETA</td>
+                    <td>editor</td>
+                    <td>editor</td>
+                </tr>
+                <tr>
+                    <td>CODEMETA</td>
+                    <td>copyrightYear</td>
+                    <td>copyrightYear</td>
+                </tr>
+                <tr>
+                    <td>CODEMETA</td>
+                    <td>isAccessibleForFree</td>
+                    <td>isAccessibleForFree</td>
+                </tr>
+                <tr>
+                    <td>CODEMETA</td>
+                    <td>Rcodemeta:SoftwareSourceCode:embargoDate</td>
+                    <td>expectedArriveFrom OR expectedArriveUntil </td>
                 </tr>
                 <tr>
                     <td>ECRIN Clinical Research Metadata Schema</td>
                     <td>Description(R)</td>
-                    <td>description</td>
+                    <td>description(R)</td>
                 </tr>
                 <tr>
                     <td>ECRIN Clinical Research Metadata Schema</td>
@@ -3377,7 +3617,7 @@
                 <tr>
                     <td>ECRIN Clinical Research Metadata Schema</td>
                     <td>Object Title(M)</td>
-                    <td>name</td>
+                    <td>name(R)</td>
                 </tr>
                 <tr>
                     <td>ECRIN Clinical Research Metadata Schema</td>
@@ -3386,28 +3626,13 @@
                 </tr>
                 <tr>
                     <td>ECRIN Clinical Research Metadata Schema</td>
-                    <td>Contributors(O)</td>
-                    <td>contributor</td>
+                    <td>Access Conatct (M)</td>
+                    <td>contactPoint</td>
                 </tr>
                 <tr>
                     <td>ECRIN Clinical Research Metadata Schema</td>
-                    <td>Creators(M)</td>
-                    <td>creator</td>
-                </tr>
-                <tr>
-                    <td>ECRIN Clinical Research Metadata Schema</td>
-                    <td>Dates (date type)(O)</td>
-                    <td>dateCreated</td>
-                </tr>
-                <tr>
-                    <td>ECRIN Clinical Research Metadata Schema</td>
-                    <td>Dates (date type)(O)</td>
-                    <td>dateModified</td>
-                </tr>
-                <tr>
-                    <td>ECRIN Clinical Research Metadata Schema</td>
-                    <td>Creation Year(M)</td>
-                    <td>datePublished</td>
+                    <td>language(R)</td>
+                    <td>inLanguage</td>
                 </tr>
                 <tr>
                     <td>ECRIN Clinical Research Metadata Schema</td>
@@ -3416,8 +3641,8 @@
                 </tr>
                 <tr>
                     <td>ECRIN Clinical Research Metadata Schema</td>
-                    <td>Publisher/Provider(M)</td>
-                    <td>publisher</td>
+                    <td>creators(M)</td>
+                    <td>creator</td>
                 </tr>
                 <tr>
                     <td>ECRIN Clinical Research Metadata Schema</td>
@@ -3426,13 +3651,28 @@
                 </tr>
                 <tr>
                     <td>ECRIN Clinical Research Metadata Schema</td>
-                    <td>Language(R)</td>
-                    <td>inLanguage</td>
+                    <td>Publisher/Provider(M)</td>
+                    <td>publisher</td>
                 </tr>
                 <tr>
                     <td>ECRIN Clinical Research Metadata Schema</td>
-                    <td>Resource Class(M)</td>
-                    <td>additionalType</td>
+                    <td>Dates (date type)(O)</td>
+                    <td>dateCreated</td>
+                </tr>
+                <tr>
+                    <td>ECRIN Clinical Research Metadata Schema</td>
+                    <td>Creation Year(M)</td>
+                    <td>datePublished</td>
+                </tr>
+                <tr>
+                    <td>ECRIN Clinical Research Metadata Schema</td>
+                    <td>Dates(date Type)</td>
+                    <td>dateModified</td>
+                </tr>
+                <tr>
+                    <td>ECRIN Clinical Research Metadata Schema</td>
+                    <td>Contributors(O)</td>
+                    <td>contributor</td>
                 </tr>
         </tbody>
         </table>
