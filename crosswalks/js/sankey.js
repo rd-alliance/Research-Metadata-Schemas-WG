@@ -448,7 +448,7 @@ chart.dataFields.value = "value";
 chart.paddingRight = 90;
 }
 
-$.getJSON("https://rd-alliance.github.io/Research-Metadata-Schemas-WG/crosswalks/json/distributioncontenturl.json", about);
+$.getJSON("https://rd-alliance.github.io/Research-Metadata-Schemas-WG/crosswalks/json/distributioncontenturl.json", distributioncontenturl);
 function distributioncontenturl(data){
 var chart=am4core.create("distributioncontenturl", am4charts.SankeyDiagram)
 chart.data = data;
@@ -458,7 +458,7 @@ chart.dataFields.value = "value";
 chart.paddingRight = 90;
 }
 
-$.getJSON("https://rd-alliance.github.io/Research-Metadata-Schemas-WG/crosswalks/json/distributionEncodingFormat.json", about);
+$.getJSON("https://rd-alliance.github.io/Research-Metadata-Schemas-WG/crosswalks/json/distributionEncodingFormat.json", distributionEncodingFormat);
 function distributionEncodingFormat(data){
 var chart=am4core.create("distributionEncodingFormat", am4charts.SankeyDiagram)
 chart.data = data;
@@ -468,8 +468,8 @@ chart.dataFields.value = "value";
 chart.paddingRight = 90;
 }
 
-$.getJSON("https://rd-alliance.github.io/Research-Metadata-Schemas-WG/crosswalks/json/contactPoint.json", about);
-function contactPointt(data){
+$.getJSON("https://rd-alliance.github.io/Research-Metadata-Schemas-WG/crosswalks/json/contactPoint.json", contactPoint);
+function contactPoint(data){
 var chart=am4core.create("contactPoint", am4charts.SankeyDiagram)
 chart.data = data;
 chart.dataFields.fromName = "from";
@@ -478,7 +478,7 @@ chart.dataFields.value = "value";
 chart.paddingRight = 90;
 }
 
-$.getJSON("https://rd-alliance.github.io/Research-Metadata-Schemas-WG/crosswalks/json/aboutORsubjectOf.json", about);
+$.getJSON("https://rd-alliance.github.io/Research-Metadata-Schemas-WG/crosswalks/json/aboutORsubjectOf.json", aboutORsubjectOf);
 function aboutORsubjectOf(data){
 var chart=am4core.create("aboutORsubjectOf", am4charts.SankeyDiagram)
 chart.data = data;
@@ -488,7 +488,7 @@ chart.dataFields.value = "value";
 chart.paddingRight = 90;
 }
 
-$.getJSON("https://rd-alliance.github.io/Research-Metadata-Schemas-WG/crosswalks/json/mentions.json", about);
+$.getJSON("https://rd-alliance.github.io/Research-Metadata-Schemas-WG/crosswalks/json/mentions.json", mentions);
 function mentions(data){
 var chart=am4core.create("mentions", am4charts.SankeyDiagram)
 chart.data = data;
@@ -498,7 +498,7 @@ chart.dataFields.value = "value";
 chart.paddingRight = 90;
 }
 
-$.getJSON("https://rd-alliance.github.io/Research-Metadata-Schemas-WG/crosswalks/json/isBasedOn.json", about);
+$.getJSON("https://rd-alliance.github.io/Research-Metadata-Schemas-WG/crosswalks/json/isBasedOn.json", isBasedOn);
 function isBasedOn(data){
 var chart=am4core.create("isBasedOn", am4charts.SankeyDiagram)
 chart.data = data;
@@ -508,7 +508,7 @@ chart.dataFields.value = "value";
 chart.paddingRight = 90;
 }
 
-$.getJSON("https://rd-alliance.github.io/Research-Metadata-Schemas-WG/crosswalks/json/contentSize.json", about);
+$.getJSON("https://rd-alliance.github.io/Research-Metadata-Schemas-WG/crosswalks/json/contentSize.json", contentSize);
 function contentSize(data){
 var chart=am4core.create("contentSize", am4charts.SankeyDiagram)
 chart.data = data;
@@ -518,7 +518,7 @@ chart.dataFields.value = "value";
 chart.paddingRight = 90;
 }
 
-$.getJSON("https://rd-alliance.github.io/Research-Metadata-Schemas-WG/crosswalks/json/expectedArriveFromexpectedArriveUntil.json", about);
+$.getJSON("https://rd-alliance.github.io/Research-Metadata-Schemas-WG/crosswalks/json/expectedArriveFromexpectedArriveUntil.json", expectedArriveFromexpectedArriveUntil);
 function expectedArriveFromexpectedArriveUntil(data){
 var chart=am4core.create("expectedArriveFromexpectedArriveUntil", am4charts.SankeyDiagram)
 chart.data = data;
