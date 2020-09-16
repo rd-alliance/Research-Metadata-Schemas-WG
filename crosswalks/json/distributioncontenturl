@@ -1,1 +1,6 @@
-
+[
+  {"from": "distributionContent.url - schema:DatasetDownload","to": "dct:accessURL (M) / dct:downloadURL (O)","value": 1},
+  {"from": "dct:accessURL (M) / dct:downloadURL (O)","to": "DCAT","value": 1},
+  {"from": "distributionContent.url - schema:DatasetDownload","to": "AccessInformation/AccessURL/URL","value": 1},
+  {"from": "AccessInformation/AccessURL/URL","to": "SPASE","value": 1}
+]
