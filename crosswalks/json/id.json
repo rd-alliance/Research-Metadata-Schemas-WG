@@ -19,6 +19,10 @@
     {"from": "Identifier - dcterms:identifier", "to": "DC", "value": 1},
     {"from": "identifier - schema:Thing", "to": "IDNo", "value": 1},
     {"from": "IDNo", "to": "DDI", "value": 1},
+    {"from": "identifier - schema:Thing", "to": "identifier", "value": 1},
+    {"from": "IDNo", "to": "CODEMETA", "value": 1},
+    {"from": "identifier - schema:Thing", "to": "ResourceHeader/DOI", "value": 1},
+    {"from": "IDNo", "to": "SPASE", "value": 1},
     {"from": "identifier - schema:Thing", "to": "DOI(M)", "value": 1},
     {"from": "DOI(M)", "to": "ECRIN", "value": 1}
   ]
