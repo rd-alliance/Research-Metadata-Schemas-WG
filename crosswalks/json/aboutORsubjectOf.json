@@ -1,1 +1,8 @@
-
+[
+  {"from": "about or subjectOf - schema:Thing or schema: CreativeWorks","to": "dcat:theme (R) dcat:subject(O)","value": 1},
+  {"from": "rdcat:theme (R) dcat:subject(O)","to": "DCAT","value": 1},
+  {"from": "about or subjectOf - schema:Thing or schema: CreativeWorks","to": "Subject*","value": 1},
+  {"from": "Subject*","to": "DATACITE","value": 1},
+  {"from": "about or subjectOf - schema:Thing or schema: CreativeWorks","to": "Descriptive keyword (from a controlled vocabulary)","value": 1},
+  {"from": "Descriptive keyword (from a controlled vocabulary)","to": "ISO-19115:2003","value": 1}
+]
