@@ -1,4 +1,8 @@
 [
   {"from": "copyrightYear - schema:CreativeWork","to": "No mapping","value": 1},
-  {"from": "No mapping","to": "RIF-CS","value": 1}
+  {"from": "No mapping","to": "RIF-CS","value": 1},
+  {"from": "copyrightYear - schema:CreativeWork","to": "dcterms:dateCopyrighted","value": 1},
+  {"from": "dcterms:dateCopyrighted","to": "DCAT","value": 1},
+  {"from": "copyrightYear - schema:CreativeWork","to": "copyrightYear","value": 1},
+  {"from": "copyrightYear","to": "CODEMETA","value": 1}
 ]
