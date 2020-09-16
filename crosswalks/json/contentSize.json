@@ -1,1 +1,6 @@
-
+[
+  {"from": "contentSize - MediaObject","to": "byteSize(O)","value": 1},
+  {"from": "byteSize(O)","to": "DCAT","value": 1},
+  {"from": "contentSize - MediaObject","to": "Size(O)*","value": 1},
+  {"from": "Size(O)*","to": "Datacite","value": 1}
+]
