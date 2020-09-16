@@ -5,6 +5,9 @@
   {"from": "contributor with contributortype=\"Producer","to": "Datacite","value": 1},
   {"from": "producer - schema:CreativeWork","to": "No mapping","value": 1},
   {"from": "No mapping","to": "RIF-CS","value": 1},
-  {"from": "producer - schema:CreativeWork","to": "producer","value": 1},
-  {"from": "producer","to": "DDI","value": 1}
+  {"from": "producer - schema:CreativeWork","to": "dcterms:contributor","value": 1},
+  {"from": "dcterms:contributor","to": "DCAT","value": 1},
+  {"from": "producer - schema:CreativeWork","to": "producer","value": 2},
+  {"from": "producer","to": "DDI","value": 1},
+  {"from": "producer","to": "CODEMETA","value": 1}
 ]
