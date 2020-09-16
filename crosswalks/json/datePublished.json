@@ -5,8 +5,8 @@
   {"from": "Temporal reference: date of publication","to": "ISO-19115:2003","value": 1},
   {"from": "datePublished - schema:CreativeWork","to": "Publication Date","value": 1},
   {"from": "Publication Date","to": "Dataverse","value": 1},
-  {"from": "datePublished - schema:CreativeWork","to": "release date","value": 1},
-  {"from": "release date","to": "DCAT","value": 1},
+  {"from": "datePublished - schema:CreativeWork","to": "dateAccepted or issued(R)","value": 1},
+  {"from": "dateAccepted or issued(R)","to": "DCAT","value": 1},
   {"from": "datePublished - schema:CreativeWork","to": "PublicationYear(M)","value": 1},
   {"from": "PublicationYear(M)","to": "Datacite","value": 1},
   {"from": "datePublished - schema:CreativeWork","to": "collection/citationInfo/citationMetadata.date[@type='publicationDate'] OR collection/citationInfo/citationMetadata/date[@type='issued'] OR collection/dates[@type='dc.issued'] OR collection/dates[@type='dc.available'] OR Collection[@dateAccessioned] OR date the record was ingested into RDA","value": 1},
@@ -17,6 +17,10 @@
   {"from": "PublicationYear(R)","to": "B2FIND","value": 1},
   {"from": "datePublished - schema:CreativeWork","to": "distDate(for export)","value": 1},
   {"from": "distDate(for export)","to": "DDI","value": 1},
+  {"from": "datePublished - schema:CreativeWork","to": "datePublished","value": 1},
+  {"from": "datePublished","to": "CODEMETA","value": 1},
+  {"from": "datePublished - schema:CreativeWork","to": "ReleaseDate","value": 1},
+  {"from": "ReleaseDate","to": "SPASE","value": 1},
   {"from": "datePublished - schema:CreativeWork","to": "Creation Year(M)","value": 1},
   {"from": "Creation Year(M)","to": "ECRIN","value": 1}
 ]
