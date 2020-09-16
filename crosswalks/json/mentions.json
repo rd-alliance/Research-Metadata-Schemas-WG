@@ -1,0 +1,4 @@
+[
+  {"from": "alternativeName - schema:CreativeWork","to": "relation","value": 1},
+  {"from": "relation","to": "DCAT","value": 1}
+]
