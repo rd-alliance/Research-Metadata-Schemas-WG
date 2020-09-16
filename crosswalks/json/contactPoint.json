@@ -1,6 +1,6 @@
 [
   {"from": "contactPoint - schema:Thing","to": "contactPoint(R)":1},
-  {"from": "contactPoint(R)","to": "DCAT","value": 1},
+  {"from": "contactPoint(R)","to": "DCAT","value":1},
   {"from": "contactPoint - schema:Thing","to": "acessContact(M)":1},
   {"from": "acessContact(M)","to": "ENCRIN","value":1},
   {"from": "contactPoint - schema:Thing","to": "ResourceHeader/Contact":1},
