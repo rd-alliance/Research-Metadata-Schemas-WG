@@ -5,5 +5,5 @@
   {"from": "measurementTechnique - schema:DataCatalog","to": "usedProcedure","value": 1},
   {"from": "usedProcedure","to": "DCAT","value": 1},
   {"from": "measurementTechnique - schema:DataCatalog","to": "measurementType","value": 1},
-  {"from": "measurementType","to": "SPASE","value": 1},
+  {"from": "measurementType","to": "SPASE","value": 1}
 ]
