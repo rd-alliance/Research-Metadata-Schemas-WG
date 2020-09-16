@@ -1,4 +1,4 @@
 [
-  {"from": "editor - schema:CreativeWork","to": "No mapping","value": 1},
-  {"from": "No mapping","to": "RIF-CS","value": 1}
+  {"from": "editor - schema:CreativeWork","to": "editor","value": 1},
+  {"from": "editor","to": "RIF-CS","CODEMETA": 1}
 ]
