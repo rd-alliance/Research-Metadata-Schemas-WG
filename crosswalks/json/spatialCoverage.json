@@ -13,6 +13,6 @@
   {"from": "dcterms:coverage(spatial)","to": "DC","value": 1},
   {"from": "spatialCoverage - schema:CreativeWork","to": "Spatial Coverage(O)","value": 1},
   {"from": "Spatial Coverage(O)","to": "B2FIND","value": 1}
-  {"from": "spatialCoverage - schema:CreativeWork","to": "ObservedRegion": 1},
+  {"from": "spatialCoverage - schema:CreativeWork","to": "ObservedRegion","value": 1},
   {"from": "ObservedRegion","to": "SPASE","value": 1},
 ]
