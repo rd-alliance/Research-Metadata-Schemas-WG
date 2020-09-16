@@ -2,5 +2,5 @@
   {"from": "alternativeName - schema:Thing","to": "rdfs:label skos:altLabel","value": 1},
   {"from": "rdfs:label skos:altLabel","to": "DCAT","value": 1},
   {"from": "alternativeName - schema:Thing","to": "ResourceHeader/AlternateName","value": 1},
-  {"from": "ResourceHeader/AlternateName","to": "SPASE","value": 1},
+  {"from": "ResourceHeader/AlternateName","to": "SPASE","value": 1}
 ]
