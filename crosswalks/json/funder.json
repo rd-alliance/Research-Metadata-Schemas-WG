@@ -1,10 +1,17 @@
 [
   {"from": "funder - schema:CreativeWork","to": "Grant information","value": 1},
   {"from": "Grant information","to": "Dataverse","value": 1},
+  {"from": "funder - schema:CreativeWork","to": "contributor with ContributorType/Sponsor(O)*","value": 1},
+  {"from": "contributor with ContributorType/Sponsor(O)*","to": "DATACITE","value": 1},
   {"from": "funder - schema:CreativeWork","to": "acknowledges(O)","value": 1},
   {"from": "acknowledges(O)","to": "DATS","value": 1},
+  {"from": "funder - schema:CreativeWork","to": "funder","value": 1},
+  {"from": "funder","to": "CODEMETA","value": 1},
+  {"from": "funder - schema:CreativeWork","to": "ResourceHeader/Funding/Agency","value": 1},
+  {"from": "ResourceHeader/Funding/Agency","to": "SPASE","value": 1},
   {"from": "funder - schema:CreativeWork","to": "relatedObject|relatedInfo party/name where relation=isFundedBy","value": 1},
   {"from": "relatedObject|relatedInfo party/name where relation=isFundedBy","to": "RIF-CS","value": 1},
-  {"from": "funder - schema:CreativeWork","to": "dc:contributor","value": 1},
-  {"from": "dc:contributor","to": "DC","value": 1}
+  {"from": "funder - schema:CreativeWork","to": "dcterms:contributor","value": 2},
+  {"from": "dcterms:contributor","to": "DC","value": 1},
+  {"from": "dcterms:contributor","to": "DCAT","value": 1}
 ]
