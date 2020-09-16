@@ -1,1 +1,10 @@
-
+[
+  {"from": "contactPoint - schema:Thing","to": "contactPoint(R)": 1},
+  {"from": "contactPoint(R)","to": "DCAT","value": 1},
+  {"from": "contactPoint - schema:Thing","to": "acessContact(M)": 1},
+  {"from": "acessContact(M)","to": "ENCRIN","value": 1},
+  {"from": "contactPoint - schema:Thing","to": "ResourceHeader/Contact": 1},
+  {"from": "ResourceHeader/Contact","to": "SPASE","value": 1},
+  {"from": "contactPoint - schema:Thing","to": "Responsible party (role: "point of contact")","value": 1},
+  {"from": "Responsible party (role: "point of contact")","to": "ISO-19915:2003","value": 1}
+]
