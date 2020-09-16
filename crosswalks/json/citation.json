@@ -11,4 +11,12 @@
   {"from": "dcterms:isReferencedBy","to": "DC","value": 1},
   {"from": "citation - schema:CreativeWork","to": "citation(R)","value": 1},
   {"from": "citation(R)","to": "BioSchema","value": 1}
+  {"from": "citation - schema:CreativeWork","to": "dcterms:bibliographicCitation","value": 1},
+  {"from": "dcterms:bibliographicCitation","to": "DCAT","value": 1}
+  {"from": "citation - schema:CreativeWork","to": "citation/isBasedOn","value": 1},
+  {"from": "citation/isBasedOn","to": "DATACITE","value": 1}
+  {"from": "citation - schema:CreativeWork","to": "citation","value": 1},
+  {"from": "citation","to": "CODEMETA","value": 1}
+  {"from": "citation - schema:CreativeWork","to": "ResourceHeader/PublicationInfo","value": 1},
+  {"from": "ResourceHeader/PublicationInfo","to": "SPASE","value": 1}
 ]
