@@ -1,1 +1,4 @@
-
+[
+  {"from": "expectedArriveFromexpectedArriveUntil - schema:ParcelDelivery","to": "codemeta:SoftwareSourceCode:embargoDate","value": 1},
+  {"from": "codemeta:SoftwareSourceCode:embargoDate","to": "CODEMETA","value": 1}
+]
