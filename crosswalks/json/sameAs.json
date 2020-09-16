@@ -12,7 +12,7 @@
   {"from": "sameAs - schema:Thing","to": "relation","value": 1},
   {"from": "relation","to": "DC","value": 1},
   {"from": "sameAs - schema:Thing","to": "owl:sameAs skos:exactMatch","value": 1},
-  {"from": "owl:sameAs skos:exactMatch","value","to": "DCAT","value": 1},
+  {"from": "owl:sameAs skos:exactMatch","to": "DCAT","value": 1},
   {"from": "sameAs - schema:Thing","to": "sameAs","value": 1},
   {"from": "sameAs","to": "CODEMETA","value": 1},
   {"from": "sameAs - schema:Thing","to": "ResourceHeader/InformationURL/URL","value": 1},
