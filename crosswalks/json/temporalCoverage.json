@@ -16,7 +16,7 @@
   {"from": "temporalCoverage - schema:CreativeWork","to": "Temporal Coverage(O)","value": 1},
   {"from": "Temporal Coverage(O)","to": "B2FIND","value": 1},
   {"from": "temporalCoverage - schema:CreativeWork","to": "timePrd","value": 1},
-  {"from": "timePrd","to": "DDI","value": 1}
+  {"from": "timePrd","to": "DDI","value": 1},
   {"from": "temporalCoverage - schema:CreativeWork","to": "TemporalDescription/TimeSpan","value": 1},
   {"from": "TemporalDescription/TimeSpan","to": "SPASE","value": 1}
 ]
