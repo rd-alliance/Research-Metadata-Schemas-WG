@@ -448,9 +448,9 @@ chart.dataFields.value = "value";
 chart.paddingRight = 90;
 }
 
-$.getJSON("https://rd-alliance.github.io/Research-Metadata-Schemas-WG/crosswalks/json/distributioncontenturl.json", distributioncontenturl);
-function distributioncontenturl(data){
-var chart=am4core.create("distributioncontenturl", am4charts.SankeyDiagram)
+$.getJSON("https://rd-alliance.github.io/Research-Metadata-Schemas-WG/crosswalks/json/distributionContentUrl.json", distributionContentUrl);
+function distributionContentUrl(data){
+var chart=am4core.create("distributionContentUrl", am4charts.SankeyDiagram)
 chart.data = data;
 chart.dataFields.fromName = "from";
 chart.dataFields.toName = "to";
