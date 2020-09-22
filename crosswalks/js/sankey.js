@@ -8,6 +8,16 @@ chart.dataFields.value = "value";
 chart.paddingRight = 90;
 }
 
+$.getJSON("https://rd-alliance.github.io/Research-Metadata-Schemas-WG/crosswalks/json/altname.json", altname);
+function altname(data){
+var chart=am4core.create("altname", am4charts.SankeyDiagram)
+chart.data = data;
+chart.dataFields.fromName = "from";
+chart.dataFields.toName = "to";
+chart.dataFields.value = "value";
+chart.paddingRight = 90;
+}
+
 $.getJSON("https://rd-alliance.github.io/Research-Metadata-Schemas-WG/crosswalks/json/id.json", id);
 function id(data){
 var chart=am4core.create("id", am4charts.SankeyDiagram)
