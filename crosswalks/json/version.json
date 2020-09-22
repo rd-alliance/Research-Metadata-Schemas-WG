@@ -9,7 +9,7 @@
   {"from": "version(R)","to": "DATS","value": 1},
   {"from": "version(R)","to": "BioSchema","value": 1},
   {"from": "version - schema:CreativeWork","to": "Version(O)","value": 1},
-  {"from": "version(O)","to": "DATACITE","value": 1},
+  {"from": "Version(O)","to": "DATACITE","value": 1},
   {"from": "version - schema:CreativeWork","to": "Version","value": 1},
   {"from": "Version","to": "Dataverse","value": 1},
   {"from": "version - schema:CreativeWork","to": "versionInfo","value": 1},
