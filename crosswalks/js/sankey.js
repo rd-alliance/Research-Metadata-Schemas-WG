@@ -148,7 +148,7 @@ chart.dataFields.value = "value";
 chart.paddingRight = 90;
 }
 
-$.getJSON("https://rd-alliance.github.io/Research-Metadata-Schemas-WG/crosswalks/json/id.json", datePublished);
+$.getJSON("https://rd-alliance.github.io/Research-Metadata-Schemas-WG/crosswalks/json/datePublished.json", datePublished);
 function datePublished(data){
 var chart=am4core.create("datePublished", am4charts.SankeyDiagram)
 chart.data = data;
