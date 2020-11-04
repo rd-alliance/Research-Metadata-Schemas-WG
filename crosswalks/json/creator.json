@@ -4,7 +4,7 @@
     {"from": "creator(M)","to": "DATS","value": 1},
     {"from": "creator - schema:CreativeWork","to": "creator","value": 2},
     {"from": "creator","to": "DCAT","value": 1},
-    {"from": "creator(M)","to": "DC","value": 1},
+    {"from": "creator","to": "DC","value": 1},
     {"from": "creator - schema:CreativeWork","to": "Author; authorName (M)","value": 1},
     {"from": "Author; authorName (M)","to": "Dataverse","value": 1},
     {"from": "creator - schema:CreativeWork","to": "Creator(M)","value": 1},
