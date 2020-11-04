@@ -170,20 +170,19 @@
             <td>citation(O)</td>
             <td>keywords(R)</td>
             <td>license(R)</td>
+            <td>creator(M)</td>
             <td>includes(Dataset)(R)</td>
-            <td></td>
+            <td>version(O)</td>
             <td>temporalCoverage(O)</td>
             <td>spatialCoverage(O)</td>
-            <td></td>
+            <td>datePublished(O)</td>
             <td>dateCreated(M)</td>
-            <td>datePublish</td>
             <td>dateModified(M)</td>
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>format (R)</td>
+            <td>format (R)</td>
             <td></td>
             <td></td>
             <td></td>
@@ -223,9 +222,8 @@
             <td>version</td>
             <td>TemporalCoverage</td>
             <td>SpatialCoverage</td>
-            <td>publisher</td>
-            <td>dateCreated</td>
             <td>datePublished</td>
+            <td>dateCreated</td>
             <td>dateModified</td>
             <td>copyrightHolder</td>
             <td>mentions</td>
@@ -262,7 +260,6 @@
             <td>schema:Dataset</td>
             <td>schema:DataDownload</td>
             <td>schema:DataDownload</td>
-            <td>schema:CreativeWork</td>
             <td>schema:CreativeWork</td>
             <td>schema:CreativeWork</td>
             <td>schema:CreativeWork</td>
@@ -2252,7 +2249,7 @@
                     <th>Standard</th>
                     <th>Term</th>
                     <th>Schema.org crosswalk</th>
-                    <th> Parent Schema</th>
+                    <th>Parent Schema</th>
                 </tr>
             </thead>
             <tbody>
@@ -2260,7 +2257,7 @@
                     <td>EOSC/EDMI</td>
                     <td>description(M)</td>
                     <td>description</td>
-                    <td></td>
+                    <td>schema:Thing</td>
                 </tr>
                 <tr>
                     <td>EOSC/EDMI</td>
@@ -2272,79 +2269,85 @@
                     <td>EOSC/EDMI</td>
                     <td>name(M)</td>
                     <td>name</td>
-                    <td></td>
+                    <td>schema:Thing</td>
                 </tr>
                 <tr>
                     <td>EOSC/EDMI</td>
                     <td>sameAs(O)</td>
                     <td>sameAs</td>
-                    <td></td>
+                    <td>schema:Thing</td>
                 </tr>
                 <tr>
                     <td>EOSC/EDMI</td>
                     <td>measurementTechniques(R)*</td>
                     <td>measurementTechnique</td>
-                    <td></td>
+                    <td>schema:Dataset/ schema:data catalogue/ schema:Data Download</td>
                 </tr>
                 <tr>
                     <td>EOSC/EDMI</td>
                     <td>variableMeasured(R)*</td>
                     <td>variableMeasured</td>
-                    <td></td>
+                    <td>schema:Dataset</td>
                 </tr>
                 <tr>
                     <td>EOSC/EDMI</td>
                     <td>includedInDataCatalog(R)</td>
                     <td>includedInDataCatalog</td>
-                    <td></td>
+                    <td>schema:Dataset</td>
                 </tr>
                 <tr>
                     <td>EOSC/EDMI</td>
                     <td>distribution</td>
                     <td>distribution</td>
-                    <td></td>
+                    <td>schema:Dataset</td>
                 </tr>
                 <tr>
                     <td>EOSC/EDMI</td>
                     <td>keywords(R)</td>
                     <td>keywords</td>
-                    <td></td>
+                    <td>schema:CreativeWork</td>
                 </tr>
                 <tr>
                     <td>EOSC/EDMI</td>
                     <td>license(R)</td>
                     <td>license</td>
-                    <td></td>
+                    <td>schema:CreativeWork</td>
                 </tr>
                 <tr>
                     <td>EOSC/EDMI</td>
                     <td>creator(M)</td>
                     <td>creator</td>
-                    <td></td>
+                    <td>schema:CreativeWork</td>
                 </tr>
                 <tr>
                     <td>EOSC/EDMI</td>
                     <td>includes(Dataset)(R)</td>
                     <td>hasPart</td>
-                    <td></td>
+                    <td>schema:CreativeWork</td>
                 </tr>
                 <tr>
                     <td>EOSC/EDMI</td>
                     <td>temporalCoverage(O)</td>
                     <td>temporalCoverage</td>
-                    <td></td>
+                    <td>schema:CreativeWork</td>
                 </tr>
                 <tr>
                     <td>EOSC/EDMI</td>
                     <td>spatialCoverage(O)</td>
                     <td>spatialCoverage</td>
-                    <td></td>
+                    <td>schema:CreativeWork</td>
+                </tr>
+                <tr>
+                    <td>EOSC/EDMI</td>
+                    <td>version(O)</td>
+                    <td>version</td>
+                    <td>schema:CreativeWork</td>
                 </tr>
                 <tr>
                     <td>EOSC/EDMI</td>
                     <td>dateCreated(M)</td>
                     <td>dateCreated</td>
-                    <td></td>
+                    <td>schema:CreativeWork</td>
                 </tr>
                 <tr>
                     <td>EOSC/EDMI</td>
