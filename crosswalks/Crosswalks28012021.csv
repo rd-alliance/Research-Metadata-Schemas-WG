@@ -1,0 +1,33 @@
+"The tab ""crosswalks"" collates available mappings (either from the survey or from recommendation) to schema.org.
+
+How are properties from schema.org chosen (V0.2):
+Row3-42 (except row 6): Properties of the types ""CreativeWork"" and ""Thing"" are from CodeMeta (https://github.com/codemeta/codemeta/blob/master/crosswalk.csv). 
+Properties of the type ""dataset"" are from dcat (Figure 6, https://www.w3.org/TR/vocab-dcat-2/#dcat-sdo). 
+Properties 43-45 are from Google dataset seach guide (https://developers.google.com/search/docs/data-types/dataset), these three properties are not covered by CodeMeta (this is added on 13 Feb. 2020, after Penny collated the crosswalks)
+Properties from the row 46 and onward are added when properties from source schemes can't be found from the row 3-42. 
+
+Rows in green color are covered by the Google dataset search guide - they are 20 in total.  The three rows in dark green are ""Required"",  the other rows in light green are ""Recommended"". 
+
+2020-09-04 (changes made by Mingfang Wu to the tab: crosswalks)
+* Readjust the schema.org columns (B-E), the version before this date is named: V0.2 - before-alighment 20200903. The Keep proprties from the v0.2 are largely from the CodeMeta Properties.
+* After the adjustment, keep the 20 properties from google, added properties from DCAT & DCAT-AP (dataset, datacatalogy and distribution) - the properties that can be mapped to schema.org are in orange color, the properties can't find proper mapping to shema.org are in color, and properties not in DCAT/DCAT-AP but used by other schemas are in color grey. 
+* Add the SPACE column. SPACE data model is available at: https://spase-group.org/data/model/index.html Baptiste Cecconi (LESIA, Observatoire de Paris, CNRS, PSL Research University) contributed the mapping here.
+
+
+
+
+
+",,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+"Versioning history (If you add a mapping/crosswalk to the crosswalks tab, please note your mapping below):",,,
+Name of the mapping (i.e. source schema),Your name,Your organisation,Contact email (optional)
+SPACE,Baptiste,Cecconi,
