@@ -1258,54 +1258,49 @@
           <tr>
             <td>RIF-CS</td>
             <td>collection/description[@type='brief'] OR collection/description[@type='full']</td>
+            <td>registryObject:collection:name</td>
+            <td>location/address/electronic @type="url" @ target="directDownload"</td>
             <td>collection/citationInfo/citationMetadata/identifier AND/OR collection/identifier</td>
-            <td>registryObject:collection:name (Title as displayed in RDA)</td>
             <td></td>
-            <td>No mapping</td>
-            <td>RDA key=URL of record. "https://researchdata.ands.org.au/view?key=(insert key)"</td>
             <td></td>
-            <td>collection/citationInfo/citationMetadata/contributor OR relatedObject|relatedInfo party/name where relation=IsPrincipalInvestigatorOf OR relatedObject|relatedInfo party/name where relation=author OR relatedObject|relatedInfo party/name where relation=coInvestigator  OR relatedObject|relatedInfo party/name where relation=hasCollector</td>
-            <td>collection/relatedInfo[@type='publication'] OR relatedObject:collection where related collection[@type='publication']</td>
-            <td>No mapping</td>
-            <td>No mapping</td>
-            <td>No mapping</td>
-            <td>collection/citationInfo/citationMetadata/contributor OR relatedObject|relatedInfo party/name where relation=IsPrincipalInvestigatorOf OR relatedObject|relatedInfo party/name where relation=coInvestigator OR relatedObject|relatedInfo party/name where relation=hasCollector</td>
-            <td>collection/citationInfo/citationMetadata/date[@type='created'] OR collection/dates[@type='created']</td>
-            <td></td>
-            <td>collection/citationInfo/citationMetadata.date[@type='publicationDate'] OR collection/citationInfo/citationMetadata/date[@type='issued'] OR collection/dates[@type='dc.issued'] OR collection/dates[@type='dc.available'] OR Collection[@dateAccessioned] OR date the record was ingested into RDA</td>
-            <td>No mapping</td>
-            <td>No mapping</td>
-            <td>collection/address/electronic[@target='directDownload']/mediaType</td>
-            <td>relatedObject|relatedInfo party/name where relation=isFundedBy</td>
+            <td>"RDA key= URL of record.""https://researchdata.ands.org.au/view?key=<insert key>"""</td>
+            <td>"collection/relatedInfo[@type='publication'] OR relatedObject:collection where related collection [@type='publication']"</td>
             <td>collection/subject</td>
-            <td>collection/rights/licence[@rightsURL] AND/OR collection/rights/licence[@type] AND collcetion/rights/licence</td>
-            <td>No mapping</td>
-            <td>No mapping</td>
+            <td>"collection/rights/licence[@rightsURI] AND/OR collection/rights/licence[@type] AND collection/rights/licence"</td>
+            <td>"collection/citationInfo/citationMetadata/contributor OR relatedObject|relatedInfo party/name where relation=IsPrincipalInvestigatorOf OR relatedObject|relatedInfo party/name where relation=author OR relatedObject|relatedInfo party/name where relation=coInvestigator OR relatedObject|relatedInfo party/name where relation=hasCollector"</td>
+            <td>relatedObject|relatedInfo collection where relation[@type='isPartOf']</td>
+            <td>relatedObject|relatedInfo collection where relation[@type='hasPart']</td>
+            <td>registryObject:collection:citationInfo:citationMetadata:version</td>
+            <td>collection/coverage/temporal</td>
+            <td>collection/coverage/spatial</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>location/address/electronic @type="url" @ target="directDownload"</td>
+            <td></td>
+            <td>relatedObject|relatedInfo party/name where relation=isFundedBy</td>
             <td>registryObject:collection:citationInfo:citationMetadata:publisher OR registryObject@Group</td>
             <td></td>
-            <td>registryObject:collection:citationInfo:citationMetadata:version</td>
-            <td>No mapping</td>
-            <td>relatedObject|relatedInfo collection where relation[@type='isPartOf']</td>
-            <td>relatedObject|relatedInfo collection where relation[@tyoe='hasPart]</td>
-            <td>No mapping</td>
-            <td>collection/coverage/spatial</td>
-            <td>collection/coverage/temporal</td>
-            <td>location/address/electronic @type="url" @ target="directDownload"</td>
-            <td>No mapping</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>registryObject@Group</td>
+            <td>collection/subject</td>
             <td>(default to English) "en"</td>
+            <td>"collection/citationInfo/citationMetadata/date[@type= 'created'] OR collection/dates[@type='created']"</td>
+            <td>"collection/citationInfo/citationMetadata/date[@type='publicationDate'] OR collection/citationInfo/citationMetadata/date[@type='issued'] OR collection/dates[@type='dc.issued'] OR collection/dates[@type='dc.available'] OR date the record was ingested into RDA" </td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
+            <td>collection/address/electronic[@target='directDownload']/mediaType</td>
             <td></td>
             <td></td>
+            <td></td>
+            <td>relatedObject|relatedInfo party/name where relation=isFundedBy</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>collection/rights</td>
             <td></td>
             <td></td>
             <td></td>
@@ -1422,55 +1417,50 @@
           <tr>
             <td>DC</td>
             <td>Description - dcterms:description</td>
-            <td>Identifier - dcterms:identifier</td>
             <td>Title - dcterms:title</td>
             <td></td>
-            <td>relation</td>
+            <td></td>
+            <td>dcterms:alternative</td>
+            <td></td>
             <td>dc:identifier (if URL)</td>
-            <td></td>
-            <td>Creator</td>
-            <td>dcterms:isReferencedBy</td>
-            <td>Contributor</td>
-            <td></td>
-            <td></td>
-            <td>Creator</td>
-            <td></td>
-            <td>dcterms:modified</td>
-            <td>dcterms:issued</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>dcterms:contributor</td>
+            <td>"dcterms:isReferencedBy/dc:relation"</td>
             <td>Subject - dcterms:subject</td>
-            <td>Rights</td>
+            <td>rights</td>
+            <td>Creator</td>
+            <td>dcterms:isPartOf</td>
+            <td>dcterms:hasPart</td>
             <td></td>
-            <td></td>
-            <td>Publisher - dcterms:publisher</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>dcterms:coverage (spatial)</td>
             <td>dcterms:temporal (start); dcterms:temporal (end)</td>
+            <td>dcterms:coverage (spatial)</td>
             <td></td>
             <td></td>
+            <td>dcterms:isPartOf</td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>dcterms:format</td>
+            <td>dcterms:contributor</td>
+            <td>Publisher - dcterms:publisher</td>
+            <td>dcterms:mediator</td>
             <td></td>
             <td>Language - dcterms:language</td>
-            <td>dcterms:contributor (Distributor)</td>
+            <td>dcterms:created</td>
+            <td>dcterms:dateAccepted</td>
+            <td>dcterms:modified</td>
+            <td>dcterms:rightsHolder</td>
+            <td>dcterms:relation</td>
+            <td>dc:source</td>
+            <td>dct:relation</td>
+            <td>dct:format (R) dct:mediaType(O)</td>
             <td></td>
-            <td>dcterms:type</td>
-            <td>dcterms:source</td>
-            <td>Date - dcterms:date</td>
+            <td>collSize</td>
+            <td>dcterms:accrualPeriodicity</td>
+            <td>dcterms:contributor</td>
             <td>Contributor - dcterms:contributor (Depositor)</td>
-            <td>dcterms:dateSubmitted</td>
+            <td>dcterms:contributor</td>
             <td></td>
+            <td>dcterms:dateCopyrighted</td>
+            <td></td>
+            <td>rights</td>
+            <td>dct:accessRights</td>
             <td></td>
             <td></td>
             <td></td>
