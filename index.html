@@ -3617,19 +3617,25 @@
                 </tr>
                 <tr>
                     <td>Datacite</td>
-                    <td>Identifier(M)</td>
-                    <td>identifier</td>
-                    <td>schema:Thing</td>
-                </tr>
-                <tr>
-                    <td>Datacite</td>
                     <td>Title(M)</td>
                     <td>name</td>
                     <td>schema:Thing</td>
                 </tr>
+                    <tr>
+                    <td>Datacite</td>
+                    <td>Identifier(M)</td>
+                    <td>identifier</td>
+                    <td>schema:Thing</td>
+                </tr>
+                    <tr>
+                    <td>Datacite</td>
+                    <td>titleType</td>
+                    <td>alternateName</td>
+                    <td>schema:Thing</td>
+                </tr>
                 <tr>
                     <td>Datacite</td>
-                    <td>RelatedIdentifier</td>
+                    <td>RelatedIdentifier/ AlternateIdentifier(O)*</td>
                     <td>sameAs</td>
                     <td>schema:Thing</td>
                 </tr>
@@ -3641,43 +3647,13 @@
                 </tr>
                 <tr>
                     <td>Datacite</td>
-                    <td>language(O)</td>
-                    <td>inlanguage</td>
-                    <td>schema:Thing</td>
-                </tr>
-                <tr>
-                    <td>Datacite</td>
-                    <td>Size(O)</td>
-                    <td>contentSize</td>
-                    <td>schema:Media Object</td>
-                </tr>
-                <tr>
-                    <td>Datacite</td>
-                    <td>publisher</td>
-                    <td>includedInDataCatalogue</td>
-                    <td>schema:Dataset</td>
-                </tr>
-                <tr>
-                    <td>Datacite</td>
-                    <td>Distribution</td>
-                    <td>distribution</td>
-                    <td>schema:Dataset</td>
-                </tr>
-                <tr>
-                    <td>Datacite</td>
-                    <td>Subject</td>
-                    <td>about</td>
-                    <td>schema:CreativeWork</td>
-                </tr>
-                <tr>
-                    <td>Datacite</td>
-                    <td>ciation/isBasedOn</td>
+                    <td>isReferencedBy/isDocumentedBy</td>
                     <td>citation</td>
                     <td>schema:CreativeWork</td>
                 </tr>
                 <tr>
                     <td>Datacite</td>
-                    <td>Subject(R)</td>
+                    <td>Subject(R)*</td>
                     <td>keywords</td>
                     <td>schema:CreativeWork</td>
                 </tr>
@@ -3689,8 +3665,26 @@
                 </tr>
                 <tr>
                     <td>Datacite</td>
-                    <td>creator(M)</td>
+                    <td>Creator(M)</td>
                     <td>creator</td>
+                    <td>schema:CreativeWork</td>
+                </tr>
+                <tr>
+                    <td>Datacite</td>
+                    <td>isPartOf</td>
+                    <td>isPartOf</td>
+                    <td>schema:CreativeWork</td>
+                </tr>
+                <tr>
+                    <td>Datacite</td>
+                    <td>hasPart</td>
+                    <td>hasPart</td>
+                    <td>schema:CreativeWork</td>
+                </tr>
+                <tr>
+                    <td>Datacite</td>
+                    <td>Version(O)</td>
+                    <td>version</td>
                     <td>schema:CreativeWork</td>
                 </tr>
                 <tr>
@@ -3701,50 +3695,26 @@
                 </tr>
                 <tr>
                     <td>Datacite</td>
-                    <td>Version(R)</td>
-                    <td>version</td>
-                    <td>schema:CreativeWork</td>
-                </tr>
-                <tr>
-                    <td>Datacite</td>
-                    <td>GeoLocation</td>
+                    <td>GeoLocation(R)</td>
                     <td>spatialCoverage</td>
                     <td>schema:CreativeWork</td>
                 </tr>
                 <tr>
                     <td>Datacite</td>
-                    <td>Publisher(M)</td>
                     <td>publisher</td>
-                    <td></td>
+                    <td>includedInDataCatalog</td>
+                    <td>schema:Dataset</td>
                 </tr>
                 <tr>
                     <td>Datacite</td>
-                    <td>date (R)/Created</td>
-                    <td>dateCreated</td>
-                    <td>schema:CreativeWork</td>
+                    <td>distribution</td>
+                    <td>distribution</td>
+                    <td>schema:Dataset</td>
                 </tr>
                 <tr>
                     <td>Datacite</td>
-                    <td>publicationYear(M)</td>
-                    <td>datePublished</td>
-                    <td>schema:CreativeWork</td>
-                </tr>
-                <tr>
-                    <td>Datacite</td>
-                    <td>Language</td>
-                    <td>inLanguage</td>
-                    <td>schema:CreativeWork</td>
-                </tr>
-                <tr>
-                    <td>Datacite</td>
-                    <td>Date(R)/Updated*</td>
-                    <td>dateModified</td>
-                    <td>schema:CreativeWork</td>
-                </tr>
-                <tr>
-                    <td>Datacite</td>
-                    <td>Format (O)*</td>
-                    <td>encodingFormat</td>
+                    <td>format</td>
+                    <td>distribution.encodingFormat</td>
                     <td>schema:CreativeWork</td>
                 </tr>
                 <tr>
@@ -3755,27 +3725,99 @@
                 </tr>
                 <tr>
                     <td>Datacite</td>
-                    <td>Format (O)*</td>
-                    <td>fileFormat (superseded by encordingFormat)</td>
+                    <td>Publisher(M)</td>
+                    <td>publisher</td>
                     <td>schema:CreativeWork</td>
                 </tr>
                 <tr>
                     <td>Datacite</td>
-                    <td>Contributor(R)</td>
-                    <td>contributor</td>
+                    <td>Subject*</td>
+                    <td>about or subjectOf</td>
+                    <td>schema:CreativeWork/schema:Thing</td>
+                </tr>
+                <tr>
+                    <td>Datacite</td>
+                    <td>Language</td>
+                    <td>inLanguage</td>
                     <td>schema:CreativeWork</td>
                 </tr>
                 <tr>
+                    <td>Datacite</td>
+                    <td>Date(R)/Created</td>
+                    <td>dateCreated</td>
+                    <td>schema:CreativeWork</td>
+                </tr>
+                <tr>
+                    <td>Datacite</td>
+                    <td>PublicationYear(M)</td>
+                    <td>datePublished</td>
+                    <td>schema:CreativeWork</td>
+                </tr>
+                <tr>
+                    <td>Datacite</td>
+                    <td>Date(R)/Updated*</td>
+                    <td>dateModified</td>
+                    <td>schema:CreativeWork</td>
+                </tr>
+                <tr>
+                    <td>Datacite</td>
+                    <td>isContinuedBy/isCompiledBy/isOriginalFromOf/isSourceOf/isDerivedFrom</td>
+                    <td>isBasedOn</td>
+                    <td>schema:CreativeWork</td>
+                </tr>
+                <tr>
+                    <td>Datacite</td>
+                    <td>Format(O)*</td>
+                    <td>encodingFormat</td>
+                    <td>schema:CreativeWork</td>
+                </tr>
+                <tr>
+                    <td>Datacite</td>
+                    <td>Size(O)*</td>
+                    <td>contentSize</td>
+                    <td>schema:MediaObject</td>
+                </tr>
+                <tr>
+                    <td>Datacite</td>
+                    <td>contributor with ContributorType/Sponsor(O)*</td>
+                    <td>funder</td>
+                    <td>schema:CreativeWork</td>
+                </tr>
+              <tr>
+                    <td>Datacite</td>
+                    <td>contributor(R)</td>
+                    <td>contributor</td>
+                    <td>schema:CreativeWork</td>
+                </tr>
+              <tr>
                     <td>Datacite</td>
                     <td>contributor with contributortype="Producer"</td>
                     <td>producer</td>
                     <td>schema:CreativeWork</td>
                 </tr>
-                <tr>
+              <tr>
                     <td>Datacite</td>
-                    <td>Rights(O))*</td>
-                    <td></td>
+                    <td>Copyrighted</td>
+                    <td>copyrightYear</td>
                     <td>schema:CreativeWork</td>
+                </tr>
+              <tr>
+                    <td>Datacite</td>
+                    <td>Rights(O)*</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+              <tr>
+                    <td>Datacite</td>
+                    <td>hasVersion</td>
+                    <td></td>
+                    <td>k</td>
+                </tr>
+              <tr>
+                    <td>Datacite</td>
+                    <td>isVersionOf</td>
+                    <td></td>
+                    <td>k</td>
                 </tr>
                 <tr>
                     <td>RIF-CS</td>
