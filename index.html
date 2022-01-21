@@ -3976,20 +3976,14 @@
                 </tr>
                 <tr>
                     <td>DC</td>
-                    <td>Identifer - dcterms:identifier</td>
-                    <td>identifier</td>
+                    <td>dcterms:altrenative</td>
+                    <td>alternatename</td>
                     <td>schema:Thing</td>
                 </tr>
                 <tr>
                     <td>DC</td>
                     <td>Title - dcterms:title</td>
                     <td>name</td>
-                    <td>schema:Thing</td>
-                </tr>
-                <tr>
-                    <td>DC</td>
-                    <td>relation</td>
-                    <td>sameAs</td>
                     <td>schema:Thing</td>
                 </tr>
                 <tr>
@@ -4006,7 +4000,7 @@
                 </tr>
                 <tr>
                     <td>DC</td>
-                    <td>dcters:isReferencedBy</td>
+                    <td>dcterms:isReferencedBy/dc:relation</td>
                     <td>citation</td>
                     <td>schema:CreativeWork</td>
                 </tr>
@@ -4028,6 +4022,18 @@
                     <td>creator</td>
                     <td>schema:CreativeWork</td>
                 </tr>
+              <tr>
+                    <td>DC</td>
+                    <td>dcterms:isPartOf</td>
+                    <td>isPartOf</td>
+                    <td>schema:CreativeWork</td>
+                </tr>
+              <tr>
+                    <td>DC</td>
+                    <td>dcterms:hasPart</td>
+                    <td>hasPart</td>
+                    <td>schema:CreativeWork</td>
+                </tr>
                 <tr>
                     <td>DC</td>
                     <td>dcterms:temporal (start); dcterms:temporal (end)</td>
@@ -4042,33 +4048,135 @@
                 </tr>
                 <tr>
                     <td>DC</td>
-                    <td>Publisher - dcterms:publisher</td>
+                    <td>dcterms:isPartOf</td>
+                    <td>distribution</td>
+                    <td>schema:Dataset</td>
+                </tr>
+                <tr>
+                    <td>DC</td>
+                    <td>dcterms:format</td>
+                    <td>distribution.encodingFormat</td>
+                    <td>schema:DataDownload</td>
+                </tr>
+                <tr>
+                    <td>DC</td>
+                    <td>dcterms:contributor</td>
+                    <td>funder</td>
+                    <td>schema:CreativeWork</td>
+                </tr>
+                <tr>
+                    <td>DC</td>
+                    <td>publisher - dcterms:publisherr</td>
                     <td>publisher</td>
                     <td>schema:CreativeWork</td>
                 </tr>
                 <tr>
                     <td>DC</td>
-                    <td>dcterms:issued</td>
+                    <td>dcterms:mediator</td>
+                    <td>contactPoint</td>
+                    <td>schema:Thing</td>
+                </tr>
+              <tr>
+                    <td>DC</td>
+                    <td>Language -dcterms:language</td>
+                    <td>inLanguage</td>
+                    <td>schema:Thing</td>
+                </tr>
+              <tr>
+                    <td>DC</td>
+                    <td>dcerms:created</td>
+                    <td>dateCreated</td>
+                    <td>schema:CreativeWork</td>
+                </tr>
+              <tr>
+                    <td>DC</td>
+                    <td>dcterms:dateAccepted</td>
                     <td>datePublished</td>
                     <td>schema:CreativeWork</td>
                 </tr>
-                <tr>
+              <tr>
                     <td>DC</td>
                     <td>dcterms:modified</td>
-                    <td>dateModified</td>
+                    <td>datModified</td>
                     <td>schema:CreativeWork</td>
                 </tr>
-                <tr>
+              <tr>
+                    <td>DC</td>
+                    <td>dcterms:rightsHolder</td>
+                    <td>copyrightHolder</td>
+                    <td>schema:CreativeWork</td>
+                </tr>
+              <tr>
+                    <td>DC</td>
+                    <td>dcterms:relation</td>
+                    <td>mentions</td>
+                    <td>schema:CreativeWork</td>
+                </tr>
+              <tr>
+                    <td>DC</td>
+                    <td>dc:source</td>
+                    <td>isBasedOn</td>
+                    <td>schema:CreativeWork</td>
+                </tr>
+              <tr>
+                    <td>DC</td>
+                    <td>dct:relation</td>
+                    <td>isRelatedTo</td>
+                    <td>schema:Thing</td>
+                </tr>
+              <tr>
+                    <td>DC</td>
+                    <td>dct:format(R)/dct:mediaType(O)</td>
+                    <td>encodingFormat</td>
+                    <td>schema:CreativeWork</td>
+                </tr>
+              <tr>
+                    <td>DC</td>
+                    <td>collSize</td>
+                    <td>contentSize</td>
+                    <td>schema:MediaObject</td>
+                </tr>
+              <tr>
+                    <td>DC</td>
+                    <td>dcterms:accrualPeriodicity</td>
+                    <td>repeatFrequency</td>
+                    <td>schema:Thing:Schedule</td>
+                </tr>
+              <tr>
                     <td>DC</td>
                     <td>dcterms:contributor</td>
-                    <td>fundere</td>
+                    <td>funder</td>
                     <td>schema:CreativeWork</td>
                 </tr>
-                <tr>
+              <tr>
                     <td>DC</td>
                     <td>Contributor - dcterms:contributor (Depositor)</td>
                     <td>contributor</td>
                     <td>schema:CreativeWork</td>
+                </tr>
+              <tr>
+                    <td>DC</td>
+                    <td>dcterms:contributor</td>
+                    <td>producer</td>
+                    <td>schema:Thing</td>
+                </tr>
+              <tr>
+                    <td>DC</td>
+                    <td>dcterms:dateCopyrighted</td>
+                    <td>copyrightYear</td>
+                    <td>schema:CreativeWork</td>
+                </tr>
+              <tr>
+                    <td>DC</td>
+                    <td>rights</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+              <tr>
+                    <td>DC</td>
+                    <td>dct:accessRights</td>
+                    <td>"in proposing: https://github.com/schemaorg/schemaorg/issues/2173"</td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td>BioSchema</td>
