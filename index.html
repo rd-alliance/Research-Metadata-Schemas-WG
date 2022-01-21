@@ -3335,117 +3335,279 @@
                 </tr>
                 <tr>
                     <td>DCATv3</td>
-                    <td></td>
-                    <td></td>
-                    <td>schema:</td>
+                    <td>dcterms:description</td>
+                    <td>description(R)</td>
+                    <td>schema:Thing</td>
                 </tr>
                 <tr>
                     <td>DCATv3</td>
-                    <td></td>
-                    <td></td>
-                    <td>schema:</td>
+                    <td>dcterms:title</td>
+                    <td>name(R)</td>
+                    <td>schema:Thing</td>
                 </tr>
                 <tr>
                     <td>DCATv3</td>
-                    <td></td>
-                    <td></td>
-                    <td>schema:</td>
+                    <td>dcat:downloadURL</td>
+                    <td>distribution.contentUrl</td>
+                    <td>schema:DataDownload</td>
                 </tr>
                 <tr>
                     <td>DATSv3</td>
-                    <td></td>
-                    <td></td>
-                    <td>schema:</td>
+                    <td>dcterms:identifier</td>
+                    <td>identifier</td>
+                    <td>schema:Thing</td>
                 </tr>
                 <tr>
                     <td>DATSv3</td>
-                    <td></td>
-                    <td></td>
-                    <td>schema:</td>
+                    <td>rdfs:label/skos:altLabel</td>
+                    <td>alternateName</td>
+                    <td>schema:Thing</td>
                 </tr>
                 <tr>
                     <td>DATSv3</td>
-                    <td></td>
-                    <td></td>
-                    <td>schema:</td>
+                    <td>owl:sameAs/ skos:exactMatch</td>
+                    <td>sameAs</td>
+                    <td>schema:Thing</td>
                 </tr>
                 <tr>
                     <td>DATSv3</td>
-                    <td></td>
-                    <td></td>
-                    <td>schema:</td>
+                    <td>dcat:endPointURL</td>
+                    <td>url</td>
+                    <td>schema:Thing</td>
                 </tr>
                 <tr>
                     <td>DATSv3</td>
-                    <td></td>
-                    <td></td>
-                    <td>schema:</td>
+                    <td>dcterms:bibliographicCitation</td>
+                    <td>citation</td>
+                    <td>schema:CreativeWork</td>
                 </tr>
                 <tr>
                     <td>DATSv3</td>
-                    <td></td>
-                    <td></td>
-                    <td>schema:</td>
+                    <td>dcat:keywords</td>
+                    <td>keywords</td>
+                    <td>schema:CreativeWork</td>
                 </tr>
                 <tr>
                     <td>DATSv3</td>
-                    <td></td>
-                    <td></td>
-                    <td>schema:</td>
+                    <td>dct:license</td>
+                    <td>license</td>
+                    <td>schema:CreativeWork</td>
                 </tr>
                 <tr>
                     <td>DATSv3</td>
-                    <td></td>
-                    <td></td>
-                    <td>schema:</td>
+                    <td>dcterms:creator</td>
+                    <td>creator</td>
+                    <td>schema:CreativeWork</td>
                 </tr>
                 <tr>
                     <td>DATSv3</td>
-                    <td></td>
-                    <td></td>
-                    <td>schema:</td>
+                    <td>dcterms:isPartOf</td>
+                    <td>isPartOf</td>
+                    <td>schema:CreativeWork</td>
                 </tr>
                 <tr>
                     <td>DATSv3</td>
-                    <td></td>
-                    <td></td>
-                    <td>schema:</td>
+                    <td>dcterms:hasPart</td>
+                    <td>hasPart</td>
+                    <td>schema:CreativeWork</td>
                 </tr>
                 <tr>
                     <td>DATSv3</td>
-                    <td></td>
-                    <td></td>
-                    <td>schema:k</td>
+                    <td>owl:versionInfo</td>
+                    <td>version</td>
+                    <td>schema:CreativeWork</td>
                 </tr>
                 <tr>
                     <td>DATSv3</td>
-                    <td></td>
-                    <td></td>
-                    <td>schema:</td>
+                    <td>dcterms:temporal</td>
+                    <td>temporalCoverage</td>
+                    <td>schema:CreativeWork</td>
                 </tr>
                 <tr>
                     <td>DATSv3</td>
-                    <td></td>
-                    <td></td>
-                    <td>schema:</td>
+                    <td>dcterms:spatial</td>
+                    <td>spatialCoverage</td>
+                    <td>schema:CreaativeWork</td>
                 </tr>
                 <tr>
                     <td>DATSv3</td>
-                    <td></td>
-                    <td></td>
-                    <td>schema:</td>
+                    <td>sosa:usedProcedure</td>
+                    <td>measurementTechnique</td>
+                    <td>schema:Dataset/chema:DataCatalog</td>
                 </tr>
                 <tr>
                     <td>DATSv3</td>
-                    <td></td>
-                    <td></td>
-                    <td>schema:k</td>
+                    <td>sosa:observedProperty</td>
+                    <td>variableMeasured</td>
+                    <td>schema:Dataset</td>
                 </tr>
                 <tr>
                     <td>DATSv3</td>
+                    <td>dcterms:isPartOf</td>
+                    <td>includedInDataCatalog</td>
+                    <td>schema:Dataset</td>
+                </tr>
+              <tr>
+                    <td>DATSv3</td>
+                    <td>dcat:distribution</td>
+                    <td>distribution</td>
+                    <td>schema:Dataset</td>
+                </tr>
+              <tr>
+                    <td>DATSv3</td>
+                    <td>dcat:mediaType/dcterms:format</td>
+                    <td>distribution.encodingFormat</td>
+                    <td>schema:DataDownload</td>
+                </tr>
+              <tr>
+                    <td>DATSv3</td>
+                    <td>dcterms:contributor</td>
+                    <td>funder</td>
+                    <td>schema:CreativeWork</td>
+                </tr>
+              <tr>
+                    <td>DATSv3</td>
+                    <td>dcterms:publisher</td>
+                    <td>publisher</td>
+                    <td>schema:CreativeWork</td>
+                </tr>
+              <tr>
+                    <td>DATSv3</td>
+                    <td>dct:ContactPoint(R)</td>
+                    <td>contactPoint</td>
+                    <td>schema:Thing</td>
+                </tr>
+              <tr>
+                    <td>DATSv3</td>
+                    <td>dcat:theme(R)/ dcterms:subject(O)</td>
+                    <td>about or SubjectOf</td>
+                    <td>schema:CreativeWork/schema:Thing</td>
+                </tr>
+              <tr>
+                    <td>DATSv3</td>
+                    <td>dcterms:language</td>
+                    <td>inLanguage</td>
+                    <td>schema:Thing</td>
+                </tr>
+              <tr>
+                    <td>DATSv3</td>
+                    <td>dcterms:created(O)</td>
+                    <td>dateCreated</td>
+                    <td>schema:CreativeWork</td>
+                </tr>
+              <tr>
+                    <td>DATSv3</td>
+                    <td>dcterms:dateAccepted</td>
+                    <td>datePublished</td>
+                    <td>schema:CreativeWork</td>
+                </tr>
+              <tr>
+                    <td>DATSv3</td>
+                    <td>dcterms:modified</td>
+                    <td>dateModified</td>
+                    <td>schema:CreativeWork</td>
+                </tr>
+              <tr>
+                    <td>DATSv3</td>
+                    <td>dcterms:rightHolder</td>
+                    <td>copyrightHolder</td>
+                    <td>schema:CreativeWork</td>
+                </tr>
+              <tr>
+                    <td>DATSv3</td>
+                    <td>dct:relation</td>
+                    <td>mentions</td>
+                    <td>schema:CreativeWork</td>
+                </tr>
+              <tr>
+                    <td>DATSv3</td>
+                    <td>dct:relation</td>
+                    <td>mentions</td>
+                    <td>schema:Dataset</td>
+                </tr>
+              <tr>
+                    <td>DATSv3</td>
+                    <td>dct:source(O)</td>
+                    <td>isBasedOn</td>
+                    <td>schema:CreativeWork</td>
+                </tr>
+              <tr>
+                    <td>DATSv3</td>
+                    <td>dct:relation</td>
+                    <td>isRelatedTo</td>
+                    <td>schema:Thing</td>
+                </tr>
+              <tr>
+                    <td>DATSv3</td>
+                    <td>dct:format(R)/dct:mediaType(O)</td>
+                    <td>encodingFormat</td>
+                    <td>schema:CreativeWork</td>
+                </tr>
+              <tr>
+                    <td>DATSv3</td>
+                    <td>dcat:downloadURL</td>
+                    <td>contentURL</td>
+                    <td>schema:MediaObject</td>
+                </tr>
+              <tr>
+                    <td>DATSv3</td>
+                    <td>dct:byteSize</td>
+                    <td>contentSize</td>
+                    <td>schema:MediaObject</td>
+                </tr>
+              <tr>
+                    <td>DATSv3</td>
+                    <td>dcterms:accrualPeriodicity</td>
+                    <td>repeatFrequency</td>
+                    <td>schema:Thing:Schedule</td>
+                </tr>
+              <tr>
+                    <td>DATSv3</td>
+                    <td>dcterms:contributor</td>
+                    <td>funder</td>
+                    <td>schema:CreativeWork</td>
+                </tr>
+              <tr>
+                    <td>DATSv3</td>
+                    <td>dcterms:contributor</td>
+                    <td>contributor</td>
+                    <td>schema:CreativeWork</td>
+                </tr>
+              <tr>
+                    <td>DATSv3</td>
+                    <td>dcterms:contributor</td>
+                    <td>producer</td>
+                    <td>schema:CreativeWork</td>
+                </tr>
+              <tr>
+                    <td>DATSv3</td>
+                    <td>dcterms:dateCopyrighted</td>
+                    <td>copyrightYear</td>
+                    <td>schema:CreativeWork</td>
+                </tr>
+              <tr>
+                    <td>DATSv3</td>
+                    <td>dct:rights</td>
                     <td></td>
                     <td></td>
-                    <td>schema:</td>
+                </tr>
+              <tr>
+                    <td>DATSv3</td>
+                    <td>dct:accessRights</td>
+                    <td>in proposing: https://github.com/schemaorg/schemaorg/issues/2173</td>
+                    <td></td>
+                </tr>
+              <tr>
+                    <td>DATSv3</td>
+                    <td>dct:conformsTo</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+              <tr>
+                    <td>DATSv3</td>
+                    <td>prov:qualifiedAttribution</td>
+                    <td></td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td>Datacite</td>
