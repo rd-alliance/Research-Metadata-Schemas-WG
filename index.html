@@ -3821,14 +3821,14 @@
                 </tr>
                 <tr>
                     <td>RIF-CS</td>
-                    <td>collection/description[@type='brief'] OR collection/description[@type='full']</td>
+                    <td>"collection/description[@type='brief']/collection/description[@type='full']</td>
                     <td>description</td>
                     <td>schema:Thing</td>
                 </tr>
                 <tr>
                     <td>RIF-CS</td>
-                    <td>collection/citationInfo/citationMetadata/identifier AND/OR collection/identifier</td>
-                    <td>identifier</td>
+                    <td>registryObject:collection:name</td>
+                    <td>name(R)</td>
                     <td>schema:Thing</td>
                 </tr>
                 <tr>
@@ -3839,36 +3839,25 @@
                 </tr>
                 <tr>
                     <td>RIF-CS</td>
-                    <td>No mapping</td>
-                    <td>sameAs</td>
+                    <td>location/address/electronic @type="url" @ target="directDownload"</td>
+                    <td>distribution.contentUrl</td>
+                    <td>schema:DataDownload</td>
+                </tr>
+                <tr>
+                    <td>RIF-CS</td>
+                    <td>collection/citationInfo/citationMetadata/identifier AND/OR collection/identifier</td>
+                    <td>identifier</td>
                     <td>schema:Thing</td>
                 </tr>
                 <tr>
                     <td>RIF-CS</td>
-                    <td>RDA key=URL of record. "https://researchdata.ands.org.au/view?key=(insert key)"</td>
+                    <td>RDA key= URL of record."https://researchdata.ands.org.au/view?key=<insert key></td>
                     <td>url</td>
                     <td>schema:Thing</td>
                 </tr>
                 <tr>
                     <td>RIF-CS</td>
-                    <td>(default to Enlgish) "en"</td>
-                    <td>inLanguage</td>
-                    <td>schema:Thing</td>
-                </tr>
-                <tr>
-                    <td>RIF-CS</td>
-                    <td>No mapping</td>
-                    <td>includedInDataCatalogue</td>
-                    <td>schema:Dataset</td>
-                </tr>
-                <tr>
-                    <td>RIF-CS</td>
-                    <td>location/address/electronic @type="url" @ target="directDownload"</td>
-                    <td>distribution</td>
-                    <td>schema:Dataset</td>
-                <tr>
-                    <td>RIF-CS</td>
-                    <td>collection/relatedInfo[@type='publication'] OR relatedObject:collection where related collection[@type='publication']</td>
+                    <td>collection/relatedInfo[@type='publication']/relatedObject:collection where related collection [@type='publication']</td>
                     <td>citation</td>
                     <td>schema:CreativeWork</td>
                 </tr>
@@ -3877,7 +3866,6 @@
                     <td>collection/subject</td>
                     <td>keywords</td>
                     <td>schema:CreativeWork</td>
-                </tr>
                 <tr>
                     <td>RIF-CS</td>
                     <td>collection/rights/licence[@rightsURI] AND/OR collection/rights/licence[@type] AND collection/rights/licence</td>
@@ -3886,14 +3874,26 @@
                 </tr>
                 <tr>
                     <td>RIF-CS</td>
-                    <td>collection/citationInfo/citationMetadata/contributor OR relatedObject|relatedInfo party/name where relation=IsPrincipalInvestigatorOf OR relatedObject|relatedInfo party/name where relation=author OR relatedObject|relatedInfo party/name where relation=coInvestigator OR relatedObject|relatedInfo party/name where relation=hasCollector</td>
+                    <td>collection/citationInfo/citationMetadata/contributor OR relatedObject|relatedInfo party/name where relation=IsPrincipalInvestigatorOf OR relatedObject|relatedInfo party/name where relation=author OR relatedObject|relatedInfo party/name where relation=coInvestigator OR relatedObject|relatedInfo party/name where relation=hasCollector </td>
                     <td>creator</td>
                     <td>schema:CreativeWork</td>
                 </tr>
                 <tr>
                     <td>RIF-CS</td>
+                    <td>relatedObject|relatedInfo collection where relation[@type='isPartOf']</td>
+                    <td>isPartOf</td>
+                    <td>schema:CreativeWork</td>
+                </tr>
+                <tr>
+                    <td>RIF-CS</td>
                     <td>relatedObject|relatedInfo collection where relation[@type='hasPart']</td>
-                    <td>hasPart</td>
+                    <tdhasPart</td>
+                    <td>schema:CreativeWork</td>
+                </tr>
+                <tr>
+                    <td>RIF-CS</td>
+                    <td>registryObject:collection:citationInfo:citationMetadata:version</td>
+                    <td>version</td>
                     <td>schema:CreativeWork</td>
                 </tr>
                 <tr>
@@ -3916,9 +3916,33 @@
                 </tr>
                 <tr>
                     <td>RIF-CS</td>
+                    <td>location/address/electronic @type="url" @ target="directDownload"</td>
+                    <td>distribution</td>
+                    <td>schema:Dataset</td>
+                </tr>
+                <tr>
+                    <td>RIF-CS</td>
+                    <td>relatedObject|relatedInfo party/name where relation=isFundedBy</td>
+                    <td>funder</td>
+                    <td>schema:CreativeWork</td>
+                </tr>
+                <tr>
+                    <td>RIF-CS</td>
                     <td>registryObject:collection:citationInfo:citationMetadata:publisher OR registryObject@Group</td>
                     <td>publisher</td>
                     <td>schema:CreativeWork</td>
+                </tr>
+                <tr>
+                    <td>RIF-CS</td>
+                    <td>collection/subject</td>
+                    <td>about or subjectOf</td>
+                    <td>schema:CreativeWork/schema:Thing</td>
+                </tr>
+                <tr>
+                    <td>RIF-CS</td>
+                    <td>(default to English) "en"</td>
+                    <td>inLanguage</td>
+                    <td>schema:Thing</td>
                 </tr>
                 <tr>
                     <td>RIF-CS</td>
@@ -3928,20 +3952,8 @@
                 </tr>
                 <tr>
                     <td>RIF-CS</td>
-                    <td>collection/citationInfo/citationMetadata/date[@type='publicationDate'] OR collection/citationInfo/citationMetadata/date[@type='issued'] OR collection/dates[@type='dc.issued'] OR collection/dates[@type='dc.available'] OR Collection[@dateAccessioned] OR date the record was ingested into RDA</td>
-                    <td>datepublished</td>
-                    <td>schema:CreativeWork</td>
-                </tr>
-                <tr>
-                    <td>RIF-CS</td>
-                    <td>No Mapping</td>
-                    <td>copyrightHolder</td>
-                    <td>schema:CreativeWork</td>
-                </tr>
-                <tr>
-                    <td>RIF-CS</td>
-                    <td>collection/address/electronic[@target='directDownload']/mediaType</td>
-                    <td>fileformat (superseded by encodingFormat)</td>
+                    <td>collection/citationInfo/citationMetadata/date[@type='publicationDate'] OR collection/citationInfo/citationMetadata/date[@type='issued'] OR collection/dates[@type='dc.issued'] OR collection/dates[@type='dc.available'] OR date the record was ingested into RDA</td>
+                    <td>encodingFormat</td>
                     <td>schema:CreativeWork</td>
                 </tr>
                 <tr>
@@ -3952,33 +3964,9 @@
                 </tr>
                 <tr>
                     <td>RIF-CS</td>
-                    <td>No mapping</td>
-                    <td>contributor</td>
-                    <td>schema:CreativeWork</td>
-                </tr>
-                <tr>
-                    <td>RIF-CS</td>
-                    <td>No mapping</td>
-                    <td>producer</td>
-                    <td>schema:CreativeWork</td>
-                </tr>
-                <tr>
-                    <td>RIF-CS</td>
-                    <td>No mapping</td>
-                    <td>copyrightYear</td>
-                    <td>schema:CreativeWork</td>
-                </tr>
-                <tr>
-                    <td>RIF-CS</td>
-                    <td>No mapping</td>
-                    <td>isAccessibleForFree</td>
-                    <td>schema:CreativeWork</td>
-                </tr>
-                <tr>
-                    <td>RIF-CS</td>
-                    <td>No mapping</td>
-                    <td>position</td>
-                    <td>schema:CreativeWork</td>
+                    <td>collection/rights</td>
+                    <td></td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td>DC</td>
