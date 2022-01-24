@@ -1,8 +1,14 @@
 [
-  {"from": "copyrightYear - schema:CreativeWork","to": "No mapping","value": 1},
-  {"from": "No mapping","to": "RIF-CS","value": 1},
+  {"from": "copyrightYear - schema:CreativeWork","to": "dct:rightsHolder(O)","value": 1},
+  {"from": "dcterms:right(O)","to": "DCAT-AP","value": 1},
+  {"from": "copyrightYear - schema:CreativeWork","to": "dct:rightsHolder","value": 1},
+  {"from": "dcterms:right","to": "DCATv3","value": 1},
+  {"from": "copyrightYear - schema:CreativeWork","to": "Copyrighted","value": 1},
+  {"from": "Copyrighted","to": "Datacite","value": 1},
+  {"from": "copyrightYear - schema:CreativeWork","to": "MD_Identification/citation//date [dateType = https://schema.org/copyrightYear]","value": 1},
+  {"from": "MD_Identification/citation//date [dateType = https://schema.org/copyrightYear]","to": "ISO19115-1","value": 1},
   {"from": "copyrightYear - schema:CreativeWork","to": "dcterms:dateCopyrighted","value": 1},
-  {"from": "dcterms:dateCopyrighted","to": "DCAT","value": 1},
+  {"from": "dcterms:dateCopyrighted","to": "DC","value": 1},
   {"from": "copyrightYear - schema:CreativeWork","to": "copyrightYear","value": 1},
   {"from": "copyrightYear","to": "CODEMETA","value": 1}
 ]
