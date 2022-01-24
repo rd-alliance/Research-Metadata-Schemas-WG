@@ -1,8 +1,11 @@
 [
+  {"from": "copyrightHolder - schema:CreativeWork","to": "dct:rightsHolder","value": 2},
+  {"from": "dct:rightsHolder","to": "DCATv3","value": 1},
+  {"from": "dct:rightsHolder","to": "DC","value": 1},
   {"from": "copyrightHolder - schema:CreativeWork","to": "dct:rightsHolder (O)","value": 1},
-  {"from": "dct:rightsHolder (O)","to": "DCAT","value": 1},
-  {"from": "copyrightHolder - schema:CreativeWork","to": "No mapping","value": 1},
-  {"from": "No mapping","to": "RIF-CS","value": 1},
+  {"from": "dct:rightsHolder (O)","to": "DCAT-AP","value": 1},
+  {"from": "copyrightHolder - schema:CreativeWork","to": "MD_Identification/resourceConstaints//responsibleParty//name [restrictionCode = copyright]","value": 1},
+  {"from": "MD_Identification/resourceConstaints//responsibleParty//name [restrictionCode = copyright]","to": "ISO19115-1","value": 1},
   {"from": "copyrightHolder - schema:CreativeWork","to": "copyrightHolder","value": 1},
   {"from": "copyrightHolder","to": "CODEMETA","value": 1}
 ]
