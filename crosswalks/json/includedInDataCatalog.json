@@ -1,16 +1,15 @@
 [
-  {"from": "includedInDataCatalog - schema:Dataset","to": "includedInDataCatalog(R)","value": 1},
-  {"from": "includedInDataCatalog(R)","to": "EOSC/EDMI","value": 1},
-  {"from": "includedInDataCatalog - schema:Dataset","to": "isPartOf","value": "1"},
-  {"from": "isPartOf","to": "DCAT","value": 1},
-  {"from": "includedInDataCatalog - schema:Dataset","to": "Responsible party (role: publisher)","value": "1"},
-  {"from": "Responsible party (role: publisher)","to": "ISO-19115:2003","value": 1},
+  {"from": "includedInDataCatalog - schema:Dataset","to": "includedIn(R)","value": 1},
+  {"from": "includedInData(R)","to": "EOSC/EDMI","value": 1},
+  {"from": "includedInDataCatalog - schema:Dataset","to": "dcterms:isPartOf","value": "2"},
+  {"from": "dcterms:isPartOf","to": "DCATv3","value": 1},
+  {"from": "dcterms:isPartOf","to": "DC","value": 1},
+  {"from": "includedInDataCatalog - schema:Dataset","to": "MD_Identification/associatedResource/name/CI_Citation [associationType = 'collectiveTitle']","value": "1"},
+  {"from": "MD_Identification/associatedResource/name/CI_Citation [associationType = 'collectiveTitle']","to": "ISO-19115-1","value": 1},
   {"from": "includedInDataCatalog - schema:Dataset","to": "distribution.storedIn(O)","value": "1"},
   {"from": "distribution.storedIn(O)","to": "DATS","value": 1},
   {"from": "includedInDataCatalog - schema:Dataset","to": "publisher","value": 1},
   {"from": "publisher","to": "Datacite","value": 1},
-  {"from": "includedInDataCatalog - schema:Dataset","to": "No mapping","value": 1},
-  {"from": "No mapping","to": "RIF-CS","value": 1},
   {"from": "includedInDataCatalog - schema:Dataset","to": "includedInDataCatalog(M)","value": 1},
   {"from": "includedInDataCatalog(M)","to": "BioSchema","value": 1}
 ]
