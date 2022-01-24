@@ -1,6 +1,6 @@
 [
-  {"from": "isAccessibleForFree - schema:CreativeWork","to": "No mapping","value": 1},
-  {"from": "No mapping","to": "RIF-CS","value": 1},
+  {"from": "isAccessibleForFree - schema:CreativeWork","to": "avlStatus/dataAccs","value": 1},
+  {"from": "avlStatus/dataAccs","to": "DDI","value": 1},
   {"from": "isAccessibleForFree - schema:CreativeWork","to": "isAccessibleForFree","value": 1},
   {"from": "isAccessibleForFree","to": "CODEMETA","value": 1}
 ]
