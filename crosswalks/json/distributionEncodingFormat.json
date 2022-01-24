@@ -1,8 +1,15 @@
 [
-  {"from": "distribution.encodingFormat - schema:dataDownload","to": "dcat:mediaType /dcterms:format","value": 1},
-  {"from": "dcat:mediaType /dcterms:format","to": "DCAT","value": 1},
-  {"from": "distribution.encodingFormat - schema:dataDownload","to": "Online resource (function: download): linkage","value": 1},
-  {"from": "Online resource (function: download): linkage","to": "ISO-19915:2003","value": 1},
+  {"from": "distribution.encodingFormat - schema:dataDownload","to": "dcterms:format","value": 2},
+  {"from": "dcterms:format","to": "DCAT-AP","value": 1},
+  {"from": "dcterms:format","to": "DC","value": 1},
+  {"from": "distribution.encodingFormat - schema:dataDownload","to": "dcat:mediaType/dcterms:format","value": 1},
+  {"from": "dcat:mediaType/dcterms:format","to": "DCATv3","value": 1},
+  {"from": "distribution.encodingFormat - schema:dataDownload","to": "format","value": 1},
+  {"from": "format","to": "Datacite","value": 1},
+  {"from": "distribution.encodingFormat - schema:dataDownload","to": "encordingFormat","value": 1},
+  {"from": "encordingFormat","to": "BioSchema","value": 1},
+  {"from": "distribution.encodingFormat - schema:dataDownload","to": "MD_Metadata/distributionInfo/MD_Distribution/transferOptions//distributionFormat","value": 1},
+  {"from": "MD_Metadata/distributionInfo/MD_Distribution/transferOptions//distributionFormat","to": "ISO-19915-1","value": 1},
   {"from": "distribution.encodingFormat - schema:dataDownload","to": "AccessInformation/Format","value": 1},
   {"from": "AccessInformation/Format","to": "SPASE","value": 1}
 ]
