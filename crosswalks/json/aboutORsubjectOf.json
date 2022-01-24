@@ -1,8 +1,12 @@
 [
-  {"from": "about or subjectOf - schema:Thing or schema: CreativeWorks","to": "dcat:theme (R) dcat:subject(O)","value": 1},
-  {"from": "dcat:theme (R) dcat:subject(O)","to": "DCAT","value": 1},
+  {"from": "about or subjectOf - schema:Thing or schema: CreativeWorks","to": "dcat:theme (R)/dct:subject(O)","value": 1},
+  {"from": "dcat:theme (R) dcat:subject(O)","to": "DCAT-AP","value": 1},
+  {"from": "about or subjectOf - schema:Thing or schema: CreativeWorks","to": "dcat:theme (R)/dcterms:subject(O)","value": 1},
+  {"from": "dcat:theme (R) dcat:subject(O)","to": "DCATv3","value": 1},
   {"from": "about or subjectOf - schema:Thing or schema: CreativeWorks","to": "Subject*","value": 1},
   {"from": "Subject*","to": "DATACITE","value": 1},
-  {"from": "about or subjectOf - schema:Thing or schema: CreativeWorks","to": "Descriptive keyword (from a controlled vocabulary)","value": 1},
-  {"from": "Descriptive keyword (from a controlled vocabulary)","to": "ISO-19115:2003","value": 1}
+  {"from": "about or subjectOf - schema:Thing or schema: CreativeWorks","to": "MD_Identification/topicCategory ; additional categories in MD_Identification/descriptiveKeywords//keyword [type = subTopicCategory]","value": 1},
+  {"from": "MD_Identification/topicCategory ; additional categories in MD_Identification/descriptiveKeywords//keyword [type = subTopicCategory]","to": "ISO-19115-1","value": 1},
+  {"from": "about or subjectOf - schema:Thing or schema: CreativeWorks","to": "collection/subject","value": 1},
+  {"from": "collection/subject","to": "RIF-CS","value": 1},
 ]
