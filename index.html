@@ -4736,16 +4736,16 @@
                     <td>description(R)</td>
                     <td>schema:Thing</td>
                 </tr>
-                <tr>
+               <tr>
                     <td>CODEMETA</td>
-                    <td>identifier</td>
-                    <td>identifier</td>
+                    <td>name</td>
+                    <td>name(R)</td>
                     <td>schema:Thing</td>
                 </tr>
                 <tr>
                     <td>CODEMETA</td>
-                    <td>name</td>
-                    <td>name(R)</td>
+                    <td>identifier</td>
+                    <td>identifier</td>
                     <td>schema:Thing</td>
                 </tr>
                 <tr>
@@ -4784,6 +4784,12 @@
                     <td>creator</td>
                     <td>schema:CreativeWork</td>
                 </tr>
+              <tr>
+                    <td>CODEMETA</td>
+                    <td>isPart</td>
+                    <td>isPart</td>
+                    <td>schema:CreativeWork</td>
+                </tr>
                 <tr>
                     <td>CODEMETA</td>
                     <td>hasPart</td>
@@ -4794,6 +4800,12 @@
                     <td>CODEMETA</td>
                     <td>version</td>
                     <td>version</td>
+                    <td>schema:CreativeWork</td>
+                </tr>
+              <tr>
+                    <td>CODEMETA</td>
+                    <td>funder</td>
+                    <td>funder</td>
                     <td>schema:CreativeWork</td>
                 </tr>
                 <tr>
@@ -4834,12 +4846,6 @@
                 </tr>
                 <tr>
                     <td>CODEMETA</td>
-                    <td>fileFormat</td>
-                    <td>fileFormat(superseded by encoding)</td>
-                    <td>schema:CreativeWork</td>
-                </tr>
-                <tr>
-                    <td>CODEMETA</td>
                     <td>funder</td>
                     <td>funder</td>
                     <td>schema:CreativeWork</td>
@@ -4872,18 +4878,18 @@
                     <td>CODEMETA</td>
                     <td>isAccessibleForFree</td>
                     <td>isAccessibleForFree</td>
-                    <td>schema:CreativeWork</td>
-                </tr>
-                <tr>
-                    <td>CODEMETA</td>
-                    <td>Rcodemeta:SoftwareSourceCode:embargoDate</td>
-                    <td>expectedArriveFrom OR expectedArriveUntil </td>
                     <td>schema:CreativeWork</td>
                 </tr>
                 <tr>
                     <td>ECRIN Clinical Research Metadata Schema</td>
                     <td>Description(R)</td>
                     <td>description(R)</td>
+                    <td>schema:Thing</td>
+                </tr>
+              <tr>
+                    <td>ECRIN Clinical Research Metadata Schema</td>
+                    <td>Object Title(M)</td>
+                    <td>name(R)</td>
                     <td>schema:Thing</td>
                 </tr>
                 <tr>
@@ -4894,15 +4900,33 @@
                 </tr>
                 <tr>
                     <td>ECRIN Clinical Research Metadata Schema</td>
-                    <td>Object Title(M)</td>
-                    <td>name(R)</td>
-                    <td>schema:Thing</td>
-                </tr>
-                <tr>
-                    <td>ECRIN Clinical Research Metadata Schema</td>
                     <td>Related resource identifiers, with relation type indicator(R)</td>
                     <td>sameAs</td>
                     <td>schema:Thing</td>
+                </tr>
+              <tr>
+                    <td>ECRIN Clinical Research Metadata Schema</td>
+                    <td>Rights(O)</td>
+                    <td>license</td>
+                    <td>schema:Thing</td>
+                </tr>
+              <tr>
+                    <td>ECRIN Clinical Research Metadata Schema</td>
+                    <td>creators(M)</td>
+                    <td>creator</td>
+                    <td>schema:CreativeWork</td>
+                </tr>
+              <tr>
+                    <td>ECRIN Clinical Research Metadata Schema</td>
+                    <td>version(O)</td>
+                    <td>version</td>
+                    <td>schema:CreativeWork</td>
+                </tr>
+              <tr>
+                    <td>ECRIN Clinical Research Metadata Schema</td>
+                    <td>Publisher/Provider(M)</td>
+                    <td>publisher</td>
+                    <td>schema:CreativeWork</td>
                 </tr>
                 <tr>
                     <td>ECRIN Clinical Research Metadata Schema</td>
@@ -4918,30 +4942,6 @@
                 </tr>
                 <tr>
                     <td>ECRIN Clinical Research Metadata Schema</td>
-                    <td>Rights(O)</td>
-                    <td>license</td>
-                    <td>schema:CreativeWork</td>
-                </tr>
-                <tr>
-                    <td>ECRIN Clinical Research Metadata Schema</td>
-                    <td>creators(M)</td>
-                    <td>creator</td>
-                    <td>schema:CreativeWork</td>
-                </tr>
-                <tr>
-                    <td>ECRIN Clinical Research Metadata Schema</td>
-                    <td>version(O)</td>
-                    <td>version</td>
-                    <td>schema:CreativeWork</td>
-                </tr>
-                <tr>
-                    <td>ECRIN Clinical Research Metadata Schema</td>
-                    <td>Publisher/Provider(M)</td>
-                    <td>publisher</td>
-                    <td>schema:CreativeWork</td>
-                </tr>
-                <tr>
-                    <td>ECRIN Clinical Research Metadata Schema</td>
                     <td>Dates (date type)(O)</td>
                     <td>dateCreated</td>
                     <td>schema:CreativeWork	</td>
@@ -4954,7 +4954,7 @@
                 </tr>
                 <tr>
                     <td>ECRIN Clinical Research Metadata Schema</td>
-                    <td>Dates(date Type)</td>
+                    <td>Dates(date Type)(O)</td>
                     <td>dateModified</td>
                     <td>schema:CreativeWork	</td>
                 </tr>
