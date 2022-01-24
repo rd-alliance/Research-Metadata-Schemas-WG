@@ -1,8 +1,10 @@
 [
-  {"from": "contentURL - schema:Thing","to": "Online resource(function:\"download\"):linkage","value": 1},
-  {"from": "Online resource(function:\"download\"):linkage","to": "ISO-19115:2003","value": 1},
-  {"from": "contentURL - schema:Thing","to": "accessURL(M)","value": 1},
-  {"from": "accessURL(M)","to": "DCAT","value": 1},
+  {"from": "contentURL - schema:Thing","to": "MD_Metadata/distributionInfo//online//linkage [function = download]","value": 1},
+  {"from": "MD_Metadata/distributionInfo//online//linkage [function = download]","to": "ISO-19115-1","value": 1},
+  {"from": "contentURL - schema:Thing","to": "dcat:accessURL(M)/dcat:downloadURL(O)","value": 1},
+  {"from": "dcat:accessURL(M)/dcat:downloadURL(O)","to": "DCAT-AP","value": 1},
+  {"from": "contentURL - schema:Thing","to": "dcat:downloadURL","value": 1},
+  {"from": "dcat:downloadURL","to": "DCATv3","value": 1},
   {"from": "contentURL - schema:Thing","to": "access(M)","value": 1},
   {"from": "access(M)","to": "DATS","value": 1}
 ]
