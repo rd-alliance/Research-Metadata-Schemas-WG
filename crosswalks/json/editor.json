@@ -1,4 +1,6 @@
 [
   {"from": "editor - schema:CreativeWork","to": "editor","value": 1},
-  {"from": "editor","to": "CODEMETA","value": 1}
+  {"from": "editor","to": "CODEMETA","value": 1},
+  {"from": "editor - schema:CreativeWork","to": "MD_Identification/citation//citedResponsibleParty//name [role = editor]","value": 1},
+  {"from": "MD_Identification/citation//citedResponsibleParty//name [role = editor]","to": "ISO19115-1","value": 1}
 ]
