@@ -1,10 +1,12 @@
 [
-  {"from": "publisher - schema:CreativeWork","to": "Responsible party(role:\"publisher\")","value": 1},
-  {"from": "Responsible party(role:\"publisher\")","to": "ISO-19115:2003","value": 1},
+  {"from": "publisher - schema:CreativeWork","to": "MD_Identification/citation//citedResponsibleParty//name [role = publisher]","value": 1},
+  {"from": "MD_Identification/citation//citedResponsibleParty//name [role = publisher]","to": "ISO-19115-1","value": 1},
   {"from": "publisher - schema:CreativeWork","to": "Dataset Publisher","value": 1},
   {"from": "Dataset Publisher","to": "Dataverse","value": 1},
-  {"from": "publisher - schema:CreativeWork","to": "publisher(R)","value": 1},
-  {"from": "publisher(R)","to": "DCAT","value": 1},
+  {"from": "publisher - schema:CreativeWork","to": "dct:publisher(R)","value": 1},
+  {"from": "dct:publisher(R)","to": "DCAT-AP","value": 1},
+  {"from": "publisher - schema:CreativeWork","to": "dcterms:publisher","value": 1},
+  {"from": "dcterms:publisher","to": "DCATv3","value": 1},
   {"from": "publisher - schema:CreativeWork","to": "Publisher(M)","value": 1},
   {"from": "Publisher(M)","to": "Datacite","value": 1},
   {"from": "publisher - schema:CreativeWork","to": "registryObject:collection:citationInfo:citationMetadata:publisher OR registryObject@Group","value": 1},
@@ -17,8 +19,8 @@
   {"from": "publisher","to": "CODEMETA","value": 1},
   {"from": "publisher - schema:CreativeWork","to": "ResourceHeader/Contact[@role=Publisher]","value": 1},
   {"from": "ResourceHeader/Contact[@role=Publisher]","to": "SPASE","value": 1},
-  {"from": "publisher - schema:CreativeWork","to": "distrbtr","value": 1},
-  {"from": "distrbtr","to": "DDI","value": 1},
+  {"from": "publisher - schema:CreativeWork","to": "publisher","value": 1},
+  {"from": "publisher","to": "DDI","value": 1},
   {"from": "publisher - schema:CreativeWork","to": "Publisher/Provider(M)","value": 1},
   {"from": "Publisher/Provider(M)","to": "ECRIN","value": 1}
 ]
