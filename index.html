@@ -4184,6 +4184,18 @@
                     <td>description</td>
                     <td>schema:Thing</td>
                 </tr>
+              <tr>
+                    <td>BioSchema</td>
+                    <td>name(M)</td>
+                    <td>name</td>
+                    <td>schema:Thing</td>
+                </tr>
+              <tr>
+                    <td>BioSchema</td>
+                    <td>distribution</td>
+                    <td>distribution.contentUrl</td>
+                    <td>schema:DataDownload</td>
+                </tr>
                 <tr>
                     <td>BioSchema</td>
                     <td>identifier(M)</td>
@@ -4192,15 +4204,9 @@
                 </tr>
                 <tr>
                     <td>BioSchema</td>
-                    <td>name(M)</td>
-                    <td>name</td>
+                    <td>alternateName</td>
+                    <td>alternateName</td>
                     <td>schema:Thing</td>
-                </tr>
-                <tr>
-                    <td>BioSchema</td>
-                    <td>measurementTechnique(R)</td>
-                    <td>measurementTechnique</td>
-                    <td>schema:Dataset/ schema:data catalogue/ schema: Data Download</td>
                 </tr>
                 <tr>
                     <td>BioSchema</td>
@@ -4210,50 +4216,80 @@
                 </tr>
                 <tr>
                     <td>BioSchema</td>
-                    <td>variablesMeasured (R)</td>
-                    <td>variableMeasured</td>
-                    <td>schema:Dataset</td>
-                </tr>
-                <tr>
-                    <td>BioSchema</td>
-                    <td>includedInDataCatalogue(M)</td>
-                    <td>includedInDataCatalogue</td>
-                    <td>schema:Dataset</td>
-                </tr>
-                <tr>
-                    <td>BioSchema</td>
-                    <td>distribution</td>
-                    <td>distribution</td>
-                    <td>schema:Dataset</td>
-                </tr>
-                <tr>
-                    <td>BioSchema</td>
                     <td>citation(R)</td>
                     <td>citation</td>
                     <td>schema:CreativeWork</td>
                 </tr>
                 <tr>
                     <td>BioSchema</td>
-                    <td>Keywords(M)</td>
+                    <td>keyword(M)</td>
                     <td>keywords</td>
                     <td>schema:CreativeWork</td>
                 </tr>
-                <tr>
+              <tr>
                     <td>BioSchema</td>
                     <td>License(R)</td>
                     <td>license</td>
                     <td>schema:CreativeWork</td>
                 </tr>
-                <tr>
+              <tr>
                     <td>BioSchema</td>
                     <td>creator(R)</td>
                     <td>creator</td>
                     <td>schema:CreativeWork</td>
                 </tr>
-                <tr>
+              <tr>
                     <td>BioSchema</td>
                     <td>version(R)</td>
                     <td>version</td>
+                    <td>schema:CreativeWork</td>
+                </tr>
+              <tr>
+                    <td>BioSchema</td>
+                    <td>measurementTechnique(R)</td>
+                    <td>measurementTechnique</td>
+                    <td>schema:Dataset/schema:DataCatalog</td>
+                </tr>
+              <tr>
+                    <td>BioSchema</td>
+                    <td>variablesMeasured(R)</td>
+                    <td>variableMeasured</td>
+                    <td>schema:Dataset</td>
+                </tr>
+              <tr>
+                    <td>BioSchema</td>
+                    <td>includedInDataCatalog(M)</td>
+                    <td>includedIndataCatalog</td>
+                    <td>schema:Dataset</td>
+                </tr>
+                <tr>
+                    <td>BioSchema</td>
+                    <td>distribution</td>
+                    <td>distribution</td>
+                    <td>schema:Dataset</td>
+                </tr>
+                <tr>
+                    <td>BioSchema</td>
+                    <td>encodingFormat</td>
+                    <td>distribution.encodingFormat</td>
+                    <td>schema:DataDownload</td>
+                </tr>
+                <tr>
+                    <td>BioSchema</td>
+                    <td>dct:contactPoint</td>
+                    <td>contactPoint</td>
+                    <td>schema:Thing</td>
+                </tr>
+                <tr>
+                    <td>BioSchema</td>
+                    <td>dateCreated</td>
+                    <td>dateCreated</td>
+                    <td>schema:CreativeWork</td>
+                </tr>
+              <tr>
+                    <td>BioSchema</td>
+                    <td>dateModified</td>
+                    <td>dateModified</td>
                     <td>schema:CreativeWork</td>
                 </tr>
                 <tr>
@@ -4262,13 +4298,7 @@
                     <td>description</td>
                     <td>schema:Thing</td>
                 </tr>
-                <tr>
-                    <td>B2FIND</td>
-                    <td>Identifier(M)</td>
-                    <td>identifier</td>
-                    <td>schema:Thing</td>
-                </tr>
-                <tr>
+              <tr>
                     <td>B2FIND</td>
                     <td>Title(M)</td>
                     <td>name</td>
@@ -4276,39 +4306,51 @@
                 </tr>
                 <tr>
                     <td>B2FIND</td>
-                    <td>Language(O)</td>
-                    <td>inLanguage</td>
+                    <td>Identifier(M)</td>
+                    <td>identifier</td>
                     <td>schema:Thing</td>
                 </tr>
-                <tr>
+              <tr>
+                    <td>B2FIND</td>
+                    <td>Title(M)</td>
+                    <td>name</td>
+                    <td>schema:Thing</td>
+                </tr>
+              <tr>
                     <td>B2FIND</td>
                     <td>Rights(O)</td>
                     <td>license</td>
-                    <td></td>
+                    <td>schema:CreativeWork</td>
                 </tr>
-                <tr>
+               <tr>
                     <td>B2FIND</td>
                     <td>Creator(R)</td>
                     <td>creator</td>
                     <td>schema:CreativeWork</td>
                 </tr>
-                <tr>
+              <tr>
                     <td>B2FIND</td>
                     <td>Temporal Coverage(O)</td>
                     <td>temporalCoverage</td>
                     <td>schema:CreativeWork</td>
                 </tr>
-                <tr>
+              <tr>
                     <td>B2FIND</td>
                     <td>Spatial Coverage(O)</td>
                     <td>spatialCoverage</td>
                     <td>schema:CreativeWork</td>
                 </tr>
-                <tr>
+              <tr>
                     <td>B2FIND</td>
                     <td>Publisher(R)</td>
                     <td>publisher</td>
                     <td>schema:CreativeWork</td>
+                </tr>
+                <tr>
+                    <td>B2FIND</td>
+                    <td>Language(O)</td>
+                    <td>inLanguage</td>
+                    <td>schema:Thing</td>
                 </tr>
                 <tr>
                     <td>B2FIND</td>
@@ -4322,6 +4364,18 @@
                     <td>contributor</td>
                     <td>schema:CreativeWork</td>
                 </tr>
+              <tr>
+                    <td>DDI</td>
+                    <td>abstract</td>
+                    <td>description(R)</td>
+                    <td>schema:Thing</td>
+                </tr>
+              <tr>
+                    <td>DDI</td>
+                    <td>titl</td>
+                    <td>name(R)</td>
+                    <td>schema:Thing</td>
+                </tr>
                 <tr>
                     <td>DDI</td>
                     <td>IDNo</td>
@@ -4330,14 +4384,32 @@
                 </tr>
                 <tr>
                     <td>DDI</td>
-                    <td>titl</td>
-                    <td>name</td>
+                    <td>altTitl</td>
+                    <td>alternateName</td>
                     <td>schema:Thing</td>
+                </tr>
+              <tr>
+                    <td>DDI</td>
+                    <td>accsPlac</td>
+                    <td>url</td>
+                    <td>schema:Thing</td>
+                </tr>
+              <tr>
+                    <td>DDI</td>
+                    <td>relPubl(biblCit)</td>
+                    <td>citation</td>
+                    <td>schema:CreativeWork</td>
                 </tr>
                 <tr>
                     <td>DDI</td>
                     <td>keywords</td>
                     <td>keywords</td>
+                    <td>schema:CreativeWork</td>
+                </tr>
+              <tr>
+                    <td>DDI</td>
+                    <td>rights</td>
+                    <td>license</td>
                     <td>schema:CreativeWork</td>
                 </tr>
                 <tr>
@@ -4346,35 +4418,155 @@
                     <td>creator</td>
                     <td>schema:CreativeWork</td>
                 </tr>
+              <tr>
+                    <td>DDI</td>
+                    <td>isPartOf</td>
+                    <td>isPartOf</td>
+                    <td>schema:CreativeWork</td>
+                </tr>
+              <tr>
+                    <td>DDI</td>
+                    <td>hasPart</td>
+                    <td>hasPart</td>
+                    <td>schema:CreativeWork</td>
+                </tr>
                 <tr>
                     <td>DDI</td>
                     <td>version</td>
                     <td>version</td>
                     <td>schema:CreativeWork</td>
                 </tr>
+              <tr>
+                    <td>DDI</td>
+                    <td>temporal</td>
+                    <td>temporalCoverage</td>
+                    <td>schema:CreativeWork</td>
+                </tr>
+              <tr>
+                  <td>DDI</td>
+                  <td>geogCover/geoBndBox/coverage</td>
+                  <td>spatialCoverage</td>
+                  <td>schema:CreativeWork</td>
+                </tr>
+              <tr>
+                    <td>DDI</td>
+                    <td>instrumentDevelopment</td>
+                    <td>measurementTechnique</td>
+                    <td>schema:Dataset/schema:dataCatalogk</td>
+                </tr>
+              <tr>
+                    <td>DDI</td>
+                    <td>measure</td>
+                    <td>variableMeasured</td>
+                    <td>schema:Dataset</td>
+                </tr>
                 <tr>
                     <td>DDI</td>
-                    <td>distrbtr</td>
+                    <td>distrbtr(URI)</td>
+                    <td>distribution</td>
+                    <td>schema:Dataset</td>
+                </tr>
+              <tr>
+                    <td>DDI</td>
+                    <td>grantNo(agency)</td>
+                    <td>funder</td>
+                    <td>schema:Dataset</td>
+                </tr>
+              <tr>
+                    <td>DDI</td>
+                    <td>publisher</td>
                     <td>publisher</td>
                     <td>schema:CreativeWork</td>
                 </tr>
                 <tr>
                     <td>DDI</td>
-                    <td>distDate (for export)</td>
+                    <td>contact</td>
+                    <td>contactPoint</td>
+                    <td>schema:Thing</td>
+                </tr>
+                <tr>
+                    <td>DDI</td>
+                    <td>language</td>
+                    <td>inLanguage</td>
+                    <td>schema:Thing</td>
+                </tr>
+              <tr>
+                    <td>DDI</td>
+                    <td>created</td>
+                    <td>dateCreated</td>
+                    <td>schema:CreativeWork</td>
+                </tr>
+              <tr>
+                    <td>DDI</td>
+                    <td>distDate(for export)</td>
                     <td>datePublished</td>
                     <td>schema:CreativeWork</td>
                 </tr>
-                <tr>
+              <tr>
                     <td>DDI</td>
-                    <td>timePrd</td>
-                    <td>temporalCoverage</td>
+                    <td>version(date)</td>
+                    <td>dateModified</td>
                     <td>schema:CreativeWork</td>
                 </tr>
-                <tr>
+              <tr>
+                    <td>DDI</td>
+                    <td>derivation</td>
+                    <td>isBasedOn</td>
+                    <td>schema:CreativeWork</td>
+                </tr>
+              <tr>
+                    <td>DDI</td>
+                    <td>format medium</td>
+                    <td>encodingFormat</td>
+                    <td>schema:CreativeWork</td>
+                </tr>
+              <tr>
+                    <td>DDI</td>
+                    <td>contributor</td>
+                    <td>contributor</td>
+                    <td>schema:CreativeWork</td>
+                </tr>
+              <tr>
                     <td>DDI</td>
                     <td>producer</td>
                     <td>producer</td>
                     <td>schema:CreativeWork</td>
+                </tr>
+              <tr>
+                    <td>DDI</td>
+                    <td>avlStatuc/dataAccs</td>
+                    <td>isAccessibleForFree</td>
+                    <td>schema:CreativeWork</td>
+                </tr>
+              <tr>
+                    <td>DDI</td>
+                    <td>rights disclaimer</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+              <tr>
+                    <td>DDI</td>
+                    <td>accessRights</td>
+                    <td>in proposing: https://github.com/schemaorg/schemaorg/issues/2173</td>
+                    <td></td>
+                </tr>
+              <tr>
+                    <td>DDI</td>
+                    <td>hasVersion</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+              <tr>
+                    <td>DDI</td>
+                    <td>isVersionOf</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+              <tr>
+                    <td>DDI</td>
+                    <td>method/relation/software</td>
+                    <td></td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td>SPASE</td>
@@ -4382,16 +4574,22 @@
                     <td>description(R)</td>
                     <td>schema:Thing</td>
                 </tr>
-                <tr>
-                    <td>SPASE</td>
-                    <td>ResourceHeader/DOI OR ResourceID</td>
-                    <td>identifier</td>
-                    <td>schema:Thing</td>
-                </tr>
-                <tr>
+              <tr>
                     <td>SPASE</td>
                     <td>ResourceHeader/ResourceName</td>
                     <td>name(R)</td>
+                    <td>schema:Thing</td>
+                </tr>
+              <tr>
+                    <td>SPASE</td>
+                    <td>AccessInformation/AccessURL/URL</td>
+                    <td>distribution.contentUrl</td>
+                    <td>schema:DataDownload</td>
+                </tr>
+                <tr>
+                    <td>SPASE</td>
+                    <td>ResourceHeader/DOI/ResourceID</td>
+                    <td>identifier</td>
                     <td>schema:Thing</td>
                 </tr>
                 <tr>
@@ -4409,64 +4607,40 @@
                 <tr>
                     <td>SPASE</td>
                     <td>AccessInformation/AccessURL/URL</td>
-                    <td>URL</td>
+                    <td>url</td>
                     <td>schema:Thing</td>
                 </tr>
-                <tr>
-                    <td>SPASE</td>
-                    <td>ResourceHeader/Contact</td>
-                    <td>contactPoint</td>
-                    <td>schema:Thing</td>
-                </tr>
-                <tr>
-                    <td>SPASE</td>
-                    <td>MeasurementType</td>
-                    <td>measurementTechnique</td>
-                    <td>schema:Dataset/ schema:data catalogue/ schema: Data Download</td>
-                </tr>
-                <tr>
-                    <td>SPASE</td>
-                    <td>Parameter</td>
-                    <td>variableMeasured</td>
-                    <td>schema:Dataset</td>
-                </tr>
-                <tr>
-                    <td>SPASE</td>
-                    <td>AccessInformation/AccessURL/URL</td>
-                    <td>distribution.contentUrl</td>
-                    <td>schema:DataDownload</td>
-                </tr>
-                <tr>
-                    <td>SPASE</td>
-                    <td>AccessInformation/Format</td>
-                    <td>distribution.encodingFormat</td>
-                    <td>schema:DataDownload</td>
-                </tr>
-                <tr>
+              <tr>
                     <td>SPASE</td>
                     <td>ResourceHeader/PublicationInfo</td>
                     <td>citation</td>
                     <td>schema:CreativeWork</td>
                 </tr>
-                <tr>
+              <tr>
                     <td>SPASE</td>
                     <td>keyword</td>
                     <td>keyword</td>
                     <td>schema:CreativeWork</td>
                 </tr>
-                <tr>
+              <tr>
                     <td>SPASE</td>
                     <td>ResourceHeader/Contact[@role=PrincipalInvestigator]</td>
                     <td>creator</td>
                     <td>schema:CreativeWork</td>
                 </tr>
-                <tr>
+              <tr>
+                    <td>SPASE</td>
+                    <td>ParentID (only for Granule resource type)</td>
+                    <td>isPartOf</td>
+                    <td>schema:CreativeWork</td>
+                </tr>
+              <tr>
                     <td>SPASE</td>
                     <td>ProviderVersion</td>
                     <td>version</td>
-                    <td></td>
+                    <td>schema:CreativeWork</td>
                 </tr>
-                <tr>
+              <tr>
                     <td>SPASE</td>
                     <td>TemporalDescription/TimeSpan</td>
                     <td>temporalCoverage/td>
@@ -4478,7 +4652,31 @@
                     <td>spatialCoverage</td>
                     <td>schema:CreativeWork</td>
                 </tr>
-                <tr>
+              <tr>
+                    <td>SPASE</td>
+                    <td>MeasurementType</td>
+                    <td>measurementTechnique</td>
+                    <td>schema:Dataset/ schema:data catalogue/ schema: Data Download</td>
+                </tr>
+              <tr>
+                    <td>SPASE</td>
+                    <td>Parameter</td>
+                    <td>variableMeasured</td>
+                    <td>schema:Dataset</td>
+                </tr>
+              <tr>
+                    <td>SPASE</td>
+                    <td>AccessInformation/Format</td>
+                    <td>distribution.encodingFormat</td>
+                    <td>schema:DataDownload</td>
+                </tr>
+              <tr>
+                    <td>SPASE</td>
+                    <td>ResourceHeader/Funding/Agency</td>
+                    <td>funder</td>
+                    <td>schema:CreativeWork</td>
+                </tr>
+              <tr>
                     <td>SPASE</td>
                     <td>ResourceHeader/Contact[@role=Publisher]</td>
                     <td>publisher</td>
@@ -4486,50 +4684,44 @@
                 </tr>
                 <tr>
                     <td>SPASE</td>
+                    <td>ResourceHeader/Contact</td>
+                    <td>contactPoint</td>
+                    <td>schema:Thing</td>
+                </tr>
+              <tr>
+                    <td>SPASE</td>
                     <td>ReleaseDate</td>
                     <td>datePublished</td>
                     <td>schema:CreativeWork</td>
                 </tr>
-                <tr>
+              <tr>
                     <td>SPASE</td>
                     <td>RevisionHistory/RevisionEvent/ReleaseDate*</td>
                     <td>dateModified</td>
                     <td>schema:CreativeWork</td>
                 </tr>
-                <tr>
+              <tr>
                     <td>SPASE</td>
-                    <td>AccesInformation/Format</td>
-                    <td>accessFormat</td>
+                    <td>AccessInformation/Format</td>
+                    <td>encodingFormat</td>
                     <td>schema:CreativeWork</td>
                 </tr>
-                <tr>
-                    <td>SPASE</td>
-                    <td>AccesInformation/Format</td>
-                    <td>fileFormat (superseded by encordingFormat)</td>
-                    <td>schema:CreativeWork</td>
-                </tr>
-                <tr>
-                    <td>SPASE</td>
-                    <td>AccesInformation/Format</td>
-                    <td>accessFormat</td>
-                    <td>schema:CreativeWork</td>
-                </tr>
-                <tr>
+              <tr>
                     <td>SPASE</td>
                     <td>ResourceHeader/Funding/Agency</td>
                     <td>funder</td>
                     <td>schema:CreativeWork</td>
                 </tr>
-                <tr>
+              <tr>
                     <td>SPASE</td>
                     <td>ResourceHeader/Contact[@role=Contributor]</td>
                     <td>contributor</td>
                     <td>schema:CreativeWork</td>
-                </tr>
+                </tr>           
                 <tr>
                     <td>SPASE</td>
-                    <td>AccesRights</td>
-                    <td></td>
+                    <td>AccessRights*</td>
+                    <td>in proposing: https://github.com/schemaorg/schemaorg/issues/2173</td>
                     <td></td>
                 </tr>
                 <tr>
