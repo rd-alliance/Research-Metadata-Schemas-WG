@@ -8,5 +8,5 @@
   {"from": "about or subjectOf - schema:Thing or schema: CreativeWorks","to": "MD_Identification/topicCategory ; additional categories in MD_Identification/descriptiveKeywords//keyword [type = subTopicCategory]","value": 1},
   {"from": "MD_Identification/topicCategory ; additional categories in MD_Identification/descriptiveKeywords//keyword [type = subTopicCategory]","to": "ISO-19115-1","value": 1},
   {"from": "about or subjectOf - schema:Thing or schema: CreativeWorks","to": "collection/subject","value": 1},
-  {"from": "collection/subject","to": "RIF-CS","value": 1},
+  {"from": "collection/subject","to": "RIF-CS","value": 1}
 ]
