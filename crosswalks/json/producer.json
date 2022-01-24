@@ -1,13 +1,15 @@
 [
-  {"from": "producer - schema:CreativeWork","to": "Producer","value": 1},
-  {"from": "Producer","to": "Dataverse","value": 1},
-  {"from": "producer - schema:CreativeWork","to": "contributor with contributortype=\"Producer","value": 1},
-  {"from": "contributor with contributortype=\"Producer","to": "Datacite","value": 1},
-  {"from": "producer - schema:CreativeWork","to": "No mapping","value": 1},
-  {"from": "No mapping","to": "RIF-CS","value": 1},
-  {"from": "producer - schema:CreativeWork","to": "dcterms:contributor","value": 1},
-  {"from": "dcterms:contributor","to": "DCAT","value": 1},
+  {"from": "producer - schema:CreativeWork","to": "dcterms:contributor","value": 3},
+  {"from": "dcterms:contributor","to": "DCATv3","value": 1},
+  {"from": "dcterms:contributor","to": "DCAT-AP","value": 1},
+  {"from": "dcterms:contributor","to": "DC","value": 1},
   {"from": "producer - schema:CreativeWork","to": "producer","value": 2},
   {"from": "producer","to": "DDI","value": 1},
   {"from": "producer","to": "CODEMETA","value": 1}
+  {"from": "producer - schema:CreativeWork","to": "Producer","value": 1},
+  {"from": "Producer","to": "Dataverse","value": 1},
+  {"from": "producer - schema:CreativeWork","to": "MD_Identification/citation//citedResponsibleParty//name [role = https://schema.org/producer]","value": 1},
+  {"from": "MD_Identification/citation//citedResponsibleParty//name [role = https://schema.org/producer]","to": "ISO19115-1","value": 1},
+  {"from": "producer - schema:CreativeWork","to": "contributor with contributortype=\"Producer","value": 1},
+  {"from": "contributor with contributortype=\"Producer","to": "Datacite","value": 1},
 ]
