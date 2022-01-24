@@ -1,6 +1,16 @@
 [
-  {"from": "distributionContent.url - schema:DatasetDownload","to": "dct:accessURL (M) / dct:downloadURL (O)","value": 1},
-  {"from": "dct:accessURL (M) / dct:downloadURL (O)","to": "DCAT","value": 1},
+  {"from": "distributionContent.url - schema:DatasetDownload","to": "dct:accessURL(M)/dct:downloadURL(O)","value": 1},
+  {"from": "dct:accessURL(M)/dct:downloadURL(O)","to": "DCAT-AP","value": 1},
+  {"from": "distributionContent.url - schema:DatasetDownload","to": "dct:downloadURL","value": 1},
+  {"from": "dct:downloadURL(O)","to": "DCATv3","value": 1},
+  {"from": "distributionContent.url - schema:DatasetDownload","to": "distribution","value": 1},
+  {"from": "distribution","to": "BioSchema","value": 1},
+  {"from": "distributionContent.url - schema:DatasetDownload","to": "accessURL","value": 1},
+  {"from": "accessURL","to": "EOSC/EDMI","value": 1},
+  {"from": "distributionContent.url - schema:DatasetDownload","to": "location/address/electronic @type=url @ target=directDownload","value": 1},
+  {"from": "location/address/electronic @type=url @ target=directDownload","to": "RIF-CS","value": 1},
+  {"from": "distributionContent.url - schema:DatasetDownload","to": "MD_Metadata/distributionInfo//online//linkage [function = download]","value": 1},
+  {"from": "MD_Metadata/distributionInfo//online//linkage [function = download]","to": "ISO19115-1","value": 1},
   {"from": "distributionContent.url - schema:DatasetDownload","to": "AccessInformation/AccessURL/URL","value": 1},
   {"from": "AccessInformation/AccessURL/URL","to": "SPASE","value": 1}
 ]
