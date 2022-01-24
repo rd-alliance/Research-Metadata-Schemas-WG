@@ -1,12 +1,15 @@
 [
-  {"from": "variableMeasured - schema:Dataset","to": "variablesMeasured(R)","value": 1},
-  {"from": "variablesMeasured(R)","to": "BioSchema","value": 1},
-  {"from": "variableMeasured - schema:Dataset","to": "observedProperty","value": 1},
-  {"from": "observedProperty","to": "DCAT","value": 1},
-  {"from": "variableMeasured - schema:Dataset","to": "variableMeasured (R)*","value": 1},
-  {"from": "variableMeasured (R)*","to": "EOSC/EDMI","value": 1},
-  {"from": "variableMeasured - schema:Dataset","to": "dimensions","value": 1},
-  {"from": "dimensions","to": "DATS","value": 1},
+  {"from": "variableMeasured - schema:Dataset","to": "variableMeasured(R)","value": 2},
+  {"from": "variableMeasured(R)","to": "BioSchema","value": 1},
+  {"from": "variableMeasured(R)","to": "EOSC/EDMI","value": 1},
+  {"from": "variableMeasured - schema:Dataset","to": "sosa:observedProperty","value": 1},
+  {"from": "sosa:observedProperty","to": "DCATv3","value": 1},
+  {"from": "variableMeasured - schema:Dataset","to": "measure","value": 1},
+  {"from": "measure","to": "DDI","value": 1},
+  {"from": "variableMeasured - schema:Dataset","to": "MD_Metadata/contentInfo//featureCatalogue [requires import of ISO 19110]","value": 1},
+  {"from": "MD_Metadata/contentInfo//featureCatalogue [requires import of ISO 19110]","to": "ISO19115-1","value": 1},
+  {"from": "variableMeasured - schema:Dataset","to": "dimensions(O)","value": 1},
+  {"from": "dimensions(O)","to": "DATS","value": 1},
   {"from": "variableMeasured - schema:Dataset","to": "Parameter","value": 1},
   {"from": "Parameter","to": "SPASE","value": 1}
 ]
