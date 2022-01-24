@@ -1,4 +1,13 @@
 [
-  {"from": "alternativeName - schema:CreativeWork","to": "source(O)","value": 1},
-  {"from": "source(O)","to": "DCAT","value": 1}
+  {"from": "isBasedOn - schema:CreativeWork","to": "dct:source(O)","value": 2},
+  {"from": "dct:source(O)","to": "DCAT-AP","value": 1},
+  {"from": "dct:source(O)","to": "DCATv3","value": 1},
+  {"from": "isBasedOn - schema:CreativeWork","to": "isContinuedBy/isCompiledBy/isOriginalFromOf/isSourceOf/isDerivedFrom","value": 1},
+  {"from": "isContinuedBy/isCompiledBy/isOriginalFromOf/isSourceOf/isDerivedFrom","to": "Datacite","value": 1},
+  {"from": "isBasedOn - schema:CreativeWork","to": "MD_Metadata/resourceLineage//source//sourceCitation","value": 1},
+  {"from": "MD_Metadata/resourceLineage//source//sourceCitation","to": "ISO19115-1","value": 1},
+  {"from": "isBasedOn - schema:CreativeWork","to": "dc:source","value": 1},
+  {"from": "dc:source","to": "DC","value": 1},
+  {"from": "isBasedOn - schema:CreativeWork","to": "derivation","value": 1},
+  {"from": "derivation","to": "DDI","value": 1},
 ]
