@@ -1,4 +1,9 @@
 [
-  {"from": "alternativeName - schema:CreativeWork","to": "relation","value": 1},
-  {"from": "relation","to": "DCAT","value": 1}
+  {"from": "mentions - schema:CreativeWork","to": "dct:relation","value": 2},
+  {"from": "dct:relation","to": "DCAT-AP","value": 1},
+  {"from": "dct:relation","to": "DCATv3","value": 1},
+  {"from": "mentions - schema:CreativeWork","to": "MD_Identifcation/associatedResource/name/CI_Citation [associationType = 'crossReference']","value": 1},
+  {"from": "MD_Identifcation/associatedResource/name/CI_Citation [associationType = 'crossReference']","to": "ISO19115-1","value": 1},
+  {"from": "mentions - schema:CreativeWork","to": "dcterms:relation","value": 1},
+  {"from": "dcterms:relation","to": "DC","value": 1}
 ]
