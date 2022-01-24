@@ -1,6 +1,14 @@
 [
-  {"from": "contentSize - MediaObject","to": "byteSize(O)","value": 1},
-  {"from": "byteSize(O)","to": "DCAT","value": 1},
+  {"from": "contentSize - MediaObject","to": "dct:byteSize(O)","value": 1},
+  {"from": "dct:byteSize(O)","to": "DCAT-AP","value": 1},
+  {"from": "contentSize - MediaObject","to": "dct:byteSize","value": 1},
+  {"from": "dct:byteSize","to": "DCATv3","value": 1},
+  {"from": "contentSize - MediaObject","to": "MD_Metadata/distributionInfo//transferOptions//transferSize (and unitsOfDistribution)","value": 1},
+  {"from": "MD_Metadata/distributionInfo//transferOptions//transferSize (and unitsOfDistribution)","to": "ISO19115-1","value": 1},
+  {"from": "contentSize - MediaObject","to": "Size(R)","value": 1},
+  {"from": "Size(R)","to": "EOSC","value": 1},
+  {"from": "contentSize - MediaObject","to": "collSize","value": 1},
+  {"from": "collSize","to": "DC","value": 1},
   {"from": "contentSize - MediaObject","to": "Size(O)*","value": 1},
   {"from": "Size(O)*","to": "Datacite","value": 1}
 ]
