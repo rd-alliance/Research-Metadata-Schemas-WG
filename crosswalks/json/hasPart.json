@@ -1,12 +1,19 @@
 [
+  {"from": "hasPart - schema:CreativeWork","to": "hasPart","value": 3},
+  {"from": "hasPart","to": "Datacite","value": 1},
+  {"from": "hasPart","to": "DDI","value": 1},
+  {"from": "hasPart","to": "CODEMETA","value": 1},
+  {"from": "hasPart - schema:CreativeWork","to": "dcterms:hasPart","value": 2},
+  {"from": "dcterms:hasPart","to": "DCATv3","value": 1},
+  {"from": "dcterms:hasPart","to": "DC","value": 1},
   {"from": "hasPart - schema:CreativeWork","to": "includes(Dataset)(R)","value": 1},
   {"from": "includes(Dataset)(R)","to": "EOSC/EDMI","value": 1},
   {"from": "hasPart - schema:CreativeWork","to": "hasPart(R)","value": 1},
-  {"from": "hasPart(R)","to": "DCAT","value": 1},
+  {"from": "hasPart(R)","to": "DCAT-AP","value": 1},
+  {"from": "hasPart - schema:CreativeWork","to": "MD_Identifcation/associatedResource/name/CI_Citation [associationType = 'isComposedOf']","value": 1},
+  {"from": "MD_Identifcation/associatedResource/name/CI_Citation [associationType = 'isComposedOf']","to": "ISO19115-1","value": 1},
   {"from": "hasPart - schema:CreativeWork","to": "hasPart(O)","value": 1},
   {"from": "hasPart(O)","to": "DATS","value": 1},
-  {"from": "hasPart - schema:CreativeWork","to": "hasPart","value": 1},
-  {"from": "hasPart","to": "CODEMETA","value": 1},
-  {"from": "hasPart - schema:CreativeWork","to": "relatedObject|relatedInfo collection where relation[@tyoe='hasPart]","value": 1},
-  {"from": "relatedObject|relatedInfo collection where relation[@tyoe='hasPart]","to": "RIF-CS","value": 1}
+  {"from": "hasPart - schema:CreativeWork","to": "relatedObject|relatedInfo collection where relation[@type='hasPart]","value": 1},
+  {"from": "relatedObject|relatedInfo collection where relation[@type='hasPart]","to": "RIF-CS","value": 1}
 ]
