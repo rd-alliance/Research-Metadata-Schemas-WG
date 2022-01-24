@@ -1,13 +1,18 @@
 [
-  {"from": "distribution - schema:Dataset","to": "distribution(R)","value": 3},
+  {"from": "distribution - schema:Dataset","to": "distribution(R)","value": 2},
   {"from": "distribution(R)","to": "EOSC/EDMI","value": 1},
   {"from": "distribution(R)","to": "DATS","value": 1},
-  {"from": "distribution(R)","to": "DCAT","value": 1},
-  {"from": "distribution - schema:Dataset","to": "Distribution information","value": 1},
-  {"from": "Distribution information","to": "ISO-19115:2003","value": 1},
   {"from": "distribution - schema:Dataset","to": "distribution","value": 2},
   {"from": "distribution","to": "Datacite","value": 1},
   {"from": "distribution","to": "BioSchema","value": 1},
+  {"from": "distribution - schema:Dataset","to": "dct:distribution(R)","value": 1},
+  {"from": "dct:distribution(R)","to": "DCAT-AP","value": 1},
+  {"from": "distribution - schema:Dataset","to": "dct:distribution","value": 1},
+  {"from": "dct:distribution","to": "DCATv3","value": 1},
+  {"from": "distribution - schema:Dataset","to": "distrbtr(URI)","value": 1},
+  {"from": "distrbtr(URI)","to": "DDI","value": 1},
+  {"from": "distribution - schema:Dataset","to": "MD_Metadata/distributionInfo/MD_Distribution/transferOptions","value": 1},
+  {"from": "MD_Metadata/distributionInfo/MD_Distribution/transferOptions","to": "ISO-19115-1","value": 1},
   {"from": "distribution - schema:Dataset","to": "location/address/electronic @type=\"url\" @ target=\"directDownload","value": 1},
   {"from": "location/address/electronic @type=\"url\" @ target=\"directDownload","to": "RIF-CS","value": 1}
 ]
