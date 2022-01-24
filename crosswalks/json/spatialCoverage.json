@@ -1,10 +1,12 @@
 [
   {"from": "spatialCoverage - schema:CreativeWork","to": "spatialCoverage(O)","value": 1},
   {"from": "spatialCoverage(O)","to": "EOSC/EDMI","value": 1},
-  {"from": "spatialCoverage - schema:CreativeWork","to": "Geographic extent","value": 1},
-  {"from": "Geographic extent","to": "ISO-19115:2003","value": 1},
-  {"from": "spatialCoverage - schema:CreativeWork","to": "spatial","value": 1},
-  {"from": "spatial","to": "DCAT","value": 1},
+  {"from": "spatialCoverage - schema:CreativeWork","to": "MD_Identification/extent/geographicElement. EX_GeographicBounding box or EX_BoundingPolygon with GM_Object is Point for centroid.Some profiles recommend putting place names in keywords,  keywordTypeCode = 'place'.  Many possibilities-will have to configure for particular ISO profile","value": 1},
+  {"from": "MD_Identification/extent/geographicElement. EX_GeographicBounding box or EX_BoundingPolygon with GM_Object is Point for centroid.Some profiles recommend putting place names in keywords,  keywordTypeCode = 'place'.  Many possibilities-will have to configure for particular ISO profile","to": "ISO-19115-1","value": 1},
+  {"from": "spatialCoverage - schema:CreativeWork","to": "dct:spatial","value": 1},
+  {"from": "dct:spatial","to": "DCAT-AP","value": 1},
+  {"from": "spatialCoverage - schema:CreativeWork","to": "dcterms:spatial","value": 1},
+  {"from": "dcterms:spatial","to": "DCATv3","value": 1},
   {"from": "spatialCoverage - schema:CreativeWork","to": "GeoLocation(R)","value": 1},
   {"from": "GeoLocation(R)","to": "Datacite","value": 1},
   {"from": "spatialCoverage - schema:CreativeWork","to": "collection/coverage/spatial","value": 1},
@@ -13,6 +15,8 @@
   {"from": "dcterms:coverage(spatial)","to": "DC","value": 1},
   {"from": "spatialCoverage - schema:CreativeWork","to": "Spatial Coverage(O)","value": 1},
   {"from": "Spatial Coverage(O)","to": "B2FIND","value": 1},
+  {"from": "spatialCoverage - schema:CreativeWork","to": "geogCover/geoBndBox/coverage","value": 1},
+  {"from": "geogCover/geoBndBox/coverage","to": "DDI","value": 1},
   {"from": "spatialCoverage - schema:CreativeWork","to": "ObservedRegion","value": 1},
   {"from": "ObservedRegion","to": "SPASE","value": 1}
 ]
