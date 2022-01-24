@@ -1,6 +1,12 @@
 [
+  {"from": "funder - schema:CreativeWork","to": "dcterms:contributor","value": 3},
+  {"from": "dcterms:contributor","to": "DC","value": 1},
+  {"from": "dcterms:contributor","to": "DCAT-AP","value": 1},
+  {"from": "dcterms:contributor","to": "DCATv3","value": 1},
   {"from": "funder - schema:CreativeWork","to": "Grant information","value": 1},
   {"from": "Grant information","to": "Dataverse","value": 1},
+  {"from": "funder - schema:CreativeWork","to": "MD_Identification/credit  or MD_Identification/citation//citedResponsibleParty//name [role = funder]","value": 1},
+  {"from": "MD_Identification/credit  or MD_Identification/citation//citedResponsibleParty//name [role = funder]","to": "ISO19115-1","value": 1},
   {"from": "funder - schema:CreativeWork","to": "contributor with ContributorType/Sponsor(O)*","value": 1},
   {"from": "contributor with ContributorType/Sponsor(O)*","to": "DATACITE","value": 1},
   {"from": "funder - schema:CreativeWork","to": "acknowledges(O)","value": 1},
@@ -9,9 +15,9 @@
   {"from": "funder","to": "CODEMETA","value": 1},
   {"from": "funder - schema:CreativeWork","to": "ResourceHeader/Funding/Agency","value": 1},
   {"from": "ResourceHeader/Funding/Agency","to": "SPASE","value": 1},
+  {"from": "funder - schema:CreativeWork","to": "grantNo (agency)","value": 1},
+  {"from": "grantNo (agency)","to": "DDI","value": 1},
   {"from": "funder - schema:CreativeWork","to": "relatedObject|relatedInfo party/name where relation=isFundedBy","value": 1},
-  {"from": "relatedObject|relatedInfo party/name where relation=isFundedBy","to": "RIF-CS","value": 1},
-  {"from": "funder - schema:CreativeWork","to": "dcterms:contributor","value": 2},
-  {"from": "dcterms:contributor","to": "DC","value": 1},
-  {"from": "dcterms:contributor","to": "DCAT","value": 1}
+  {"from": "relatedObject|relatedInfo party/name where relation=isFundedBy","to": "RIF-CS","value": 1}
+  
 ]
