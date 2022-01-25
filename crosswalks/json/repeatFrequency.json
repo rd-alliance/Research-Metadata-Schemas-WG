@@ -1,0 +1,8 @@
+[
+  {"from": "repeatFrequency - schema:Thing:Schedule","to": "dcterms:accrualPeriodicity","value": 3},
+  {"from": "dcterms:accrualPeriodicity","to": "DCATS-AP","value": 1},
+  {"from": "dcterms:accrualPeriodicity","to": "DCATSv3","value": 1},
+  {"from": "dcterms:accrualPeriodicity","to": "DC","value": 1},
+  {"from": "repeatFrequency - schema:Thing:Schedule","to": "MD_Metadata/distributionInfo//transferOptions//transferFrequency","value": 1},
+  {"from": "MD_Metadata/distributionInfo//transferOptions//transferFrequency","to": "ISO19115-1","value": 1}
+]
