@@ -8,7 +8,7 @@
   {"from": "name(M)","to": "EOSC/EDMI","value": 1},
   {"from": "name(M)","to": "BioSchema","value": 1},
   {"from": "name - schema:Thing","to": "dct:title(M)","value": 1},
-  {"from": "title(M)","to": "DCAT-AP","value": 1},
+  {"from": "dct:title(M)","to": "DCAT-AP","value": 1},
   {"from": "name - schema:Thing","to": "dcterms:title","value": 1},
   {"from": "dcterms:title","to": "DATv3","value": 1},
   {"from": "name - schema:Thing","to": "MD_Identification/citation//title(M)","value": 1},
