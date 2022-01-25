@@ -9,5 +9,5 @@
   {"from": "isBasedOn - schema:CreativeWork","to": "dc:source","value": 1},
   {"from": "dc:source","to": "DC","value": 1},
   {"from": "isBasedOn - schema:CreativeWork","to": "derivation","value": 1},
-  {"from": "derivation","to": "DDI","value": 1},
+  {"from": "derivation","to": "DDI","value": 1}
 ]
