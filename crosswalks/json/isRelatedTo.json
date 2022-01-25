@@ -3,8 +3,8 @@
   {"from": "dct:relation","to": "DCAT-AP","value": 1},
   {"from": "dct:relation","to": "DCATv3","value": 1},
   {"from": "dct:relation","to": "DC","value": 1},
-  {"from": "isRelatedTo - schema:Thing","to": "relationType","value": },
+  {"from": "isRelatedTo - schema:Thing","to": "relationType","value": 1},
   {"from": "relationType","to": "Datacite","value": 1},
-  {"from": "isRelatedTo - schema:Thing","to": "MD_Identifcation/associatedResource/name/CI_Citation [associationType = 'crossReference']","value": },
+  {"from": "isRelatedTo - schema:Thing","to": "MD_Identifcation/associatedResource/name/CI_Citation [associationType = 'crossReference']","value": 1},
   {"from": "MD_Identifcation/associatedResource/name/CI_Citation [associationType = 'crossReference']","to": "ISO19115-1","value": 1}
 ]
