@@ -1,5 +1,5 @@
 [
-  {"from": "includedInDataCatalog - schema:Dataset","to": "includedIn(R)","value": 1},
+  {"from": "includedInDataCatalog - schema:Dataset","to": "includedInData(R)","value": 1},
   {"from": "includedInData(R)","to": "EOSC/EDMI","value": 1},
   {"from": "includedInDataCatalog - schema:Dataset","to": "dcterms:isPartOf","value": "2"},
   {"from": "dcterms:isPartOf","to": "DCATv3","value": 1},
