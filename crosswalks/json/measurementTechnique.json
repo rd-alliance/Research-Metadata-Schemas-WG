@@ -4,10 +4,10 @@
   {"from": "measurementTechniques(R)","to": "BIOSCHEMA","value": 1},
   {"from": "measurementTechnique - schema:DataCatalog","to": "sosa:usedProcedure","value": 1},
   {"from": "sosa:usedProcedure","to": "DCATv3","value": 1},
-  {"from": "measurementTechnique - schema:DataCatalog","to": "MD_Metadata/resourceLineage//statement","value": 1},
-  {"from": "MD_Metadata/resourceLineage//statement ","to": "ISO19115-1","value": 1},
+  {"from": "measurementTechnique - schema:DataCatalog","to": "MD_Metadata/resourceLineage/statement","value": 1},
+  {"from": "MD_Metadata/resourceLineage/statement","to": "ISO19115-1","value": 1},
   {"from": "measurementTechnique - schema:DataCatalog","to": "instrumentDevelopment","value": 1},
-  {"from": "instrumentDeveloment ","to": "DDI","value": 1},
+  {"from": "instrumentDeveloment","to": "DDI","value": 1},
   {"from": "measurementTechnique - schema:DataCatalog","to": "measurementType","value": 1},
   {"from": "measurementType","to": "SPASE","value": 1}
 ]
