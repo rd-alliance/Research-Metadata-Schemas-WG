@@ -14,7 +14,5 @@
   {"from": "alternateName - schema:Thing","to": "alternateName","value": 1},
   {"from": "alternateName","to": "Bioschema","value": 1},
   {"from": "alternateName - schema:Thing","to": "altTitl","value": 1},
-  {"from": "altTitl","to": "DDI","value": 1},
-  {"from": "alternateName - schema:Thing","to": "ResourceHeader/AlternateName","value": 1},
-  {"from": "ResourceHeader/AlternateName","to": "SPASE","value": 1}
+  {"from": "altTitl","to": "DDI","value": 1}
 ]
