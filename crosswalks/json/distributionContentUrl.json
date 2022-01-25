@@ -2,7 +2,7 @@
   {"from": "distributionContent.url - schema:DatasetDownload","to": "dct:accessURL(M)/dct:downloadURL(O)","value": 1},
   {"from": "dct:accessURL(M)/dct:downloadURL(O)","to": "DCAT-AP","value": 1},
   {"from": "distributionContent.url - schema:DatasetDownload","to": "dct:downloadURL","value": 1},
-  {"from": "dct:downloadURL(O)","to": "DCATv3","value": 1},
+  {"from": "dct:downloadURL","to": "DCATv3","value": 1},
   {"from": "distributionContent.url - schema:DatasetDownload","to": "distribution","value": 1},
   {"from": "distribution","to": "BioSchema","value": 1},
   {"from": "distributionContent.url - schema:DatasetDownload","to": "accessURL","value": 1},
