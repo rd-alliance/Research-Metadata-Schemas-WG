@@ -1,4 +1,7 @@
 [
+  {"from": "dateCreated - schema:CreativeWork","to": "dateCreated","value": 2},
+  {"from": "dateCreated","to": "Bioschema","value": 1},
+  {"from": "dateCreated","to": "CODEMETA","value": 1},
   {"from": "dateCreated - schema:CreativeWork","to": "dateCreated(M)","value": 1},
   {"from": "dateCreated(M)","to": "EOSC/EDMI","value": 1},
   {"from": "dateCreated - schema:CreativeWork","to": "Date of collection","value": 1},
@@ -7,8 +10,6 @@
   {"from": "dcterms:created","to": "DC","value": 1},
   {"from": "dateCreated - schema:CreativeWork","to": "created","value": 1},
   {"from": "created","to": "DDI","value": 1},
-  {"from": "dateCreated - schema:CreativeWork","to": "dateCreated","value": 1},
-  {"from": "dateCreated","to": "Bioschema","value": 1},
   {"from": "dateCreated - schema:CreativeWork","to": "dcterms:created(O)","value": 1},
   {"from": "dcterms:created(O)","to": "DCATv3","value": 1},
   {"from": "dateCreated - schema:CreativeWork","to": "dct:created(O)","value": 1},
@@ -17,10 +18,8 @@
   {"from": "Date (R)/Created","to": "Datacite","value": 1},
   {"from": "dateCreated - schema:CreativeWork","to": "MD_Metadata/dataInfo [dateType = creation] for metadata record; MD_Identification/citation//date [dateType = creation] for the described resource","value": 1},
   {"from": "MD_Metadata/dataInfo [dateType = creation] for metadata record; MD_Identification/citation//date [dateType = creation] for the described resource","to": "ISO19115-1","value": 1},
-  {"from": "dateCreated - schema:CreativeWork","to": "dateCreated","value": 1},
-  {"from": "dateCreated","to": "CODEMETA","value": 1},
   {"from": "dateCreated - schema:CreativeWork","to": "collection/citationInfo/citationMetadata/date[@type= 'created']OR collection/dates[@type='created']","value": 1},
-  {"from": "collection/citationInfo/citationMetadata/date[@type= 'created'] OR collection/dates[@type='created']","to": "RIF-CS","value": 1},
+  {"from": "collection/citationInfo/citationMetadata/date[@type= 'created']OR collection/dates[@type='created']","to": "RIF-CS","value": 1},
   {"from": "dateCreated - schema:CreativeWork","to": "Dates(date type)(O)","value": 1},
   {"from": "Dates(date type)(O)","to": "ECRIN","value": 1}
 ]
