@@ -1,8 +1,8 @@
 [
   {"from": "copyrightYear - schema:CreativeWork","to": "dct:rightsHolder(O)","value": 1},
-  {"from": "dcterms:right(O)","to": "DCAT-AP","value": 1},
+  {"from": "dct:rightsHolder(O)","to": "DCAT-AP","value": 1},
   {"from": "copyrightYear - schema:CreativeWork","to": "dct:rightsHolder","value": 1},
-  {"from": "dcterms:right","to": "DCATv3","value": 1},
+  {"from": "dct:rightsHolder","to": "DCATv3","value": 1},
   {"from": "copyrightYear - schema:CreativeWork","to": "Copyrighted","value": 1},
   {"from": "Copyrighted","to": "Datacite","value": 1},
   {"from": "copyrightYear - schema:CreativeWork","to": "MD_Identification/citation//date [dateType = https://schema.org/copyrightYear]","value": 1},
