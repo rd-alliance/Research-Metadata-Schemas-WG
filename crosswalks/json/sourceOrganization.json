@@ -1,4 +1,0 @@
-[
-  {"from": "sourceOrganization - schema:DataCatalog","to": "registeryObject@Group","value": 1},
-  {"from": "registeryObject@Group","to": "RIF-CS","value": 1}
-]
