@@ -11,5 +11,5 @@
   {"from": "producer - schema:CreativeWork","to": "MD_Identification/citation//citedResponsibleParty//name [role = https://schema.org/producer]","value": 1},
   {"from": "MD_Identification/citation//citedResponsibleParty//name [role = https://schema.org/producer]","to": "ISO19115-1","value": 1},
   {"from": "producer - schema:CreativeWork","to": "contributor with contributortype=\"Producer","value": 1},
-  {"from": "contributor with contributortype=\"Producer","to": "Datacite","value": 1},
+  {"from": "contributor with contributortype=\"Producer","to": "Datacite","value": 1}
 ]
