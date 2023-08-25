@@ -1,4 +1,4 @@
-$('select.filter').change(function(){
+$('select.filter').on("change", function(){
     if($(this).val() != "-1")
     {
     $('table.i').hide();
